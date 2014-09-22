@@ -544,8 +544,6 @@ Listing completed tutorial steps is an action out of world.
 
 Understand "tutorial steps" as listing completed tutorial steps.
 
-[Definition: a list (called L) is empty if the number of entries in L is zero.
-]
 Report listing completed tutorial steps: 
 	say "Completed tutorial steps:[line break]";
 	[ the list is never empty, always includes the "teach looking rule" ]
