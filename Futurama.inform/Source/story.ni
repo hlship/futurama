@@ -550,15 +550,6 @@ Report listing completed tutorial steps:
 	repeat with step running through completed instruction list:
 		say "- [step][line break]";
 	
-[ This is temporary, just to help with debugging. ]
-Assaying conversation partners is an action out of world.
-
-Understand "assay" as assaying conversation partners.
-
-Report assaying conversation partners: Say "These are previously mentioned partners: [the list of previously-mentioned conversation-capable persons].r
-
-These are all partners (who will now be flagged as previously mentioned): [the list of conversation-capable persons]."
-
 Requesting developer help is an action out of world.
 
 Understand "devhelp" as requesting developer help.
