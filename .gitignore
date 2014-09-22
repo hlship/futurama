@@ -14,3 +14,7 @@
 # is problematic due to its construction. It changes constantly and is very
 # hard to merge.
 *.skein
+
+# And I have not idea what this thing is:
+
+Futurama.materials/Icon*
