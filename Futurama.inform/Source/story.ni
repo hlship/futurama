@@ -109,7 +109,7 @@ The description of the wrapper is "Written on the inside of the wrapper, in cray
 
 Section 2 - Access Road
 
-The Access Road is east of the Alley. 
+The Access Road is east of the Alley and west of the Truck Lane.
 "A wide access road frequented by [heavy freight skimmers] moving past in both directions at high speed. 
 From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers.
 [New New Yorkers] swarm past, many coming and going through the [transport tube].
@@ -155,14 +155,6 @@ Carry out crossing a street in Access Road:
 Carry out crossing a street in Planet Express:
 	try going west.
 
-Going east in the Access Road is crossing a dangerous street.
-Going west in Planet Express is crossing a dangerous street.
-
-Instead of crossing a dangerous street, say  "Your Frogger days are over, centuries over.
-And that frog never had to deal with multi-ton heavy transports moving at 200 miles per hour three inches above the road. 
-You especially aren't thinking of crossing now that most robot truckers have upgraded their operating systems to Meth 3.0. 
-Those guys don't stop for anything: red lights, cops, sometimes not even brick walls, and they certainly don't stop for delivery boys."
-
 Section 3 - Madison Cube Garden
 
 Madison Cube Garden is a room in Manhattan.
@@ -170,9 +162,19 @@ Madison Cube Garden is a room in Manhattan.
 
 [TODO: Flesh this out with other locations; currently just a test of the transport tube system.]
 
-Section 4 - Planet Express
+Section 4 - Truck Lane
 
-Planet Express is east of the Access Road. "Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the [river]. 
+The Truck Lane is a room in Manhattan. "It is not reachable."
+
+Instead of going when the room gone to is the Truck Lane, say  "Your Frogger days are over, centuries over.
+And that frog never had to deal with multi-ton heavy transports moving at 200 miles per hour three inches above the road. 
+You especially aren't thinking of crossing now that most robot truckers have upgraded their operating systems to Meth 3.0. 
+Those guys don't stop for anything: red lights, cops, sometimes not even brick walls, and they certainly don't stop for delivery boys."
+
+
+Section 5 - Planet Express
+
+Planet Express is east of the Truck Lane. "Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the [river]. 
 The access road is to the west, as busy and dangerous as ever ... fortunately, the transport tube system extends this far.
 On the side of the building is a wide circular door [if circular door is open]through which you can enter[else]which is currently rolled shut.[end if]"
 
