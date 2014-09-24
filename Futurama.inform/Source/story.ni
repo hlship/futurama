@@ -21,7 +21,7 @@ When play begins, say "[bold type]Futurama
 You wish you could say this is the first time you've woken up in a dark, dirty alley ... really, you wish you could say for sure. 
 You can't seem to remember.
 You feel a bit disoriented, and your tortured neurons cough up just a couple of memories ... you were out on a bender, or out [italic type]with[roman type] a Bender? 
-A loud buzzing sound startles you out of your reverie, as a fast moving, colorful blur whizzes by at overhead.
+A loud buzzing sound startles you out of your reverie, as a fast moving, colorful blur whizzes by overhead.
 
 This game has a tutorial mode, which is on.
 At any time, enter TUTORIAL OFF to turn it off, or TUTORIAL ON to turn it back on."
