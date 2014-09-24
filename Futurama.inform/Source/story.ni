@@ -18,9 +18,13 @@ When play begins, say "[bold type]Futurama
 
 [italic type]Honk if you like z-code[roman type]
 
-You wish you could say this is the first time you've woken up in a dark, dirty alley ... really, you wish you could say for sure.  You can't seem to remember.  You feel a bit disoriented, and your tortured neurons cough up just a couple of memories ... you were out on a bender, or out [italic type]with[roman type] a Bender?  A loud buzzing sound startles you out of your reverie, as a fast moving, colorful blur whizzes by at overhead.
+You wish you could say this is the first time you've woken up in a dark, dirty alley ... really, you wish you could say for sure. 
+You can't seem to remember.
+You feel a bit disoriented, and your tortured neurons cough up just a couple of memories ... you were out on a bender, or out [italic type]with[roman type] a Bender? 
+A loud buzzing sound startles you out of your reverie, as a fast moving, colorful blur whizzes by at overhead.
 
-This game has a tutorial mode, which is on. At any time, enter TUTORIAL OFF to turn it off, or TUTORIAL ON to turn it back on."
+This game has a tutorial mode, which is on.
+At any time, enter TUTORIAL OFF to turn it off, or TUTORIAL ON to turn it back on."
 
 [ Book - Part - Section - Chapter ]
 
@@ -51,7 +55,10 @@ Every turn when the player is in Manhattan and Tubing Out is not happening:
 
 Section 1 - The Alley
 
-The Alley is a room.  "A short alley not far from Planet Express, notable for being dark and dingy in an otherwise bright and colorful city.  They alley is divided in two by [a tall fence] topped with razor wire to the west. A busy street is just outside the alley to the east. There's not much activity here, beyond [a pair of owls] who watch you carefully, eager to scavenge any crumbs you might drop." 
+The Alley is a room.  "A short alley not far from Planet Express, notable for being dark and dingy in an otherwise bright and colorful city. 
+The alley is divided in two by [a tall fence] topped with razor wire to the west. 
+A busy street is just outside the alley to the east. 
+There's not much activity here, beyond [a pair of owls] who watch you carefully, eager to scavenge any crumbs you might drop." 
 
 Instead of going west in the Alley, say "Tall fence.  Check.  Razor wire.  Check.  Fry going west of the tall fence with razor wire?  No check."
 
@@ -63,14 +70,23 @@ Understand "razor/wire" as tall fence.
 
 A pair of owls are scenery in the Alley. "They stare down at you from the neighboring roof's gutter, imperiously." The owls are  an animal. Understand "owl" as owls.
 
-Instead of doing something to the owls, say "The owls have learned to be cautious, and studiously keep themselves out of reach."
+Instead of doing something other than examining to the owls, say "The owls have learned to be cautious, and studiously keep themselves out of reach."
 
 [At some point, we're sure to put Zoidberg in the dumpster.]
 
-The dumpster is a closed, openable container in the alley. "At the back of the alley is a graffiti-festooned dumpster." The description is "The dumpster is made of gun-metal grey heavy plastic and has seen better days.  It has smelled much better days.  You hate to think what it has tasted. The dumpster is worn and battered, and festooned with graffiti in [an alien script]. Basically, it's disgusting, [if closed]but you fear that the worst is on the inside, mercifully closed from view[else]all the more so for the reek wafting into the alley from the open top[end if]." It is fixed in place.
+The dumpster is a closed, openable container in the alley.
+"At the back of the alley is a graffiti-festooned dumpster." 
+The description is "The dumpster is made of gun-metal grey heavy plastic and has seen better days. 
+It has smelled much better days. 
+You hate to think what it has tasted.
+The dumpster is worn and battered, and festooned with graffiti in [an alien script].
+Basically, it's disgusting, [
+if closed]but you fear that the worst is on the inside, mercifully closed from view[else]all the more so for the reek wafting into the alley from the open top[end if]."
+It is fixed in place.
 
 [So far just a red herring, but flavor is fun on its own.  Maybe later, we'll get an alien here and have them read/translate the script for us.]
-The alien script is scenery in the alley. "Well, it's in an alien script, and despite your general befuddlement, you're fairly certain you are not an alien, and very certain you aren't an alien who can read this lettering."
+The alien script is scenery in the alley. 
+"Well, it's in an alien script, and despite your general befuddlement, you're fairly certain you are not an alien, and very certain you aren't an alien who can read this lettering."
 
 Understand "graffiti" as alien script.
 
@@ -79,7 +95,8 @@ The player is wearing a red jacket. The description of the jacket is "Members on
 The can of slurm is carried by the player. The description is "An empty can of Slurm soft drink.[if the can is carried by the player] You hold onto it with a desperate junkie's grip.  'Maybe it has just one more delicious drop?' you think and give it a quick shake. No dice.[end if]".
 
 Report dropping the can: 
-	say "With considerable mental effort, you convince your fingers to open, allowing the can to drop free of your grasp. You never feel quite right without a can of Slurm handy, even an empty one.";
+	say "With considerable mental effort, you convince your fingers to open, allowing the can to drop free of your grasp.
+	You never feel quite right without a can of Slurm handy, even an empty one.";
 	stop the action.
 	
 Last report taking the can:
@@ -87,25 +104,36 @@ Last report taking the can:
 
 Understand "drink" or "soft drink" as the can of slurm.
 
-The player carries a crumpled candy-bar wrapper. The description of the wrapper is "Written on the inside of the wrapper, in crayon, is the urgent message: 'WORK PANLET EXPERS GO', but you are not sure what that means."
+The player carries a crumpled candy-bar wrapper.
+The description of the wrapper is "Written on the inside of the wrapper, in crayon, is the urgent message: 'WORK PANLET EXPERS GO', but you are not sure what that means."
 
 Section 2 - Access Road
 
-The Access Road is east of the Alley. "A wide access road frequented by [heavy freight skimmers] moving past in both directions at high speed.  From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers.  You can see the transport tube servicing Planet Express across the road from you, to the east; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system."
+The Access Road is east of the Alley. 
+"A wide access road frequented by [heavy freight skimmers] moving past in both directions at high speed. 
+From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers.
+[New New Yorkers] swarm past, many coming and going through the [transport tube].
+You can see the transport tube servicing Planet Express across the road from you, to the east; beyond that is the river.
+People are everywhere, moving north and south along the street and zipping in and out of the transport tube system."
 
-The heavy freight skimmers are scenery in the Access Road. "These skimmers seem to be hauling freight on a robot time schedule: 24 hours a day, 7 days a week. You can't imagine what they might be carrying, and they've never slowed down enough for you to make out the contents."
+The heavy freight skimmers are scenery in the Access Road. 
+"These skimmers seem to be hauling freight on a robot time schedule: 24 hours a day, 7 days a week.
+You can't imagine what they might be carrying, and they've never slowed down enough for you to make out the contents."
 
-The New New Yorkers are scenery in the Access Road. "They run the gamut from rich and stylish to poor and mutant."
+The New New Yorkers are scenery in the Access Road.
+"They run the gamut from rich and stylish to poor and mutant."
 
 Understand "people/crowd/mob" as New New Yorkers.
 
 Instead of doing something other than examining to the New New Yorkers, say "You don't fuss with them and they don't fuss with you."
 
-Going north in the Access Road is a rejected walk.  Going south in the Access Road is a rejected walk.
+Going north in the Access Road is a rejected walk.  
+Going south in the Access Road is a rejected walk.
 
 [This will need to be tweaked once we're outside of Manhattan.]
 
-Instead of a rejected walk, say "The thought of trudging through the sun-baked streets filled with such throngs of happy, productive people fills you with an overpowering sense of dread and despair, and brings a twitch to your right eyelid.  Some of that may be Slurm withdrawal, but nonetheless."
+Instead of a rejected walk, say "The thought of trudging through the sun-baked streets filled with such throngs of happy, productive people fills you with an overpowering sense of dread and despair, and brings a twitch to your right eyelid. 
+Some of that may be Slurm withdrawal, but nonetheless."
 
 Crossing a street is an action applying to nothing.
 
@@ -116,25 +144,37 @@ Understand "cross the/-- road/street" as crossing a street.
 [This will be generalized more in the future, if necessary.]
 
 Check crossing a street:
-	if the location is not the Access Road:
+	if the location is Planet Express or the location is  Access Road:
+		continue the action;
+	otherwise:
 		instead say "[We] see no such thing to cross."
 
-Carry out crossing a street:
+Carry out crossing a street in Access Road:
 	try going east.
+	
+Carry out crossing a street in Planet Express:
+	try going west.
 
 Going east in the Access Road is crossing a dangerous street.
+Going west in Planet Express is crossing a dangerous street.
 
-Instead of crossing a dangerous street, say  "Your Frogger days are over, centuries over. And that frog never had to deal with multi-ton heavy transports moving at 200 miles per hour three inches above the road. You especially aren't thinking of crossing now that most robot truckers have upgraded their operating systems to Meth 3.0.  Those guys don't stop for anything: red lights, cops, sometimes not even brick walls, and they certainly don't stop for delivery boys."
+Instead of crossing a dangerous street, say  "Your Frogger days are over, centuries over.
+And that frog never had to deal with multi-ton heavy transports moving at 200 miles per hour three inches above the road. 
+You especially aren't thinking of crossing now that most robot truckers have upgraded their operating systems to Meth 3.0. 
+Those guys don't stop for anything: red lights, cops, sometimes not even brick walls, and they certainly don't stop for delivery boys."
 
 Section 3 - Madison Cube Garden
 
-Madison Cube Garden is a room in Manhattan. "You are near the transport tube serving Madison Cube Garden. This is your favorite venue for Monster Rallies ... it's much more exciting with real genetically modified monsters than with the oversized trucks from your prior life."
+Madison Cube Garden is a room in Manhattan.
+"You are near the transport tube serving Madison Cube Garden. This is your favorite venue for Monster Rallies ... it's much more exciting with real genetically modified monsters than with the oversized trucks from your prior life."
 
 [TODO: Flesh this out with other locations; currently just a test of the transport tube system.]
 
 Section 4 - Planet Express
 
-Planet Express is east of the Access Road. "Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the [river]. The access road is to the west, as busy and dangerous as ever ... fortunately, the transport tube system extends this far. On the side of the building is a wide circular door [if circular door is open]through which you can enter[else]which is currently rolled shut.[end if]"
+Planet Express is east of the Access Road. "Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the [river]. 
+The access road is to the west, as busy and dangerous as ever ... fortunately, the transport tube system extends this far.
+On the side of the building is a wide circular door [if circular door is open]through which you can enter[else]which is currently rolled shut.[end if]"
 
 The circular door is east of Planet Express and west of Conference Room. It is a door. It is scenery.
 
@@ -143,7 +183,11 @@ Going west in Planet Express Entrance is crossing a dangerous street.
 The river is scenery in Planet Express. The description is "Wide, flowing, and filled with more than a thousand years of toxic wastes and alien parasites, it's something New New Yorkers studiously ignore and avoid."
 
 after looking in Planet Express the first time: 
-		say "From the upper turret of Planet Express, you hear Professor Farnsworth's demanding, querulous voice call out to you: 'Fry!  Where have you been? We're about to start a [italic type]very dangerous[roman type] mission and we're going to need someone to mop up the blood, er, I mean, provide moral support.  Get on in here!' He disappears back into the tower.";
+		say "From the upper turret of Planet Express, you hear Professor Farnsworth's demanding, querulous voice call out to you:
+		'Fry!  Where have you been? 
+		We're about to start a [italic type]very dangerous[roman type] mission and we're going to need someone to mop up the blood, er, I mean, provide moral support.  
+		Get on in here!' 
+		He disappears back into the tower.";
 		increase the score by one.
 	
 
@@ -154,14 +198,18 @@ Chapter 2 - The Transport Tube System
 The Transport Tube is a backdrop.
 
 Instead of examining the transport tube, say
- "It's the standard transport tube terminal: an entrance bubble on one end ... that's where you announce your destination. The reversing chamber is on the opposite side.  A steady flow of people march into the entrance bubble and are sucked up into the system; another steady stream of people from other parts of the city arrive and exit through the reversing chamber."
+ "It's the standard transport tube terminal: 
+an entrance bubble on one end ... that's where you announce your destination. 
+The reversing chamber is on the opposite side.  
+A steady flow of people march into the entrance bubble and are sucked up into the system; 
+another steady stream of people from other parts of the city arrive and exit through the reversing chamber."
 
 Understand "system/chamber" as the tube.
 
-[Because backdrop and container are not compatible, we model the bubble as part of the tube which works:
-  however, you can't enter a part, so once you enter, you are inside the Tube, not the Bubble -- well, maybe that changed in 6L02, since SHOWME shows yourself inside the bubble.] 
+[Because backdrop and container are not compatible, we model the bubble as part of the tube which works]
 
-The Entrance Bubble is an enterable container and part of the Transport Tube. The description is "A large transparent bubble that acts as the entrance to the tube, the only feature being a small box with a speaker grill on it."
+The Entrance Bubble is an enterable container and part of the Transport Tube. 
+The description is "A large transparent bubble that acts as the entrance to the tube, the only feature being a small box with a speaker grill on it."
 
 Understand "booth" as bubble.
 
@@ -170,11 +218,18 @@ Instead of entering the transport tube:
 
 Report entering the entrance bubble:
   [ I picture this as Crazy Cat lady's day job. Or is she from The Simpsons? ]
-  say "You shuffle onto the end of the fast moving line. The New New Yorkers ahead of you flit off to all parts of the city. Before you know it, you're at the head of the line. You duck your head and walk inside the transparent bubble.  A raspy, elderly voice, barely recognizable as a woman's, announces, 'What's your, whadjamacallit, destination?'" instead.
+  instead say "You shuffle onto the end of the fast moving line.
+The New New Yorkers ahead of you flit off to all parts of the city.
+Before you know it, you're at the head of the line.
+You duck your head and walk inside the transparent bubble. 
+A raspy, elderly voice, barely recognizable as a woman's, announces, 'What's your, whadjamacallit, destination?'"
 
-The speaker is scenery in the bubble. "That's where that raspy voice comes from. There must also be a microphone in here somewhere, to listen to your destination request."
+The speaker is scenery in the bubble. "That's where that raspy voice comes from. 
+There must also be a microphone in here somewhere, to listen to your destination request."
 
-Instead of examining  the bubble during Tubing Out, say "The bubble is transparent, clean, even hygienic. The only feature is a small control box with a speaker (for announcements) and a hidden microphone (for listening to your destination request)."
+Instead of examining  the bubble during Tubing Out, say "The bubble is transparent, clean, even hygienic.
+The only feature is a small control box with a speaker (for announcements) and a hidden microphone
+(for listening to your destination request)."
 
 Understand "box" or "grill" as the speaker.
 
@@ -203,7 +258,9 @@ At the time when the tube complains:
 		say "The raspy voice announces, 'I'm not getting any younger, bud. Just announce where ya wanna go.'".
 At the time when the tube ejects:
 	if Tubing Out is happening:
-		say "The raspy voice complains, 'Listen bub, announce a, whadjamacallit, destination, or get out of the way.' You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign.  You put your hands in the pockets of your jacket and shuffle out of the bubble.";
+		say "The raspy voice complains, 'Listen bub, announce a, whadjamacallit, destination, or get out of the way.'
+		You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign. 
+		You put your hands in the pockets of your jacket and shuffle out of the bubble.";
 		silently try exiting.
 
 Every turn during Tubing Out:
@@ -251,7 +308,8 @@ carry out announcing a destination:
 	
 report announcing a destination:
 		[Ultimately, I'd like this to mention a couple of  random places you whizz by between the starting and ending room, chosen randomly.]
-		say "With a sound like a great Tupperware lid being opened, the tube sucks you in and hurtles your upwards and about at great speed.  You shoot past a number of New New York locations, familiar and unfamiliar, before being spat out of the reversal chamber at [the announced destination].";
+		say "With a sound like a great Tupperware lid being opened, the tube sucks you in and hurtles your upwards and about at great speed.  
+		You shoot past a number of New New York locations, familiar and unfamiliar, before being spat out of the reversal chamber at [the announced destination].";
 		try looking.
 				
 Section 3 - Tube Transport Destinations
@@ -269,44 +327,73 @@ Book 3 - Planet Express Interior
 
 Section 1 - Conference Room
 
-The Conference Room is a room. "A large space overlooking the hangar to the north.  A huge display [monitor] looms on the south wall.  A [metal railing] divides this room from the hangar[if the delivery ship is in the hangar] where the delivery ship stands ready[end if].  A steep set of stairs leads down into the hangar. The door leading back out to the access road is [if circular door is open]open[else]rolled shut[end if]."
+The Conference Room is a room. "A large space overlooking the hangar to the north. 
+A huge [display  monitor] looms on the south wall.  
+A [metal railing] divides this room from the hangar[if the delivery ship is in the hangar] where the delivery ship stands ready[end if]. 
+A steep set of stairs leads down into the hangar.
+The door leading back out to the access road is [if circular door is open]open[else]rolled shut[end if]."
 
-The conference table is a fixed in place supporter in the Conference Room. "The center of the room is dominated by a large round table surrounded by seats for the crew."
+The conference table is a fixed in place supporter in the Conference Room.
+"The center of the room is dominated by a large round table surrounded by seats for the crew."
 
-The metal railing is scenery in the Conference Room. The description is "The railing was installed, over the Professor's objections, as a safety measure due to the steep dropoff from the conference room to the main hangar. It has gradually gotten larger and more involved, the longer Amy continues her internship here."
+The metal railing is scenery in the Conference Room. 
+The description is "The railing was installed, over the Professor's objections, as a safety measure due to the steep dropoff from the conference room to the main hangar.
+It has gradually gotten larger and more involved, the longer Amy continues her internship here."
 
-The display monitor is scenery in the Conference Room. The description is "Improbably large and improbably useless, considering how many holographic projectors are about."
+The display monitor is scenery in the Conference Room. 
+The description is "Improbably large and improbably useless, considering how many holographic projectors are about."
 
 Section 2 - Hangar
 
-The Hangar is north from the Conference Room. "This large room, the largest space inside Planet Express, is where the delivery ship is parked. The floor is heavy concrete, , capable of supporting the great mass of the ship, but still showing stains and wear marks. A row of [lockers] line one side of room, and a steep flight of stairs, almost a ladder, leads back to the conference room."
+The Hangar is north from the Conference Room. 
+"This large room, the largest space inside Planet Express, is where the delivery ship is parked. 
+The floor is heavy concrete, , capable of supporting the great mass of the ship, but still showing stains and wear marks.
+A row of [lockers] line one side of room, and a steep flight of stairs, almost a ladder, leads back to the conference room."
 
 The Hanger is down from the Conference Room.
 
-The Planet Express Delivery Ship is a fixed in place, thing in the Hangar. "The Planet Express Delivery Ship overshadows everything else in the Hangar, resting on three huge landing struts. It stands ready for the next mission, or for the next whim of the Professor."
+The Planet Express Delivery Ship is a fixed in place thing in the Hangar. 
+"The Planet Express Delivery Ship overshadows everything else in the Hangar, resting on three huge landing struts. It stands ready for the next mission, or for the next whim of the Professor."
+
+[ Probably do something with these eventually.]
 
 The lockers are scenery in the Hangar.
+"A row of dented lockers."
 
-The Ellisonium Capsule is here. It is a closed, unopenable container.  "Off to one side is a cylindrical container, about a foot high, with a clear dome on top." The description is "The container is cylindrical, about a foot high. A bright red label on the side reads 'Danger! Ellisonium! Highly Bitter!'.  Under the clear top you can see a floating vortext of purplish dust."
+The Ellisonium Capsule is here. It is a closed, unopenable container.  
+"Off to one side is a cylindrical container, about a foot high, with a clear dome on top." 
+The description is "The container is cylindrical, about a foot high. 
+A bright red label on the side reads 'Danger! Ellisonium! Highly Bitter!'. 
+Under the clear top you can see a floating vortex of purplish dust."
+
+Understand "purple/vortex" as the Ellisonium Capsule.
 
 Book 4 - Our Intrepid Cast
 
 Chapter 1 - The Professor
 
-The Professor is a man in the Conference Room. "Professor Farnsworth is dressed, as ever, in his lab coat." The description is "Ancient, wizened, somewhat doddering, and visibly off. He has aspirations to be diabolical, but lacks the necessary focus."
+The Professor is a man in the Conference Room. 
+"Professor Farnsworth is dressed, as ever, in his lab coat." 
+The description is "Ancient, wizened, somewhat doddering, and visibly off. 
+He has aspirations to be diabolical, but lacks the necessary focus."
+
 Understand "prof/farnsworth" as the Professor.
 
 The Professor wears a white lab coat and a pair of thick-lensed eyeglasses.
 
-
 Chapter 2 - Bender
 
-Bender is a man in the Conference Room. "Your robot friend, Bender, lounges nearby." The description is "Your trusty robot friend and co-enabler."
+Bender is a man in the Conference Room. 
+"Your robot friend, Bender, lounges nearby." 
+The description is "Your trusty robot friend and co-enabler."
+
 Understand "robot/friend" as Bender.
 
 Chapter 3 - Leela
 
-Leela is a woman in the Hangar. "Leela is fussing about hangar, checking that the ship is ready for its next mission." The description is "Leela is a dark haired, single eyed beauty."
+Leela is a woman in the Hangar. 
+"Leela is fussing about hangar, checking that the ship is ready for its next mission." 
+The description is "Leela is a dark haired, single eyed beauty."
 
 Book 5 - Conversations
 
@@ -332,32 +419,48 @@ Mission Description ends when the Professor is not in the Conference Room.
 about the new mission is a questioning quip. 
 	The comment is "'So, Professor, you said something about a mission?' you ask."
 	It mentions the mission.
-	The reply is "'The, oh, what?' The professor seems confused for a moment, then remembers: 'Yes, you must make a delivery to Miri Alpha Prime. Very dangerous, I'm afraid.'  Hearing this, Bender announces 'Oh boy! Here we go again.'"
+	The reply is "'The, oh, what?' The professor seems confused for a moment, then remembers:
+	'Yes, you must make a delivery to Miri Alpha Prime. 
+	Very dangerous, I'm afraid.' 
+	Hearing this, Bender announces 'Oh boy! Here we go again.'"
 	It quip-supplies the Professor.
 
-[ Trying to figure out how to 'hide' this until after the new mission quip.]
 what he thinks about the mission is a repeatable questioning quip.
 	The comment is "You ask Bender, 'What do you think about the mission?'"
-	The reply is "Bender leans forward. 'Yea, yea. Pick things up. Drop them off. Not enough bending involved, if you ask me.' He leans back against the wall, exhaling a noxious puff of cigar smoke."
+	The reply is "Bender leans forward. 'Yea, yea. Pick things up. Drop them off.
+	Not enough bending involved, if you ask me.'
+	He leans back against the wall, exhaling a noxious puff of cigar smoke."
 	It quip-supplies Bender.
 
 about the danger is a questioning quip. 
 	It mentions danger.
 	The comment is "You ask 'What's so dangerous about this mission?'"
-  The reply is "The Professor stares down at the conference table. 'Oh, the Ellisonium, yes, the bitterest mostly-stable element in the known universe. Oh who knows what strange and terrible uses the Mirians will use it for! Make deserts bloom? A snap! Desalinate their oceans? Certainly. Or wage horrific intergalactic war. It's their choice, but that doesn't matter really, it's the payment that's so dangerous!'".
+	The reply is "The Professor stares down at the conference table. 
+	'Oh, the Ellisonium, yes, the bitterest mostly-stable element in the known universe. 
+	Oh who knows what strange and terrible uses the Mirians will use it for!
+	Make deserts bloom? A snap! Desalinate their oceans? Certainly. 
+	Or wage horrific intergalactic war. 
+	It's their choice, but that doesn't matter really, it's the payment that's so dangerous!'".
 	It quip-supplies the professor.
 	It indirectly-follows about the new mission.
 
 about the payment is a questioning quip.
 	The comment is "You try to tease some useful information out of the old codger. 'And the payment is?'".
-	The reply is "The Professor becomes agitated and raises his voice. 'Just the most dangerous machine in the know galaxy ... The Guardian of Forever!'  He settles down after a moment. 'I[']m getting it for quite a steal, actually. And really, it shouldn't be so dangerous as long as you don't go fooling around with it! Maybe you'll listen to [Leela] for once ... where is she?'".
+	The reply is "The Professor becomes agitated and raises his voice.
+	'Just the most dangerous machine in the know galaxy ... The Guardian of Forever!'
+	He settles down after a moment.
+	'I[']m getting it for quite a steal, actually. 
+	And really, it shouldn't be so dangerous as long as you don't go fooling around with it!
+	Maybe you'll listen to [Leela] for once ... where is she?'".
 	It indirectly-follows about the danger.
 		
 [ this was originally "offer to find Leela" which I preferred, but "offer ... to" got mixed up with a variant of the giving action.
   For the moment, I just renamed the quip. ]
 suggest finding Leela is a performative quip.
 	The comment is "You say 'I don't know where she is, maybe we should go look for her?'"
-	The reply is "'Very good. You find Leela,  grab this mechanical buffoon,' he gestures towards Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke, 'and get that Ellisonium delivered!'
+	The reply is "'Very good. You find Leela,  grab this mechanical buffoon,'
+	he gestures towards Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke,
+	'and get that Ellisonium delivered!'
 	
 	The Professor pushes back from the conference table and exits the conference room, heading upstairs to his lab.".
 	It indirectly-follows about the payment.
@@ -402,14 +505,12 @@ Instead of thinking, say "That's never been your strong point."
 
 Section 3 - Fry's Description
 
-Instead of examining yourself, say "Being in cold storage for a thousand years didn't change the [']classic['] Fry look: red jacket, white T-shirt, slight slouch."
+Instead of examining yourself, say "Being in cold storage for a thousand years didn't change the [']classic['] Fry look: 
+red jacket, white T-shirt, slight slouch."
 
 Book 7 - Extending Tutorial Mode
 
 Section 1 - Working around Quip Wierdness
-
-[ The quip-repository is placed "in scope" as a convienience, which makes quips and the repository
-  visible, confusing tutorial mode into thinking it can be taken or examined.]
 
 A thing can be tangible or abstract. A thing is usually tangible. A quip is always abstract. The quip-repository is abstract.
 		
@@ -453,7 +554,8 @@ An instructional rule (this is the teach conversations rule):
 	If the teach conversations rule is listed in the completed instruction list, make no decision;
 	if the player can see a previously-mentioned conversation-capable person (called the partner):
 		let N be "[the partner]";
-		say "Some characters can be engaged in conversation. For example, you can TALK TO [N in upper case].";
+		say "Some characters can be engaged in conversation.
+		For example, you can TALK TO [N in upper case].";
 		[[ Threaded Conversation does a good job of prompting the user from there. ]]
 		now the held rule is the teach conversations rule;
 		now the expected action is the action of saying hello to the partner;
@@ -524,7 +626,8 @@ An instructional rule (this is the teach door usage rule):
 	If the teach door usage rule is listed in the completed instruction list, make no decision;
 	If the player can see an unlocked door (called the portal):
 		let N be "[the portal]";
-		say "Doors can connect rooms together. They can be open or closed, and are sometimes locked.
+		say "Doors can connect rooms together.
+		They can be open or closed, and are sometimes locked.
 		You can enter a door to pass through to the other side, for example ENTER [N in upper case].";
 		now the held rule is the teach door usage rule;
 		rule succeeds;
