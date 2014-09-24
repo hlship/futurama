@@ -346,11 +346,11 @@ The description is "Improbably large and improbably useless, considering how man
 Section 2 - Hangar
 
 The Hangar is north from the Conference Room. 
-"This large room, the largest space inside Planet Express, is where the delivery ship is parked. 
-The floor is heavy concrete, , capable of supporting the great mass of the ship, but still showing stains and wear marks.
+"This large room, the largest open space inside Planet Express, is where the delivery ship is parked. 
+The floor is heavy concrete,  capable of supporting the great mass of the ship, but still showing stains and wear marks.
 A row of [lockers] line one side of room, and a steep flight of stairs, almost a ladder, leads back to the conference room."
 
-The Hanger is down from the Conference Room.
+The Hangar is down from the Conference Room.
 
 The Planet Express Delivery Ship is a fixed in place thing in the Hangar. 
 "The Planet Express Delivery Ship overshadows everything else in the Hangar, resting on three huge landing struts. It stands ready for the next mission, or for the next whim of the Professor."
