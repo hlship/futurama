@@ -12,7 +12,8 @@ Include Tutorial Mode by Emily Short.
 
 Include Inanimate Listeners by Emily Short.
 
-Use scoring.
+Use scoring. 
+The maximum score is 3.
 
 When play begins, say "[bold type]Futurama
 
