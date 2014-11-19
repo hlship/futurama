@@ -1,8 +1,12 @@
 "Futurama" by "Howard M. Lewis Ship"
 
-The story genre is "Comedy" [ I hope! ]. The story headline is "The Future. It's where you want to be."
+The story genre is "Comedy" [ I hope! ]. 
+The story headline is "The Future. It's where you want to be."
+The story creation year is 2014.
 
 The release number is 4.
+
+Release along with the introductory booklet, a website, an interpreter.
 
 [ Version 5/140601 from https://raw.githubusercontent.com/i7/extensions/master/Chris%20Conley/Threaded%20Conversation.i7x ]
 
