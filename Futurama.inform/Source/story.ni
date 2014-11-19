@@ -614,13 +614,11 @@ carry out someone (called the npc) discussing something (called the gossip) (thi
 		now remind the player about the tell command is true;
 	continue the action.
 	
+[ This somes out a bit earlier than I'd like, before the npc's reply is printed. ]
 report someone discussing something when remind the player about the tell command is true:
-	say "Later, you may be able to TELL another character something, or perform a special conversational action."
-	
-after someone discussing something:
-	now remind the player about the tell command is false;
-	continue the action.
-		
+	say "Later, you may be able to TELL another character something, or perform a special conversational action.";
+	now remind the player about the tell command is false;	continue the action.
+			
 An instructional rule (this is the teach performing rule):
 	If the teach performing rule is listed in the completed instruction list, make no decision;
 	let L be the  list of plausible performative quips; 
