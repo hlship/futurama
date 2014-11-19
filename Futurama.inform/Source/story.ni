@@ -678,6 +678,6 @@ Report requesting developer help: say "List of common and useful debugging comma
 	ABSTRACT thing TO other - moves thing to other thing[line break]
 	GONEAR thing - transports player to vicinity of the thing[line break]
 	SCOPE - lists objects in scope for player[line break]
-	SHOWVERB verbname - lists understanding information for a verb
+	SHOWVERB verbname - lists understanding information for a verb[line break]
 	QUEUE person - lists queued quips
 	[paragraph break]Enjoy!"
