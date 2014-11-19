@@ -171,7 +171,7 @@ Section 4 - Truck Lane
 
 The Truck Lane is a room in Manhattan. "It is not reachable."
 
-Instead of going when the room gone to is the Truck Lane, say  "Your Frogger days are over, centuries over.
+Instead of going when the room gone to is the Truck Lane (this is the your frogger days are over rule), say  "Your Frogger days are over, centuries over.
 And that frog never had to deal with multi-ton heavy transports moving at 200 miles per hour three inches above the road. 
 You especially aren't thinking of crossing now that most robot truckers have upgraded their operating systems to Meth 3.0. 
 Those guys don't stop for anything: red lights, cops, sometimes not even brick walls, and they certainly don't stop for delivery boys."
@@ -274,6 +274,12 @@ Every turn during Tubing Out:
 		[ This seemed the easiest way to prevent people announcing the current location; thus it's a bit less than a 2/3rd chance, but that's ok.]
 		if the destination room entry is not the location:
 			say "A New New Yorker impatiently pushes past you, announces '[utterance entry]', and is immediately sucked up into the tube and away."		
+
+Instead of going when tubing out is happening (this is the trapped in the transport tube rule), say "You are inside the entrance bubble of the transport tube, which fully wraps around you. You aren't going anywhere until you announce your destination, or exit the bubble."
+
+The trapped in the transport tube rule is listed before the your frogger days are over rule in the instead rulebook.
+
+Report exiting when tubing out is happening: instead say "You exit the bubble, squeezing past the line of New New Yorkers waiting to use the transport tube system."
 
 Tubing Out ends when the player is not in the bubble.
 
