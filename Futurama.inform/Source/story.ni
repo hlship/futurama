@@ -413,6 +413,7 @@ Chapter 1 - Subjects
 The mission is a subject.
 Danger is a subject.
 The payment is a subject.
+The guardian of forever is a subject. [And eventually an object.]
 
 Chapter 2 - Mission Description Scene and Quips
 
@@ -464,11 +465,17 @@ about the payment is a questioning quip.
 	And really, it shouldn't be so dangerous as long as you don't go fooling around with it!
 	Maybe you'll listen to [Leela] for once ... where is she?'".
 	It indirectly-follows about the danger.
+	
+about the guardian is a questioning quip.
+  it mentions the guardian of forever.
+  the comment is "'So Professor, what exactly is this guardian thing?'".
+  it indirectly-follows about the payment.
+  the reply is "The Professor responds a bit crankily: 'It's a machine that needs to be delivered back here to Planet Express'.  He looks at you. 'By a delivery boy.'".
 		
 [ this was originally "offer to find Leela" which I preferred, but "offer ... to" got mixed up with a variant of the giving action.
   For the moment, I just renamed the quip. ]
 suggest finding Leela is a performative quip.
-	The comment is "You say 'I don't know where she is, maybe we should go look for her?'"
+	The comment is "You say 'I don't know where Leela is, maybe we should go look for her?'"
 	The reply is "'Very good. You find Leela,  grab this mechanical buffoon,'
 	he gestures towards Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke,
 	'and get that Ellisonium delivered!'
@@ -480,7 +487,8 @@ after discussing suggest finding leela:
 	[ terminates the scene, frees Fry to move around. ]
 	now the Professor is nowhere;
 	increase the score by one;
-	continue the action.
+	continue the action.	
+
 
 Check going during Mission Description (this is the Professor demands attention rule):
 	Say "You start to sneak out of the meeting, but the Professor notices.  'Fry! Get back here, we're not done yet!'";
