@@ -185,8 +185,6 @@ On the side of the building is a wide circular door [if circular door is open]th
 
 The circular door is east of Planet Express and west of Conference Room. It is a door. It is scenery.
 
-Going west in Planet Express Entrance is crossing a dangerous street.
-
 The river is scenery in Planet Express. The description is "Wide, flowing, and filled with more than a thousand years of toxic wastes and alien parasites, it's something New New Yorkers studiously ignore and avoid."
 
 after looking in Planet Express the first time: 
