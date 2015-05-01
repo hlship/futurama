@@ -470,7 +470,7 @@ about the guardian is a questioning quip.
   it mentions the guardian of forever.
   the comment is "'So Professor, what exactly is this guardian thing?'".
   it indirectly-follows about the payment.
-  the reply is "The Professor responds a bit crankily: 'It's a machine that needs to be delivered back here to Planet Express'.  He looks at you. 'By a delivery boy.'".
+  the reply is "The Professor responds a bit crankily: 'It's a machine that needs to be delivered back here to Planet Express.'  He looks at you. 'By a delivery boy.'".
 		
 [ this was originally "offer to find Leela" which I preferred, but "offer ... to" got mixed up with a variant of the giving action.
   For the moment, I just renamed the quip. ]
