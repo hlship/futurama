@@ -86,7 +86,7 @@ It has smelled much better days.
 You hate to think what it has tasted.
 The dumpster is worn and battered, and festooned with graffiti in [an alien script].
 Basically, it's disgusting, [
-if closed]but you fear that the worst is on the inside, mercifully closed from view[else]all the more so for the reek wafting into the alley from the open top[end if]."
+if closed]but you fear that the worst is on the inside, mercifully closed from view[else]all the more so for the reek wafting into the alley from the open lid[end if]."
 It is fixed in place.
 
 [So far just a red herring, but flavor is fun on its own.  Maybe later, we'll get an alien here and have them read/translate the script for us.]
@@ -110,7 +110,7 @@ Last report taking the can:
 Understand "drink" or "soft drink" as the can of slurm.
 
 The player carries a crumpled candy-bar wrapper.
-The description of the wrapper is "Written on the inside of the wrapper, in crayon, is the urgent message: 'WORK PANLET EXPERS GO', but you are not sure what that means."
+The description of the wrapper is "Written on the inside of the wrapper, in crayon, is the urgent message: 'WORK PANLET EXPERS GO!', but you are not sure what that means."
 
 Section 2 - Access Road
 
@@ -149,7 +149,7 @@ Understand "cross the/-- road/street" as crossing a street.
 [This will be generalized more in the future, if necessary.]
 
 Check crossing a street:
-	if the location is Planet Express or the location is  Access Road:
+	if the location is Planet Express or the location is Access Road:
 		continue the action;
 	otherwise:
 		instead say "[We] see no such thing to cross."
