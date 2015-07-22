@@ -545,7 +545,8 @@ The quips can't be examined rule is listed first in the instructional rulebook.
 An instructional rule (this is the revised teach taking rule):
 	[ We use the teach taking rule as a flag here, so that we don't have to duplicate the message in the Instruction Followups ] 
 	if the teach taking rule is listed in the completed instruction list, make no decision;
-	if the player can see a tangible take-worthy thing (called target item): 
+	[ The take-worthy adjective doesn't account for worn items, just carried, so we added "not held" ]
+	if the player can see a tangible take-worthy not held thing (called target item): 
 		let N be "[the target item]";
 		say "You can pick things up when you see them, like this: TAKE [N in upper case]." (A);
 		now the expected action is the action of taking the target item;
