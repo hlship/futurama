@@ -179,13 +179,17 @@ Those guys don't stop for anything: red lights, cops, sometimes not even brick w
 
 Section 5 - Planet Express
 
-Planet Express is east of the Truck Lane. "Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the [river]. 
-The access road is to the west, as busy and dangerous as ever ... fortunately, the transport tube system extends this far.
+Planet Express is east of the Truck Lane. "Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the [river].  Planet Express is an oddly shaped red building, consisting of a mostly conical tower, attached
+to a large blocky hangar for the delivery ship itself.
+To the west is the busy truck route, buzzing with fast moving freight trucks.  Fortunately, the transport tube system extends this far.
 On the side of the building is a wide circular door [if circular door is open]through which you can enter[else]which is currently rolled shut.[end if]"
 
 The circular door is east of Planet Express and west of Conference Room. It is a door. It is scenery.
 
 The river is scenery in Planet Express. The description is "Wide, flowing, and filled with more than a thousand years of toxic wastes and alien parasites, it's something New New Yorkers studiously ignore and avoid."
+
+Instead of going east in Planet Express, say
+	"There's no point in getting any closer to the vaguely toxic river."
 
 after looking in Planet Express the first time: 
 		say "From the upper turret of Planet Express, you hear Professor Farnsworth's demanding, querulous voice call out to you:
