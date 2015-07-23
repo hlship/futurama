@@ -412,7 +412,7 @@ Chapter 3 - Leela
 
 Leela is a woman in the Hangar. 
 "Leela is fussing about hangar, checking that the ship is ready for its next mission." 
-The description is "Leela is a dark haired, single eyed beauty."
+The description is "Leela is a dark haired, single eyed beauty. As always, she's dressed in sensible combat boots and a white tank-top."
 
 Book 5 - Conversations
 
