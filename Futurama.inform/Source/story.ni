@@ -358,11 +358,15 @@ It has gradually gotten larger and more involved, the longer Amy continues her i
 The display monitor is scenery in the Conference Room. 
 The description is "Improbably large and improbably useless, considering how many holographic projectors are about."
 
+The steep stairs are a backdrop. They are in the Conference Room and the Hangar.
+The description is "The stairs lead [if the player is in the Conference Room]down and north into the cavernous hangar
+[else]up and south back to the conference room.[end if] ."
+
 Section 2 - Hangar
 
 The Hangar is north from the Conference Room. 
 "This large room, the largest open space inside Planet Express, is where the delivery ship is parked. 
-The floor is heavy concrete,  capable of supporting the great mass of the ship, but still showing stains and wear marks.
+The floor is heavy concrete,  capable of supporting the great mass of the ship, but still showing stains, scorches and wear marks.
 A row of [lockers] line one side of room, and a steep flight of stairs, almost a ladder, leads back to the conference room."
 
 The Hangar is down from the Conference Room.
