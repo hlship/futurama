@@ -482,16 +482,16 @@ about the guardian is a questioning quip.
 		
 [ this was originally "offer to find Leela" which I preferred, but "offer ... to" got mixed up with a variant of the giving action.
   For the moment, I just renamed the quip. ]
-suggest finding Leela is a performative quip.
+suggest finding her is a performative quip.
 	The comment is "You say 'I don't know where Leela is, maybe we should go look for her?'"
 	The reply is "'Very good. You find Leela,  grab this mechanical buffoon,'
 	he gestures towards Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke,
 	'and get that Ellisonium delivered!'
 	
-	The Professor pushes back from the conference table and exits the conference room, heading upstairs to his lab.".
+	The Professor pushes back from the table and exits the conference room, heading upstairs to his lab.".
 	It indirectly-follows about the payment.
 
-after discussing suggest finding leela:
+after discussing suggest finding her:
 	[ terminates the scene, frees Fry to move around. ]
 	now the Professor is nowhere;
 	increase the score by one;
