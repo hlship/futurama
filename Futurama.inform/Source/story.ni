@@ -55,8 +55,10 @@ Manhattan is a region. It contains the Alley, Planet Express Entrance, and the A
 
 [Should not have to say "the player is" here, but compiler failure otherwise,] 
 
+[
 Every turn when the player is in Manhattan and Tubing Out is not happening:
 	if a random chance of 1 in 3 succeeds, say "[one of]An antique skycar jalopy putters by at sub-sonic speed, dangerously close to roof level.[or]A vast golden flying saucer floats majestically by, seemingly taking up then entire sky.  Suddenly, it accelerates up and away at eye-popping speed and is quickly out of sight.[or]A group of blocky, vaguely insect-shaped spaceships move back and forth across the full expanse of the sky. They are keeping in a tight grid-like formation, descending a short distance on each pass, just before reversing direction.[or]A heavily armored space limousine zig-zags past at high speed, just above street level. Several police floaters are in hot pursuit; a wild-eyed robot clings to the side of the limousine, firing ray blasts from what looks like a 1930's tommy gun.[or]A swarm of tiny, brightly colored rocket ships, each no larger than a heavy duty flashlight, buzz past low and fast in a kind of flocking pattern, like a school of small fish.[at random]"
+]
 
 Section 1 - The Alley
 
@@ -349,7 +351,7 @@ A steep set of stairs leads down into the hangar.
 The door leading back out to the access road is [if circular door is open]open[else]rolled shut[end if]."
 
 The conference table is a fixed in place supporter in the Conference Room.
-"The center of the room is dominated by a large round table surrounded by seats for the crew."
+"The center of the room is dominated by a large round table surrounded by seats for the Professor, the crew, and the other employees."
 
 The metal railing is scenery in the Conference Room. 
 The description is "The railing was installed, over the Professor's objections, as a safety measure due to the steep dropoff from the conference room to the main hangar.
@@ -383,9 +385,9 @@ The Ellisonium Capsule is here. It is a closed, unopenable container.
 "Off to one side is a cylindrical container, about a foot high, with a clear dome on top." 
 The description is "The container is cylindrical, about a foot high. 
 A bright red label on the side reads 'Danger! Ellisonium! Highly Bitter!'. 
-Under the clear top you can see a floating vortex of purplish dust."
+Under the clear dome you can see a floating vortex of purplish dust."
 
-Understand "purple/vortex" as the Ellisonium Capsule.
+Understand "purple/vortex/dome" as the Ellisonium Capsule.
 
 Book 4 - Our Intrepid Cast
 
@@ -429,7 +431,7 @@ Mission Description is a Scene. Mission Description begins when the player is in
 
 When Mission Description begins:
 	say "As you enter the conference room, [the Professor] announces 'Good News, Everyone! I have a new and incredibly dangerous mission for you!' He sits down at the head of the conference table, and seems to waiting for you to talk to him.". 
-	
+		
 After saying hello to the Professor:
 	say "You sit down at the conference table, and direct your attention, or as much of it as you can muster, to the Professor."
 
@@ -459,7 +461,7 @@ about the danger is a questioning quip.
 	'Oh, the Ellisonium, yes, the bitterest mostly-stable element in the known universe. 
 	Oh who knows what strange and terrible uses the Mirians will use it for!
 	Make deserts bloom? A snap! Desalinate their oceans? Certainly. 
-	Or wage horrific intergalactic war. 
+	Or wage horrific intergalactic war?
 	It's their choice, but that doesn't matter really, it's the payment that's so dangerous!'".
 	It quip-supplies the professor.
 	It indirectly-follows about the new mission.
@@ -493,11 +495,14 @@ suggest finding her is a performative quip.
 
 after discussing suggest finding her:
 	[ terminates the scene, frees Fry to move around. ]
-	now the Professor is nowhere;
 	increase the score by one;
-	continue the action.	
+	now the professor is nowhere;
+	continue the action.
+	
+Last every turn when the current interlocutor is a person and the current interlocutor is not in the location:
+     reset the interlocutor.
 
-
+		
 Check going during Mission Description (this is the Professor demands attention rule):
 	Say "You start to sneak out of the meeting, but the Professor notices.  'Fry! Get back here, we're not done yet!'";
 	stop the action. 
