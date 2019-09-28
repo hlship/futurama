@@ -15,12 +15,12 @@ I started to think about drinking some more Slurm.
 Leela reached into her bag for a bottle of sun screen. "Fry, can you rub a bit more lotion in?  These suns are really strong."
 * "Of course, my love"[] I said. Did she just roll her eyes? It was hard to tell underneath her sunglass.
 * "What, again[?"]? It's only been fifteen minutes." I said. She's a starship captain, so she doesn't understand how stressful it is to be a delivery boy. I had only just started to relax.  "Well, if it's too much bother for my boyfriend ..." she said, her voice edged in sarcasm.
-    * * "Sorry! Sorry!  Right on it!"[] Chastened, I started to pull myself up out of the lounger.
+    * * "Sorry! Sorry!  Right on it!"[] Chastened, I pulled myself up out of the lounger.
     * * "Boyfriend, not slave."[] I replied, but nethertheless, I started to swing my legs around and sit up.
     * * "Just teasing[."]," I said, then laughed unconvincingly. "There's nothing I'd rather being doing this instant." Was that a lie? I started to roll out of the lounger.
 -
-Kneeling next to her, I spread some of the sun screen on my hands, just as Bender returned from his rounds about the beach. After re-attaching his head, and tucking his stash of jewelery and cash inside his torso, he announced "Hey, Good Buddy.  I need you to run a scam with me."
-Leela turns her head. "Oh come on Fry, how often do we get to just relax together?".
+Kneeling next to her, I spread some of the sun screen on my hands, and finished coating her back just as Bender returned from his rounds about the beach. After re-attaching his head, and tucking his stash of jewelery and cash inside his torso, he announced "Hey, Good Buddy.  I need you to run a scam with me."
+Leela turned her head. "Oh come on Fry, how often do we get to just relax together?"
 Bender ignored her and pulled a cigar from inside his chest, and began to smoke it. "This is going to be like taking candy from a baby. I just need a stooge ... I mean, a partner, to pull it off ..."
 * "I'm in[."]" I announced. Leela slitted her eye over the rim of her sunglass. "I know boys will be boys, Fry, but is getting arrested the best way you can spend you time, right now, with me?"
     * * "Uh, maybe?"[] I mean, it's possible we won't get arrested.
@@ -28,6 +28,26 @@ Bender ignored her and pulled a cigar from inside his chest, and began to smoke 
     - - I turned my attention back to Bender.  
 * "I'm kind of busy[."] at the moment, Bender.  Can it wait?" I replied.
    Bender leaned over and poked me in the ribs. "Oh, I get it, you just don't have time for Bender now that she's in the picture."
-   * * "Who, Amy?" I replied. "We haven't been together since I got my head detached from her body.  Well, a little before that."
-- AND SO IT GOES
+   * * "Who, Amy?"[] I replied. "We haven't been together since I got my head detached from her body.  Well, a little before that."
+   * * "Leela's cool[."]" I said. "She knows the bro code."  Leela turned and stared at me in disbelief. "But I'm happy right here", I added quickly.
+- Bender eyed me carefully. "You humans, with your non-binary logic.  Are you in or out?" he said. I glanced between Bender and Leela, trying to figure out what would spare me the most trouble. -> choose
+
+= choose
+
+* I [got up ...] started to lift myself out of the lounger. "Fry," said Leela, "I trust you to do the right thing." From the tone of her voice, I don't think she mean it, though. 
+
+   I had to come up with a different option. -> choose
+
+* I delayed[ ...], reaching back into the cooler for another Slurm.  Bender and Leela both stared at me, so intently that
+    ** I put the can back [...]. Gulping, I looked around for another way. -> choose
+    ** I froze [...] for a moment, then pulled my hand back, pretending that I didn't desperately want a Slurm right then. What to do? -> choose
+* I shook my head[ ...] and told Bender, "Not this time Buddy."  He leaned in closer, a blew a cloud of cigar smoke in my face. "Is that how it's gonna be then, 'Good Buddy?'" I was feeling trapped, looking for a way out.  -> choose
+* -> nightmare
+
+= nightmare
+
+There wasn't one.
+
+ And SO IT GOES. (That's as much as I have written).
+
 -> END
