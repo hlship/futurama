@@ -8,9 +8,7 @@ The release number is 4.
 
 Release along with the introductory booklet, a website, an interpreter.
 
-[ Version 5/140601 from https://raw.githubusercontent.com/i7/extensions/master/Chris%20Conley/Threaded%20Conversation.i7x ]
-
-Include Threaded Conversation by Chris Conley.
+Include Threaded Conversation by Chris Conley. [ v 7/180807]
 
 Include Tutorial Mode by Emily Short.
 
@@ -33,6 +31,8 @@ A loud buzzing sound startles you out of your reverie, as a fast moving, colorfu
 This game has a tutorial mode, which is on.
 At any time, enter TUTORIAL OFF to turn it off, or TUTORIAL ON to turn it back on."
 
+After printing the banner text: say "[the list of extension credits]".
+
 [ Book - Part - Section - Chapter ]
 
 Book 1 - Simple Extensions
@@ -42,6 +42,11 @@ Book 1 - Simple Extensions
 Include Punctuation Removal by Emily Short.
 
 After reading a command: remove quotes. 
+
+[Because sometimes we remove the interlocutor rudely as part of an after rule in a conversation]
+
+Last every turn when the current interlocutor is a person and the current interlocutor is not in the location:
+     reset the interlocutor.
 
 Book 2 - New New York
 
@@ -399,14 +404,14 @@ Book 4 - Our Intrepid Cast
 Chapter 1 - The Professor
 
 The Professor is a man in the Conference Room. 
-"Professor Farnsworth is dressed, as ever, in his lab coat." 
+"Professor Farnsworth is dressed, as ever, in his lab coat."
 The description is "Ancient, wizened, somewhat doddering, and visibly off. 
 He has aspirations to be diabolical, but lacks the necessary focus."
 
 Understand "prof/farnsworth" as the Professor.
 
 The Professor wears a white lab coat and a pair of thick-lensed eyeglasses.
-
+The eyeglasses are plural-named.
 
 
 Understand "glasses" as the eyeglasses.
@@ -425,13 +430,14 @@ Leela is a woman in the Hangar.
 "Leela is fussing about hangar, checking that the ship is ready for its next mission." 
 The description is "Leela is a dark haired, single eyed beauty. As always, she's dressed in sensible combat boots and a white tank-top."
 
+Leela is wearing a pair of sensible combat boots. The boots are plural-named.
+Leela is wearing a white tank top.
+
 Book 5 - Conversations
 
 Chapter 1 - Subjects
 
-The mission is a subject.
-Danger is a subject.
-The payment is a subject.
+
 The guardian of forever is a subject. [And eventually an object.]
 
 Chapter 2 - Mission Description Scene and Quips
@@ -439,7 +445,8 @@ Chapter 2 - Mission Description Scene and Quips
 Mission Description is a Scene. Mission Description begins when the player is in the Conference Room.
 
 When Mission Description begins:
-	say "As you enter the conference room, [the Professor] announces 'Good News, Everyone! I have a new and incredibly dangerous mission for you!' He sits down at the head of the conference table, and seems to waiting for you to talk to him.". 
+	say "As you enter the conference room, [the Professor] announces 'Good News, Everyone! I have a new and incredibly dangerous mission for you!' He sits down at the head of the conference table, and seems to waiting for you to talk to him.";
+	try saying hello to the professor.
 		
 After saying hello to the Professor:
 	say "You [first time]sit down at the conference table, and [only]direct your attention, 
@@ -448,11 +455,18 @@ After saying hello to the Professor:
 
 Mission Description ends when the Professor is not in the Conference Room.
 
+Check going during Mission Description (this is the Professor demands attention rule):
+	Say "You start to sneak out of the meeting, but the Professor notices.  'Fry! Get back here, we're not done yet!'";
+	stop the action. 
+	
+The Professor demands attention rule is listed after the can't go that way rule
+	 in the check going rulebook.
+	
 [ Case matters with quip names, otherwise "You could ask About the new mission."]
 about the new mission is a questioning quip. 
 	The comment is "'So, Professor, you said something about a mission?' you ask."
 	The reply is "'The, oh, what?' The professor seems confused for a moment, then remembers:
-	'Yes, you must make a delivery to Miri Alpha Prime. 
+	'Yes, yes, you must make a delivery to Miri Alpha Prime. 
 	Very dangerous, I'm afraid.' 
 	Hearing this, Bender asks 'Is it the kind of danger only fragile meat bags need to worry about, or is it real danger?'
 	The Professor ignores him."
@@ -462,7 +476,7 @@ what he thinks about the mission is a repeatable questioning quip.
 	The comment is "You ask Bender, 'What do you think about this mission?'"
 	The reply is "Bender leans forward. 'Yea, yea. Pick things up. Drop them off.
 	Not enough bending involved, if you ask me.'
-	He leans back against the wall, exhaling a noxious puff of cigar smoke."
+	He leans back in his chair, crosses his arms behind his head, and exhales a noxious puff of cigar smoke."
 	It quip-supplies Bender.
 	
 An availability rule for what he thinks about the mission:
@@ -486,11 +500,12 @@ about the Mirians is a questioning quip.
 	it quip-supplies the professor.
 	It indirectly-follows about the mission and about the danger.
 	The comment is "You ask 'Well,  what are these Mirians like?'."
-	The reply is "'Oh, they're just ordinary folks, at least by our standards.  Ordinary folks who want to ruthlessly command the powers of Nature and perhaps commit unspeakable intergalactic crimes.  You know, a race of scientists like me. I'm connected to some of the Mirians on LinkedIn[if the professor recollects about the danger]. That's how I knew they were desperate enough for the Ellisonium in the first place![else].[end if]'".
+	The reply is "'Oh, they're just ordinary folks, at least by our standards.  Ordinary folks who want to ruthlessly command the powers of Nature and perhaps commit unspeakable intergalactic crimes.  You know, a race of scientists like me. I'm connected to some of the leading Mirians on LinkedIn.[if the professor recollects about the danger] That's how I knew they were desperate for the Ellisonium in the first place![end if]'".
 	
 
 about the Mirian's payment is a questioning quip.
-	The comment is "You try to tease some useful information out of the old codger. 'And their payment is?'".
+	The comment is "You try to tease some useful information out of the old codger. 'And their payment is?'
+You're really hoping the Mirians pay in Slurm."
 	The reply is "The Professor becomes agitated and raises his voice.
 	'Just the most dangerous machine in the know galaxy ... The Guardian of Forever!'
 	He settles down after a moment.
@@ -501,7 +516,7 @@ about the Mirian's payment is a questioning quip.
 	
 about the Guardian of Forever is a questioning quip.
   it mentions the guardian of forever.
-  the comment is "'So Professor, what exactly is this guardian thing?'".
+  the comment is "'So Professor, what exactly is this Guardian thing?'".
   it indirectly-follows about the Mirian's payment.
   the reply is "The Professor responds a bit crankily: 'It's a machine that needs to be delivered back here to Planet Express.'  He looks at you. 'By a delivery boy.'".
 		
@@ -523,16 +538,11 @@ after discussing suggest finding Leela:
 	now the professor is nowhere;
 	continue the action.
 	
-Last every turn when the current interlocutor is a person and the current interlocutor is not in the location:
-     reset the interlocutor.
-
 		
-Check going during Mission Description (this is the Professor demands attention rule):
-	Say "You start to sneak out of the meeting, but the Professor notices.  'Fry! Get back here, we're not done yet!'";
-	stop the action. 
-	
-The Professor demands attention rule is listed after the can't go that way rule
-	 in the check going rulebook.
+Chapter 3 - Leela's Conversation
+
+
+
 	
 Book 6 - Trivia
 
@@ -720,6 +730,7 @@ Report requesting developer help: say "List of common and useful debugging comma
 	SHOWME - summarizes current location[line break]
 	SHOWME thing- summarizes the thing, where ever it is[line break]
 	ACTIONS - turns on actions listing[line break]
+	ACTIONS OFF - turns action listing off[line break]
 	RULES - turns on rules tracing[line break]
 	RULES OFF - turns off rules tracing[line break]
 	RULES ALL - turns on rules tracing, including rules which do no apply[line break]
