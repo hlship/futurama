@@ -19,6 +19,8 @@ Include Inanimate Listeners by Emily Short.
 Use scoring. 
 The maximum score is 3.
 
+Use serial comma.
+
 When play begins, say "[bold type]Futurama
 
 [italic type]Honk if you like z-code[roman type]
@@ -374,7 +376,10 @@ A row of [lockers] line one side of room, and a steep flight of stairs, almost a
 The Hangar is down from the Conference Room.
 
 The Planet Express Delivery Ship is a fixed in place thing in the Hangar. 
-"The Planet Express Delivery Ship overshadows everything else in the Hangar, resting on three huge landing struts. It stands ready for the next mission, or for the next whim of the Professor."
+The description is "The Planet Express Delivery Ship overshadows everything else in the Hangar, resting on three huge landing struts. It stands ready for the next mission, or for the next whim of the Professor."
+
+The heavy concrete floor is scenery in the Hangar. 
+"Did you really spend a thousand years as a popsicle just so you could stare at the floor?"
 
 [ Probably do something with these eventually.]
 
@@ -401,6 +406,10 @@ He has aspirations to be diabolical, but lacks the necessary focus."
 Understand "prof/farnsworth" as the Professor.
 
 The Professor wears a white lab coat and a pair of thick-lensed eyeglasses.
+
+
+
+Understand "glasses" as the eyeglasses.
 
 Chapter 2 - Bender
 
@@ -433,41 +442,55 @@ When Mission Description begins:
 	say "As you enter the conference room, [the Professor] announces 'Good News, Everyone! I have a new and incredibly dangerous mission for you!' He sits down at the head of the conference table, and seems to waiting for you to talk to him.". 
 		
 After saying hello to the Professor:
-	say "You sit down at the conference table, and direct your attention, or as much of it as you can muster, to the Professor."
+	say "You [first time]sit down at the conference table, and [only]direct your attention, 
+	or as much of it as you can muster, [one of][or]back[stopping]
+	to the Professor.[first time]Bender sits down as well, leaning far back in his chair with his feet stretched out on the table.[only]"
 
 Mission Description ends when the Professor is not in the Conference Room.
 
 [ Case matters with quip names, otherwise "You could ask About the new mission."]
 about the new mission is a questioning quip. 
 	The comment is "'So, Professor, you said something about a mission?' you ask."
-	It mentions the mission.
 	The reply is "'The, oh, what?' The professor seems confused for a moment, then remembers:
 	'Yes, you must make a delivery to Miri Alpha Prime. 
 	Very dangerous, I'm afraid.' 
-	Hearing this, Bender announces 'Oh boy! Here we go again.'"
+	Hearing this, Bender asks 'Is it the kind of danger only fragile meat bags need to worry about, or is it real danger?'
+	The Professor ignores him."
 	It quip-supplies the Professor.
 
 what he thinks about the mission is a repeatable questioning quip.
-	The comment is "You ask Bender, 'What do you think about the mission?'"
+	The comment is "You ask Bender, 'What do you think about this mission?'"
 	The reply is "Bender leans forward. 'Yea, yea. Pick things up. Drop them off.
 	Not enough bending involved, if you ask me.'
 	He leans back against the wall, exhaling a noxious puff of cigar smoke."
 	It quip-supplies Bender.
-
+	
+An availability rule for what he thinks about the mission:
+	if the current interlocutor is bender and the professor recollects about the new mission, it is available;
+	it is off-limits.
+	
 about the danger is a questioning quip. 
-	It mentions danger.
-	The comment is "You ask 'What's so dangerous about this mission?'"
+	The comment is "You ask 'What's so dangerous about this mission, Professor?'"
 	The reply is "The Professor stares down at the conference table. 
 	'Oh, the Ellisonium, yes, the bitterest mostly-stable element in the known universe. 
-	Oh who knows what strange and terrible uses the Mirians will use it for!
-	Make deserts bloom? A snap! Desalinate their oceans? Certainly. 
+	Who knows what strange and terrible uses the Mirians will use it for!
+	Make their deserts bloom? A snap! 
+	Change the orbit of their moon? Easy as pie.
 	Or wage horrific intergalactic war?
 	It's their choice, but that doesn't matter really, it's the payment that's so dangerous!'".
 	It quip-supplies the professor.
-	It indirectly-follows about the new mission.
+	it indirectly-follows about the mission.
 
-about the payment is a questioning quip.
-	The comment is "You try to tease some useful information out of the old codger. 'And the payment is?'".
+	
+about the Mirians is a questioning quip.
+	it quip-supplies the professor.
+	It indirectly-follows about the mission and about the danger.
+	The comment is "You ask 'Well,  what are these Mirians like?'."
+	The reply is "'Oh, they're just ordinary folks, at least by our standards.  Ordinary folks who want to ruthlessly command the powers of Nature and perhaps commit unspeakable intergalactic crimes.  You know, a race of scientists like me. I'm connected to some of the Mirians on LinkedIn[if the professor recollects about the danger]. That's how I knew they were desperate enough for the Ellisonium in the first place![else].[end if]'".
+	
+
+about the Mirian's payment is a questioning quip.
+	The comment is "You try to tease some useful information out of the old codger. 'And their payment is?'".
 	The reply is "The Professor becomes agitated and raises his voice.
 	'Just the most dangerous machine in the know galaxy ... The Guardian of Forever!'
 	He settles down after a moment.
@@ -476,24 +499,25 @@ about the payment is a questioning quip.
 	Maybe you'll listen to [Leela] for once ... where is she?'".
 	It indirectly-follows about the danger.
 	
-about the guardian is a questioning quip.
+about the Guardian of Forever is a questioning quip.
   it mentions the guardian of forever.
   the comment is "'So Professor, what exactly is this guardian thing?'".
-  it indirectly-follows about the payment.
+  it indirectly-follows about the Mirian's payment.
   the reply is "The Professor responds a bit crankily: 'It's a machine that needs to be delivered back here to Planet Express.'  He looks at you. 'By a delivery boy.'".
 		
 [ this was originally "offer to find Leela" which I preferred, but "offer ... to" got mixed up with a variant of the giving action.
   For the moment, I just renamed the quip. ]
-suggest finding her is a performative quip.
+suggest finding Leela is a performative quip.
 	The comment is "You say 'I don't know where Leela is, maybe we should go look for her?'"
 	The reply is "'Very good. You find Leela,  grab this mechanical buffoon,'
 	he gestures towards Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke,
 	'and get that Ellisonium delivered!'
 	
-	The Professor pushes back from the table and exits the conference room, heading upstairs to his lab.".
+	The Professor pushes back from the table and exits the conference room, heading upstairs to his lab.
+	You and Bender stand up as well.".
 	It indirectly-follows about the payment.
 
-after discussing suggest finding her:
+after discussing suggest finding Leela:
 	[ terminates the scene, frees Fry to move around. ]
 	increase the score by one;
 	now the professor is nowhere;
@@ -611,6 +635,8 @@ An instructional rule (this is the teach asking rule):
 		let N be "[Q]";
 		say "A conversation flows by discussing different topics. For example, ASK [N in upper case] (or shorten it to A [N in upper case]) will advance the conversation, and maybe introduce further topics.
 		
+		The TOPICS command will remind you of any topics to be discussed.
+				
 		You can often abbreviate the topic to just a single identifying word. Experiment and see what happens.";
 		now the held rule is the teach asking rule;
 		rule succeeds;
@@ -629,9 +655,10 @@ carry out someone (called the npc) discussing something (called the gossip) (thi
 	continue the action.
 	
 [ This somes out a bit earlier than I'd like, before the npc's reply is printed. ]
-report someone discussing something when remind the player about the tell command is true:
+report someone discussing something when remind the player about the tell command is true and tutorial mode is true:
 	say "Later, you may be able to TELL another character something, or perform a special conversational action.";
-	now remind the player about the tell command is false;	continue the action.
+	now remind the player about the tell command is false;	
+	continue the action.
 			
 An instructional rule (this is the teach performing rule):
 	If the teach performing rule is listed in the completed instruction list, make no decision;
