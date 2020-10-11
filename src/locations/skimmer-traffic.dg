@@ -1,0 +1,15 @@
+#skimmer-traffic
+(room *)
+(name *) Skimmer Traffic
+%% This room exists just so we can prevent going there with a cute message.
+(look *)
+    Aaaargh!
+(prevent [leave $Room $Dir])
+    (from $Room go $Dir to *)
+    Your Frogger days are over, centuries over.
+    And that frog never had to deal with multi-ton heavy transports moving
+    at 200 miles per hour three inches above the road.
+    You especially aren't thinking of crossing now that most robot truckers
+    have upgraded their operating systems to Meth 3.0.
+    Those guys don't stop for anything: red lights, cops, sometimes not even
+    brick walls, and they certainly don't stop for delivery boys.

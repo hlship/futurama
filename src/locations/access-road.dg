@@ -1,0 +1,46 @@
+#access-road
+(room *)
+(name *) Access Road
+(from * go #east to #alley)
+(from * go #west to #skimmer-traffic)
+(look *)
+    You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed.
+    From here you can see a portion of the Manhattan skyline, all glittering
+    spires and transport tubes endlessly flowing with passengers.
+    You can see the transport tube servicing Planet Express across the road from you to the
+    west; beyond that is the river.
+    People are everwhere, moving north and south along the street and zipping in and out
+    of the transport tube system.
+(#skimmers/#planet-express-scenery/#people is #in *)
+(prevent [leave * #north/#south])
+    The thought of trudging through the sun-baked streets filled with such
+    throngs of happy, productive people fills you with an overpowering sense
+    of dread and despair, and brings a twitch to your right eyelid.
+    Some of that may be Slurm withdrawal, but nonetheless.
+
+%% TODO: Support for "cross the street"
+
+#skimmers
+(name *) heavy freight skimmers
+(descr *)
+    These skimmers seem to be hauling freight on a robot time schedule: 24 hours a day,
+    7 days a week.
+    You can't imagine what they might be carrying, and they've never slowed down enough
+    for you to make out the contents.
+
+#planet-express-scenery
+(name *) Planet Express
+(out of reach *) 
+(descr *)
+    Beyond the dizzying freight skimmer traffic, you can see the Planet Express building.
+
+#people
+(name *) New New Yorkers
+(dict *) people crowd mob
+(plural *)
+(descr *)
+    They run the gamut from rich and stylish to poor and mutant.
+(prevent $Action)
+    ~($Action = [examine *])
+    (* is one of $Action)
+    You don't fuss with them, and they don't fuss with you.

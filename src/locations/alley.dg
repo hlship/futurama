@@ -1,0 +1,62 @@
+#alley
+(room *)
+(name *) Alley
+(look *)
+    A short slley not far from Planet Express, notable for being dark and dingy
+    in an otherwise bright and colorful city. 
+    The alley is divided in two by a tall fence, topped with razor wire, to the east.
+    A busy street is just outside the alley to the west.
+    There's not much activity here, beyond a pair of owls who watch you carefully,
+    eager to scavenge any crumbs you might drop.
+    At the back of the alley is a graffiti-festooned dumpster.
+(prevent [leave * #east])
+    Tall fence. Check. Razor wire. Check. Fry going east of the tall fence
+    with the razor wire? No check.
+(#tall-fence/#owls/#dumpster is #in *)
+(from * go #west to #access-road)
+
+#tall-fence
+(name *) tall fence
+(dict *) razor wire wirelink
+(descr *)
+    It's just like the one you tried to climb as a kid ... you know,
+    the time you hung upside-down for 12 hours?
+(instead of [climb *])
+    (try [go #east])
+
+#owls
+(name *) owls
+(dict *) owl
+(pair *)
+(out of reach *)
+%% (prevent [$Verb | $Words])
+%%     ($Verb != @examine)
+%%     (* is one of $Words)
+%%     The owls have learned to be cautious, and studiously keep themselves out of reach.
+
+#dumpster
+(name *) grey dumpster
+(openable *)
+(descr *)
+    The dumpster is made of gun-metal grey heavy plastic and has seen better days.
+    It has smelled much better days.
+    You hate to think what it has tasted.
+    The dumpster is worn and battered, and festooned with graffiti in an alien script.
+    Basically, it's disgusting,
+    (if) (* is closed)
+    (then)
+        but you fear that the worst is one the inside, mercifully closed from view
+    (else)
+        all the more so for the reek wafting into the alley from the open lid
+    (endif)
+    .
+(#graffiti is #partof *)
+
+#graffiti
+(name *) graffiti
+(dict *) alien script
+(descr *)
+    Well, it's in an alient script, and despite your general befuddlement,
+    you're fairly certain you are not an alien, and very certain you aren't
+    an alien who can read this lettering.
+

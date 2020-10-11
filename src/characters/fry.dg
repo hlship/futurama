@@ -1,0 +1,44 @@
+#fry
+(current player *)
+(* is #in #alley)
+(#wrapper/#slurm is #heldby *)
+(#jacket is #wornby *)
+(descr *)
+    Being in cold storage for a thousand years didn't change the 'classic' Fry look:
+    red jacket, white T-shirt, slight slouch.
+
+#wrapper
+(item *)
+(name *) candy-bar wrapper
+(dict *) note
+(descr *)
+    Written on the inside of the wrapper, in crayon, is the urgent
+    message: "WORK PANLET EXPERS GO!", but you are not sure what that means.
+
+#slurm
+(item *)
+(name *) can of slurm
+(dict *) soft drink
+(descr *)
+    An empty can of Slurm soft drink.
+    (if) (* has ancestor #fry)
+    (then)
+        You hold onto iit with a desparate junkie's grip.
+        "Maybe it has just one more delicious drop?" you think and
+        give it a quick shake.
+        No dice.
+    (endif)
+(narrate dropping *)
+    With considerable mental effort, you convince your fingers to open, 
+    allowing the can to drop free of your grasp.
+    You never feel quite right without a can of Slurm handy, evan an empty one.
+(narrate taking *)
+    Ah. Better. Back where it belongs.
+
+#jacket
+(wearable *)
+(name *) red jacket
+(your *)
+(descr *)
+    Members only.  Seriously.
+
