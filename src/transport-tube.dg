@@ -1,0 +1,31 @@
+%% The transport tube is how Fry moves around main locations in New New York.
+%%
+%% Certain rooms are marked as `(tube location $)` and are accessible from any other tube location.
+
+#transport-tube
+(name *) Transport Tube Entrance Bubble
+(dict *) system chamber
+((tube location $) attracts *)
+(actor container *)
+(descr *)
+    It's the standard transport tube terminal:
+    an entrace bubble on one end ... that's where you announce your destination.
+    The reversing chamber is on the opposite side.
+    There's an entrace: a large, transparent bubble, into which 
+    a steady flow of people march and are then sucked up into the system.
+    Another steady stream of people from other parts of the city arrive and exit
+    through the reversing chamber.
+(#grill is #partof *)
+(narrate entering *)
+    You shuffle on to the end of the fast moving line.
+    The New New Yorkers ahead of you flit off to all parts of the city.
+    Before you know it, you're at the head of the line.
+    You duck your head and walk inside the transparent bubble.
+    A raspy, elderly voice, barely recognizable as a woman's, announces, "What's your, whadjamacallit, destination?"
+
+#grill
+(name *) speaker
+(dict *) grill box
+(descr *)
+    That's where the raspy voice comes from.
+    There must also be a microphone in here somewhere, to listen to your destination request.

@@ -1,9 +1,7 @@
-{:story-sources [#_ "src/scenes/*.dg"
-                 #_ "src/characters/*.dg"
-                 "src/*.dg"
+{:story-sources ["src/scenes/*.dg"
                  "src/characters/*.dg"
                  "src/locations/*.dg"
-                 #_ "src/actions/*.dg"]
+                 "src/*.dg"]
  :debug-sources ["lib/debug/*.dg"
                  {:github "hlship/threaded-conversation"
                   :version "v0.6"

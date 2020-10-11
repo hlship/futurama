@@ -1,6 +1,7 @@
 #access-road
 (room *)
 (name *) Access Road
+(tube location *)
 (from * go #east to #alley)
 (from * go #west to #skimmer-traffic)
 (look *)

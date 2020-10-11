@@ -84,3 +84,6 @@
 (ready to start scene $Scene)
     ~($Scene in progress)
     { ~($Scene has completed) (or) (recurring $Scene) }
+ 
+%% Need to provide one of these to prevent a warning:
+(on every tick during $)

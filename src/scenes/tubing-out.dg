@@ -1,0 +1,33 @@
+(global variable (tubing out enter tick $))
+
+#tubing-out
+(scene *) 
+(recurring *)
+(start *)
+    (#fry is #in #transport-tube)
+    (current tick $Now)
+    (now) (tubing out enter tick $Now)
+    (trigger [tubing out complaint $Now] in 2 ticks)
+    (trigger [tubing out eject $Now] in 5 ticks)
+(complete *)
+    ~(#fry is #in #transport-tube)
+
+%% Triggered events
+(process event [tubing out complaint $When])
+    (#tubing-out in progress)
+    (tubing out enter tick $When)
+    (par) 
+    The raspy void announces, "I'm not gettting any younger bud. Just announce where ya wanna go."
+
+(process event [tubing out eject $When])
+    (#tubing-out in progress)
+    (tubing out enter tick $When)
+    (par)
+    The raspy voice complains, "Listen bub, announce a whadjamacallit, destination,
+    or get out of the way!"
+    You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign.
+    You put your hands in the pockets of your jacket and shuffle out of the bubble.
+    %% Dialog doesn't have a `try silently` so:
+    (#transport-tube is #in $Room)
+    (move player to #in $Room)
+    (tick) (stop)

@@ -1,5 +1,6 @@
 #planet-express
 (room *)
 (name *) Planet Express
+(tube location *)
 (look *)
     The Planet Express building <More to Come>.
