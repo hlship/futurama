@@ -1,4 +1,4 @@
-(global variable (tubing out enter tick $))
+(global variable (tubing out start $))
 
 #tubing-out
 (scene *) 
@@ -6,28 +6,27 @@
 (start *)
     (#fry is #in #transport-tube)
     (current tick $Now)
-    (now) (tubing out enter tick $Now)
-    (trigger [tubing out complaint $Now] in 2 ticks)
-    (trigger [tubing out eject $Now] in 5 ticks)
+    (now) (tubing out start $Now)
 (complete *)
     ~(#fry is #in #transport-tube)
-
-%% Triggered events
-(process event [tubing out complaint $When])
-    (#tubing-out in progress)
-    (tubing out enter tick $When)
+    (now) ~(tubing out start $)
+(on every tick during *)
+    (tubing out start $Start)
+    (2 ticks elapsed since $Start)
     (par) 
-    The raspy void announces, "I'm not gettting any younger bud. Just announce where ya wanna go."
-
-(process event [tubing out eject $When])
-    (#tubing-out in progress)
-    (tubing out enter tick $When)
+    The raspy void announces, "I'm not gettting any younger bub. Just announce where ya wanna go."
+(on every tick during *)
+    (tubing out start $Start)
+    (5 ticks elapsed since $Start)
     (par)
     The raspy voice complains, "Listen bub, announce a whadjamacallit, destination,
     or get out of the way!"
-    You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign.
-    You put your hands in the pockets of your jacket and shuffle out of the bubble.
-    %% Dialog doesn't have a `try silently` so:
+    (par)
     (#transport-tube is #in $Room)
+    %% This disables the stdlib from making (the $Room) out as "this location":
+    (now) ~(current room $)
+    You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign.
+    You put your hands in the pockets of your jacket and shuffle back out to (the $Room).
+    %% Dialog doesn't have a `try silently` so:
     (move player to #in $Room)
     (tick) (stop)

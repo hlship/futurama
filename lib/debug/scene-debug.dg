@@ -3,10 +3,12 @@
 (understand command [debug scenes])
 (perform [debug scenes])
     (now) (scene debugging enabled)
+    Scene debugging enabled.
 
 (understand command [debug scenes off])
 (perform [debug scenes off])
     (now) ~(scene debugging enabled)
+    Scene debugging disabled.
 
 (understand command [sceneinfo])
 
@@ -21,8 +23,6 @@
 
         (line)
     }
-
-(annotate (dramatic $) with @dramatic)
 
 (annotate (recurring $) with @recurring)
 (annotate ($ has started) with [has started])

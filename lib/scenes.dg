@@ -29,8 +29,7 @@
 (recurring $) (fail)
 (dramatic $) (fail)
 
-(scene debugging enabled)
-    (fail)
+~(scene debugging enabled)
 
 %% Each scene that is in progress at the start of the tick and not completed during the tick
 %% is notified via this predicate.  It doesn't matter whether this predicate succeeds or fails.

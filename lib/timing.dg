@@ -1,0 +1,16 @@
+%% Track current tick, help determining when a certain amount of time has elapsed.
+
+(global variable (current tick 0))
+
+(early on every tick)
+    (current tick $Old)
+    ($Old plus 1 into $Now)
+    (now) (current tick $Now)
+
+(interface ($<Count ticks elapsed since $<Start))
+
+%% Succeed if exactly $Count ticks have elapsed since the $Start tick.
+
+($Count ticks elapsed since $Start)
+    (current tick $Now)
+    ($Start plus $Count into $Now)
