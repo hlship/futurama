@@ -4,7 +4,7 @@
 
 #transport-tube
 (name *) Transport Tube Entrance Bubble
-(dict *) system chamber terminal
+(dict *) system chamber terminal station
 ((tube location $) attracts *)
 (actor container *)
 (descr *)
@@ -14,6 +14,10 @@
     A steady flow of people march into the bubble and are then sucked up into the system.
     Another steady stream of people from other parts of the city arrive and are
     ejected through the reversing chamber.
+(appearance *)
+    (current room #access-road)
+(appearance *)
+    Nearby is a terminal of the city's transport tube system.
 (#grill is #partof *)
 (narrate entering *)
     You shuffle on to the end of the fast moving line.

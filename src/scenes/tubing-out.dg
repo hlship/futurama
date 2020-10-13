@@ -30,3 +30,41 @@
     %% Dialog doesn't have a `try silently` so:
     (move player to #in $Room)
     (tick) (stop)
+
+(understand $Words as [tube to $Where])
+    (* in progress)
+    (determine object $Where)
+        *(tube location $Where)
+    (from words)
+        *(dict $Where)
+    (matching all of $Words)
+
+%% Prevent stdlib reachability check:
+~(refuse [tube to $])
+
+(prevent [tube to $Room])
+    (current room $Room)
+    The raspy voice corrects you. "Look around, willya?  You're already there."
+
+(perform [tube to $Room])
+    (current room $Start)
+    (collect $Stop)
+        *(tube location $Stop)
+        ~($Stop = $Room)
+        ~($Stop = $Start)
+    (into $Stops)
+    %% TODO: Randomize $Stops 
+    (random from 2 to 3 into $Count)
+    (take $Count from $Stops into $SomeStops)
+    With a sound like a great tupperware container lid being opened, the tube sucks you in and
+    hurtles you around New New York \(you catch fleeting images of (the $SomeStops)\) before
+    you are spat out of the reversal chamber at (the $Room).
+    You roll gracelessly back onto your feet and look around.
+    (enter $Room)
+
+
+(describe action [tube to $Room])
+    announce (name $Room) as your destination
+
+%% All tube locations ale also rooms
+(room $Room) (tube location $Room)

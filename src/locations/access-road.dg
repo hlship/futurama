@@ -1,5 +1,4 @@
 #access-road
-(room *)
 (name *) Access Road
 (tube location *)
 (from * go #east to #alley)
@@ -31,10 +30,12 @@
 
 #planet-express-scenery
 (name *) Planet Express
+(proper *)
 (out of reach *) 
 (descr *)
     Beyond the dizzying freight skimmer traffic, you can see the Planet Express building.
 
+%% Might make this mobile scenery eventually too.
 #people
 (name *) New New Yorkers
 (dict *) people crowd mob
