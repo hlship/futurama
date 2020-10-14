@@ -30,6 +30,24 @@
     %% Dialog doesn't have a `try silently` so:
     (move player to #in $Room)
     (tick) (stop)
+(on every tick during *)
+    (random chance of 2 in 3)
+    (par)
+    (current room $Room)
+    (collect $Stop)
+        *(tube location $Stop)
+        ~($Stop = $Room)
+    (into $Stops)
+    (randomly select $Stop from $Stops)
+    A New New Yorker elbows past you impatiently, announces "(no space)(name $Stop)," and is immediately sucked up
+    into the tube system and away.
+
+%% TODO:
+%% check announcing a destination:
+%%	 if the announced destination is nothing, say "The raspy voice responds: 'How about announcing someplace with a tube innit, will ya?'" instead.
+
+(rewrite [say/announce/request | $Words] into $Words)
+    (* in progress)
 
 (understand $Words as [tube to $Where])
     (* in progress)
@@ -44,7 +62,7 @@
 
 (prevent [tube to $Room])
     (current room $Room)
-    The raspy voice corrects you. "Look around, willya?  You're already there."
+    The raspy voice sounds exasperated. "Look around, will ya, or announce someplace else instead, idjyat".
 
 (perform [tube to $Room])
     (current room $Start)
@@ -57,8 +75,10 @@
     (random from 2 to 3 into $Count)
     %% Watch out: this fails if there are not enough to take!
     (take $Count from $RandomStops into $SomeStops)
+    "I'd like to go to (the $Room)," you announce.
+    (par)
     With a sound like a great tupperware container lid being opened, the tube sucks you in and
-    hurtles you around New New York \(you catch fleeting images of (the $SomeStops)\) before
+    hurtles you about New New York.  You catch fleeting images of (the $SomeStops) before
     you are spat out of the reversal chamber at (the $Room).
     You roll gracelessly back onto your feet and look around.
     (enter $Room)

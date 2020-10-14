@@ -13,3 +13,16 @@
 (shuffle $Input into $Output)
         (length of $Input into $N)
         (shuffle $Input of length $N into $Output)
+
+(random chance of $Y in $X)
+    (random from 1 to $X into $Z)
+    ($Z <= $Y)
+
+($X <= $Y)
+    ($X < $Y) (or) ($X = $Y)
+
+($X >= $Y)
+    ($X > $Y) (or) ($X = $Y)
+
+
+        
