@@ -1,0 +1,15 @@
+(remove element 1 namely $Head from [$Head | $Tail] leaving $Tail)
+(remove element $N namely $Elem from [$Head | $TailIn] leaving [$Head | $TailOut])
+        ($N minus 1 into $Nm1)
+        (remove element $Nm1 namely $Elem from $TailIn leaving $TailOut)
+
+(shuffle [] of length $ into [])
+(shuffle $Input of length $N into [$HeadOut | $TailOut])
+        (random from 1 to $N into $I)
+        (remove element $I namely $HeadOut from $Input leaving $Rest)
+        ($N minus 1 into $Nm1)
+        (shuffle $Rest of length $Nm1 into $TailOut)
+
+(shuffle $Input into $Output)
+        (length of $Input into $N)
+        (shuffle $Input of length $N into $Output)

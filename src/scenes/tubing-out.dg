@@ -53,9 +53,10 @@
         ~($Stop = $Room)
         ~($Stop = $Start)
     (into $Stops)
-    %% TODO: Randomize $Stops 
+    (shuffle $Stops into $RandomStops)
     (random from 2 to 3 into $Count)
-    (take $Count from $Stops into $SomeStops)
+    %% Watch out: this fails if there are not enough to take!
+    (take $Count from $RandomStops into $SomeStops)
     With a sound like a great tupperware container lid being opened, the tube sucks you in and
     hurtles you around New New York \(you catch fleeting images of (the $SomeStops)\) before
     you are spat out of the reversal chamber at (the $Room).
