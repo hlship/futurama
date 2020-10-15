@@ -1,6 +1,7 @@
 #access-road
 (name *) Access Road
 (tube location *)
+(omit tube appearance *)
 (from * go #east to #alley)
 (from * go #west to #skimmer-traffic)
 (look *)
@@ -34,15 +35,3 @@
 (out of reach *) 
 (descr *)
     Beyond the dizzying freight skimmer traffic, you can see the Planet Express building.
-
-%% Might make this mobile scenery eventually too.
-#people
-(name *) New New Yorkers
-(dict *) people crowd mob
-(plural *)
-(descr *)
-    They run the gamut from rich and stylish to poor and mutant.
-(prevent $Action)
-    ~($Action = [examine *])
-    (* is one of $Action)
-    You don't fuss with them, and they don't fuss with you.

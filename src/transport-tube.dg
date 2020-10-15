@@ -10,13 +10,17 @@
 (descr *)
     It's the standard transport tube terminal:
     an entrance bubble on one end ... that's where you announce your destination.
-    The reversing chamber is on the opposite side.
+    A transport tube rises up and is lost in the twisted network of tubes that spans the city.
+    A second tube also seperates from the mesh and drops down into the reversing chamber.
+    %% TODO: May adjust this for locations that don't have "a steady flow"
     A steady flow of people march into the bubble and are then sucked up into the system.
     Another steady stream of people from other parts of the city arrive and are
     ejected through the reversing chamber.
 (appearance *)
-    (current room #access-road)
-(appearance *)
+    (current room $Room)
+    %% Certain tube locations integrate a description of
+    %% the transport tube system into their look rule, so no appearance is necessary.
+    ~(omit tube appearance $Room)
     Nearby is a terminal of the city's transport tube system.
 (#grill is #partof *)
 (narrate entering *)
@@ -32,3 +36,15 @@
 (descr *)
     That's where the raspy voice comes from.
     There must also be a microphone in here somewhere, to listen to your destination request.
+
+#people
+(name *) New New Yorkers
+(dict *) people crowd mob
+((tube location $) attracts *)
+(plural *)
+(descr *)
+    They run the gamut from rich and stylish to poor and mutant.
+(prevent $Action)
+    ~($Action = [examine *])
+    (* is one of $Action)
+    You don't fuss with them, and they don't fuss with you.    

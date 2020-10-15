@@ -1,5 +1,12 @@
-#statue-of-liberty
+#liberty-island
 (tube location *)
-(name *) Statue of Liberty
+(omit tube appearance *)
+(name *) Liberty Island
+(proper *)
+(dict *) statue of
+%% TODO: Maybe an "utterance" since NNYers should say "Statue of Liberty" not "Liberty Island"
 (look *)
-    <Soon>
+    You are on Liberty Island, at the base of the Statue of Liberty. This is one of the most remote
+    extensions of the transport tube system.
+    A single transport tube extends from here back north, over the Hudson
+    river, to Manahattan proper.

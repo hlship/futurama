@@ -2,4 +2,10 @@
 (name *) Madison Cube Garden
 (proper *)
 (tube location *)
-(look *) <Soon>
+(look *)
+    You are at the entryway to Madison Cube Garden, an impossibly huge cube that balances
+    on one point. From here, ramps lead north into the building. %% Not yet
+    (par)
+    This is your favorite venue for Monster Rallies... it's much more
+    exciting with real genetically modified monsters than with the oversized trucks from
+    your prior life.
