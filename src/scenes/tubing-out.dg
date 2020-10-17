@@ -31,7 +31,6 @@
     (move player to #in $Room)
     (tick) (stop)
 (on every tick during *)
-    (random chance of 2 in 3)
     (par)
     (current room $Room)
     (collect $Stop)

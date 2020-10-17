@@ -1,12 +1,15 @@
 (story title) Futurama: Untitled Episode
 (story author) Howard M. Lewis Ship
-(story ifid) 62dfdf29-7092-4122-9dcc-ec088c4d5249
+(story ifid) 62DFDF29-7092-4122-9DCC-EC088C4D5249
 (story noun) Comedy
 (story blurb)
-    (italic)Honk if you like z-code!(roman)
+    Missing Episode of Futurama
 (story release 0)
 
 (intro)
+    (div @center)
+        (embed resource @banner)
+    (par)
     You wish you could say this is the first time you've woken up in a dark, dirty alley ...
     really, you wish you could say for sure.
     You can't seem to remember.
@@ -20,3 +23,8 @@
 
 (scoring enabled)
 (maximum score 3)
+
+(define resource @banner) src/honk-bytecode.jpg; Futurama: Honk If You Like Bytecode
+
+
+

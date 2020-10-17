@@ -1,0 +1,12 @@
+%% "Honk if you like Bytecode"
+
+(grammar [honk] for itself)
+
+(perform [honk])
+    (select)
+        Thanks for your support!
+        (increase score by 1)
+    (or)
+        Don't be greedy.
+    (stopping)
+

@@ -37,6 +37,7 @@
 #dumpster
 (name *) grey dumpster
 (openable *)
+(container *)
 (descr *)
     The dumpster is made of gun-metal grey heavy plastic and has seen better days.
     It has smelled much better days.

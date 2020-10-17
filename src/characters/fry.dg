@@ -17,13 +17,14 @@
 
 #slurm
 (item *)
-(name *) can of slurm
+(name *) can of Slurm
 (dict *) soft drink
+(potable *)
 (descr *)
     An empty can of Slurm soft drink.
     (if) (* has ancestor #fry)
     (then)
-        You hold onto iit with a desparate junkie's grip.
+        You hold onto it with a desparate junkie's grip.
         "Maybe it has just one more delicious drop?" you think and
         give it a quick shake.
         No dice.
@@ -34,6 +35,11 @@
     You never feel quite right without a can of Slurm handy, even an empty one.
 (narrate taking *)
     Ah. Better. Back where it belongs.
+(prevent [drink *])
+    You tip the can towards your mouth, hoping against hope that there's even one more
+    drop of precious Slurm in there.
+    There isn't.
+
 
 #jacket
 (wearable *)
