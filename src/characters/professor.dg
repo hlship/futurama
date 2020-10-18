@@ -1,0 +1,24 @@
+#professor
+(name *) Professor Farnsworth
+(male *)
+(dict *) prof
+(proper *)
+(appearance *)
+    Professor Farnsworth is dressed, as ever, in his lab coat and thick eyeglasses.
+(descr *)
+    Ancient, wizened, somewhat doddering, and visibly off.
+    He has aspirtations to be diabolical, but lacks the necessary focus.
+(#lab-coat/#eyeglasses is #wornby *)
+
+#lab-coat
+(name *) white lab coat
+(wearable *)
+
+#eyeglasses
+(name *) thick-rimmed eyeglasses
+(dict *) glasses
+(pair *)
+(wearable *)
+(descr *)
+    You've never seen him without these glasses, which are so thick, you can't
+    be sure if he even has eyes underneath them.

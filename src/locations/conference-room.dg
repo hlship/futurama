@@ -1,5 +1,75 @@
 #conference-room
 (room *)
 (name *) Conference Room
-(look *) TODO
+(look *)
+    The conference room is the central hub of Planet Express, the place
+    where most of the griping and chit-chat takes place, outside of the
+    occasional delivery mission.
+    A large circular conference table sits in the center of the room,
+    loomed over by a huge video display monitor.
+    A metal railing divides this room from the hangar
+    (if) (#delivery-ship is #in #hangar)
+    (then)
+        where the delivery ship stands ready
+    (endif)
+    .
+    A steep set of stairs down into the hangar.
+    The door leading back out to the access road is
+    (if) (#pe-door is open)
+    (then) open
+    (else) rolled shut
+    (endif)
+    .
 (from * go #out through #pe-door to #planet-express)
+(from * go #down to #hangar)
+(from * go #north to #down)
+(#conference-table/
+    #conference-chair/
+    #metal-railing/
+    #display-monitor/
+    #bender is #in *)
+(* attracts #steep-stairs)
+
+#conference-table
+(name *) conference table 
+(dict *) circular
+(supporter *)
+(descr *)
+    The center of the room is dominated by a large round table surrounded by seats
+    for the Professor, you, the rest of the crew, and the other employees.
+
+#conference-chair
+(name *) conference chair
+(your *)
+(in-seat *)
+(descr *)
+    Whereas the Professor has an oversize seat with all sorts of cool extra buttons, 
+    and the others have stylish chairs of swoopy stainless steel, 
+    yours is kind of squeeky and uncomfortable.
+
+#metal-railing
+(name *) metal railing
+(dict *) divider
+(descr *)
+    The railing was installed, over the Professor's objections, as a safety measure
+    due to the steep dropoff from the conference room to the main hangar.
+    It has gradually gotten taller and more involved, the longer Amy continues
+    her internship here.
+
+    #display-monitor
+(name *) huge video display
+(dict *) monitor
+(descr *)
+    Improbably large and improbably useless, considering how many holographic
+    projectors are about.
+
+#steep-stairs
+(name *) steep stairs
+(descr *)
+    Steep stairs connect the conference room and the hangar.
+(instead of [climb *])
+    (current room #conference-room)
+    (try [go #down])
+(instead of [climb *])
+    (current room #hangar)
+    (try [go #up])

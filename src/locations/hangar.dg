@@ -1,0 +1,8 @@
+#hangar
+(room *)
+(name *) Delivery Ship Hangar
+(look *)
+    <TODO>
+(* attracts #steep-stairs)
+(from * go #up to #conference-room)
+(from * go #south to #up)

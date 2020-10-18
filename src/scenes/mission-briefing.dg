@@ -1,0 +1,152 @@
+#mission-briefing
+(scene *)
+(start *)
+    (current room #conference-room)
+    You hear the Professor's voice above you: "Good News, Everyone!"
+    His oversized chair descends from the upper levels on two telescoping
+    arms, which retreat back into the ceiling after depositing him at the 
+    head of the conference table.
+    He continues: "I have a new and incredibly dangerous mission for you!"
+    (now) (#professor is #in #conference-room)
+    (now) (conversation partner #professor)
+    (now) (#fry is #in #conference-chair)
+    (par)
+    You sit down at the conference table.
+    Bender sits down as well, leaning far back into his chair with his feet
+    stretched out on the table.
+(complete *)
+    ~(#professor is #in #conference-room)
+
+(narrate greeting #professor)
+    (* in progress)
+    You direct your attention, or as much of it as you can muster,
+    back to the Professor.
+
+(prevent [leave $])
+    (* in progress)
+    You start to sneak out of the meeting but the Professor notices.
+    "Fry! Get back here, we're not done yet!"
+
+#new-mission
+(name *) the new mission
+(about *)
+(asking quip *)
+(* supplies #professor)
+(comment *)
+    "So, Professor, you said something about a mission?" you ask.
+(reply *)
+    "The, oh, what?"
+    The Professor seems confused for a moment, then remembers:
+    "Yes, yes, you must make a delivery to Miri Alpha Prime.
+    Very dangerous, I'm afraid."
+    Hearing this, Bender asks "Is it the kind of danger only fragile meat bags
+    need to worry about, or is it real danger?"
+    The Professor ignores him.
+
+#benders-mission-thoughts
+(asking quip *)
+(name *) the mission
+(about *)
+(repeatable *)
+(* supplies #bender)
+(off limits *)
+    %% TODO: Broken?
+    ~(#professor recollects #new-mission)
+(comment *)
+    You ask Bender, "What do you think about this mission?"
+(reply *)
+    Bender leans forward. "Yea, yea. Pick things up.
+    Drop them off. Not enough bending involved, if you ask me."
+    (if) (#mission-briefing in progress)
+    (then)
+        He leans back, in his chair, crosses his arms behind his head,
+        and exhales a noxious puff of cigar smoke. 
+    (endif)
+
+#about-the-danger
+(asking quip *)
+(name *) the danger
+(about *)
+(* follows #new-mission)
+(comment *)
+    "What's so dangerous about this mission, Professor?" you ask.
+(reply *)
+    %% To be fair, I started writing this when Ellison was still alive.
+    "Oh, the Ellisonium, yes, the bitterest, mostly-stable element in the known
+    universe.
+    Who knows what strange and terrible uses the Mirians will use it for!
+    Make their deserts bloom? A snap!
+    Change the orbit of their moon? Easy as pie!
+    Or wage horrific intergalactic war?
+    It's their choice, but that doesn't matter really, it's the payment
+    that's so dangerous."
+
+#about-mirians
+(asking quip *)
+(name *) the Mirians
+(about *)
+(* follows #new-mission)
+(comment *)
+    You ask "Well, what are these Mirians like?"
+(reply *)
+    "Oh, they're just ordinary folks, " says the Professor, "at least by our standards.
+    Ordinary folks who want to ruthlessly command the powers of Nature and 
+    perhaps commit unspeakable intergalactic crimes.
+    You know, a race of scientists much like me.
+    I'm connected to some of the leading Mirians on LinkedIn.
+    (if) (#professor recollects #about-the-danger)
+    (then)
+        That's how I knew they were desperate for the Ellisonium in the first place!
+    (endif)
+    (no space)
+    "
+
+#about-payment
+(asking quip *)
+(name *) the payment
+(about *)
+(* follows #about-the-danger)
+(comment *)
+    You try to tease some useful information out of the old codger.
+    "And their payment is?" you ask.
+    You're reallying hoping the Mirians pay in Slurm.
+(reply *)
+    The Professor becomes agisted and rasises his voice.
+    "Just the most dangerous machine in the known galaxy ... The Guardian of Forever!"
+    He settles down after a moment.
+    "I'm getting it for quite a steal, actually.
+    And really, it shouldn't be so dangerous as long as you don't go fooling
+    around with it!
+    Maybe you'll listen to Leela for once ... where is she?"
+
+#about-guardian
+(asking quip *)
+(name *) the Guardian of Forever
+(about *)
+(* follows #about-payment)
+(comment *)
+    "So Professor, what exactly is this Guardian thing?"
+(reply *)
+    The Professor responds a bit crankily:
+    "It's a machine that needs to be delivered back here to Planet Express."
+    He looks at you.
+    "By a delivery boy."
+
+#find-leela
+(performing quip *)
+(name *) suggest finding Leela
+(* follows #about-payment)
+(comment *)
+    You say "I don't know where Leela is, maybe we should go look for her?"
+(reply *)
+    "Very good. You find Leela, grab this mechanical buffoon,"
+    he gestures towards Bender, who arches his vision tubes and blows out a 
+    puff of noxious cigar smoke,
+    "and get that Ellisonium delivered!"
+    (par)
+    The Professor pushes back from the table, and punches a button on his chair.
+    The telescoping arms return, grab the chair, and raise it up into the ceiling.
+    You and Bender stand up as well.
+    (now) (#professor is nowhere)
+    (now) (#fry is #in #conference-room)
+    (reset conversation partner)

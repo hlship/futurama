@@ -1,0 +1,14 @@
+#bender
+(name *) Bender
+(proper *)
+(dict *) robot friend
+(male *)
+(appearance *)
+    Bender, your not-exactly-trusty robot friend and co-enabler, lounges nearby.
+(descr *)
+    Bender is human shaped ... head, torso, arms and legs ... but would never be
+    mistaken for anything but a shiny metal monstrosity.
+    There's a gleam in his vision tubes that too often leads to petty larceny
+    and other hyjinx.
+(narrate greeting *)
+    You turn to Bender.
