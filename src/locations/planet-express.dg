@@ -16,8 +16,9 @@
     (then)
         through which you can enter
     (else)
-        which is currently rolled shut.
+        which is currently rolled shut
     (endif)
+    .   
     To the east, beyond a blur of fast moving freight skimmers, is
     the access road. Fortunately, the transport tube system extends this far.
 (* attracts #skimmers)
