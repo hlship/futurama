@@ -26,6 +26,9 @@
     You duck your head and walk inside the transparent bubble.
     A raspy, elderly voice, barely recognizable as a woman's, announces, 
     "What's your, whadjamacallit, destination?"
+(narrate leaving *)
+    You exit the bubble, squeezing past the line of New New Yorkers waiting to use the
+    transport tube system.
 
 #people
 (name *) New New Yorkers

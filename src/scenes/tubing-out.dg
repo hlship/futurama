@@ -14,7 +14,7 @@
     (tubing out start $Start)
     (2 ticks elapsed since $Start)
     (par) 
-    The raspy void announces, "I'm not gettting any younger bub. Just announce where ya wanna go."
+    The raspy void announces, "I'm not getting any younger bub. Just announce where ya wanna go."
 (on every tick during *)
     (tubing out start $Start)
     (5 ticks elapsed since $Start)
@@ -45,8 +45,12 @@
 %% check announcing a destination:
 %%	 if the announced destination is nothing, say "The raspy voice responds: 'How about announcing someplace with a tube innit, will ya?'" instead.
 
-(rewrite [say/announce/request | $Words] into $Words)
+(understand [say/announce/request | $Words] as $Action)
     (* in progress)
+    (just)
+    { (understand $Words as $Action)
+      (or)
+      ($Action = [tube to unknown]) }
 
 (understand $Words as [tube to $Where])
     (* in progress)
@@ -56,8 +60,14 @@
         *(dict $Where)
     (matching all of $Words)
 
+(describe action [tube to unknown]) announce an unknown destination
+
 %% Prevent stdlib reachability check:
 ~(refuse [tube to $])
+
+(perform [tube to unknown])
+    The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
+
 
 (prevent [tube to $Room])
     (current room $Room)
@@ -82,9 +92,17 @@
     You roll gracelessly back onto your feet and look around.
     (enter $Room)
 
+~(before [go $])
+    (* in progress)
+
+(prevent [go $])
+    (* in progress)
+    You are inside the entrance bubble of the transport tube, which fully wraps
+    around you.
+    You aren't going anywhere until you announce your destination, or exit the bubble.
 
 (describe action [tube to $Room])
     announce (name $Room) as your destination
 
-%% All tube locations ale also rooms
+%% All tube locations are also rooms
 (room $Room) (tube location $Room)

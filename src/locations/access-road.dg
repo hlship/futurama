@@ -12,12 +12,12 @@
     west; beyond that is the river.
     People are everwhere, moving north and south along the street and zipping in and out
     of the transport tube system.
-(#skimmers/#planet-express-scenery/#people is #in *)
 (prevent [leave * #north/#south])
     The thought of trudging through the sun-baked streets filled with such
     throngs of happy, productive people fills you with an overpowering sense
     of dread and despair, and brings a twitch to your right eyelid.
     Some of that may be Slurm withdrawal, but nonetheless.
+(* attracts #skimmers)
 
 %% TODO: Support for "cross the street"
 
@@ -35,3 +35,4 @@
 (out of reach *) 
 (descr *)
     Beyond the dizzying freight skimmer traffic, you can see the Planet Express building.
+(* is #in #access-road)

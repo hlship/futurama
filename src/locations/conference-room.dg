@@ -1,0 +1,5 @@
+#conference-room
+(room *)
+(name *) Conference Room
+(look *) TODO
+(from * go #out through #pe-door to #planet-express)

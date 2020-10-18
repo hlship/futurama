@@ -3,5 +3,59 @@
 (name *) Planet Express
 (proper *)
 (tube location *)
+(omit tube appearance *)
 (look *)
-    The Planet Express building <More to Come>.
+    Professor Farnsworth's curious tower of science and commerce,
+    situated on a parcel of industrial real-estate adjacent
+    to the river.
+    Planet Express is an oddly shaped red building, consisting of a
+    largely conical tower, attached to a large blocky hangar
+    for the delivery ship itself.
+    On the side of the building is a wide circular door
+    (if) (#pe-door is open)
+    (then)
+        through which you can enter
+    (else)
+        which is currently rolled shut.
+    (endif)
+    To the east, beyond a blur of fast moving freight skimmers, is
+    the access road. Fortunately, the transport tube system extends this far.
+(* attracts #skimmers)
+(from * go #east to #skimmer-traffic)
+(from * go #in through #pe-door to #conference-room)
+(#river is #in *)
+(after [look])
+    (current room *)
+    (select)
+        From the upper turret of Planet Express, you hear
+        Professor Farnsworth's demanding, querulous voice call out to you:
+        "Fry! Where have you been?
+        We're about to start a (italic)very dangerous(roman)
+        mission and we're going to need someone to mop up the blood, er,
+        I mean, provide moral support.
+        Get on in here!"
+        He disappears back into the tower.
+        (increase score by 1)
+    (or)
+    (stopping)
+
+#pe-door
+(name *) circular door
+(door *)
+(openable *)
+(* is closed)
+(perform [examine *])
+    (* is closed)
+    The door is incredibly heavy, triple-reinforced plasteel.
+    You're not sure if the Professor installed it to keep something out, 
+    or to keep something in.
+(narrate opening *)
+    With some effort, you are able to roll the door to the side.
+(narrate closing *)
+    You yank hard on the door and eventually get it to roll shut.
+
+#river
+(name *) River
+(descr *)
+    Wide, flowing, and filled with more than a thousand years of toxic waste
+    and alien parasites, it's something New New Yorkers studiously ignore and avoid.
