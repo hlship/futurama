@@ -45,14 +45,14 @@
 (descr *)
     Whereas the Professor has an oversize seat with all sorts of cool extra buttons, 
     and the others have stylish chairs of swoopy stainless steel, 
-    yours is kind of squeeky and uncomfortable.
+    yours is kind of squeaky and uncomfortable.
 
 #metal-railing
 (name *) metal railing
 (dict *) divider
 (descr *)
     The railing was installed, over the Professor's objections, as a safety measure
-    due to the steep dropoff from the conference room to the main hangar.
+    due to the steep drop-off from the conference room to the main hangar.
     It has gradually gotten taller and more involved, the longer Amy continues
     her internship here.
 

@@ -10,7 +10,7 @@
     spires and transport tubes endlessly flowing with passengers.
     You can see the transport tube servicing Planet Express across the road from you to the
     west; beyond that is the river.
-    People are everwhere, moving north and south along the street and zipping in and out
+    People are everywhere, moving north and south along the street and zipping in and out
     of the transport tube system.
 (prevent [leave * #north/#south])
     The thought of trudging through the sun-baked streets filled with such

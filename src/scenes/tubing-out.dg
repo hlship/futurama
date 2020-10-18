@@ -41,10 +41,6 @@
     A New New Yorker elbows past you impatiently, announces "(no space)(name $Stop)," and is immediately sucked up
     into the tube system and away.
 
-%% TODO:
-%% check announcing a destination:
-%%	 if the announced destination is nothing, say "The raspy voice responds: 'How about announcing someplace with a tube innit, will ya?'" instead.
-
 (understand [say/announce/request | $Words] as $Action)
     (* in progress)
     (just)
@@ -68,7 +64,6 @@
 (perform [tube to unknown])
     The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
 
-
 (prevent [tube to $Room])
     (current room $Room)
     The raspy voice sounds exasperated. "Look around, will ya, or announce someplace else instead, idjyat".
@@ -86,7 +81,7 @@
     (take $Count from $RandomStops into $SomeStops)
     "I'd like to go to (the $Room)," you announce.
     (par)
-    With a sound like a great tupperware container lid being opened, the tube sucks you in and
+    With a sound like a great Tupperware container lid being opened, the tube sucks you in and
     hurtles you about New New York.  You catch fleeting images of (the $SomeStops) before
     you are spat out of the reversal chamber at (the $Room).
     You roll gracelessly back onto your feet and look around.

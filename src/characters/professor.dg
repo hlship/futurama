@@ -7,7 +7,7 @@
     Professor Farnsworth is dressed, as ever, in his lab coat and thick eyeglasses.
 (descr *)
     Ancient, wizened, somewhat doddering, and visibly off.
-    He has aspirtations to be diabolical, but lacks the necessary focus.
+    He has aspirations to be diabolical, but lacks the necessary focus.
 (#lab-coat/#eyeglasses is #wornby *)
 
 #lab-coat
