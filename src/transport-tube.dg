@@ -18,7 +18,6 @@
     %% the transport tube system into their look rule, so no appearance is necessary.
     ~(omit tube appearance $Room)
     Nearby is a terminal of the city's transport tube system.
-(#grill is #partof *)
 (narrate entering *)
     You shuffle on to the end of the fast moving line.
     The New New Yorkers ahead of you flit off to all parts of the city.
