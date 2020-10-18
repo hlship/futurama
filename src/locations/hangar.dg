@@ -2,7 +2,47 @@
 (room *)
 (name *) Delivery Ship Hangar
 (look *)
-    <TODO>
+    This very large room, the largest open space inside Planet Express, is where the delivery ship is
+    (if) ~(#ship is #in #hangar) (then) normally (endif) 
+    parked.
+    The floor is heavy concrete, capable of supporting the great mass of the ship, but still showing stains, scorches, and
+    wear marks.
+    A row of lockers lines one side of the hangar, and a steep flight of stairs, almost a ladder, leads back to the conference room.
 (* attracts #steep-stairs)
 (from * go #up to #conference-room)
 (from * go #south to #up)
+(#ship/#ellisonium/#lockers/#floor/#leela is #in *)
+
+#ship
+(name *) Planet Express delivery ship
+(appearance *)
+        The Planet Express Delivery Ship overshadows everything else in the hangar, resting on three huge landing struts.
+        It stands ready for the next mission, or the next whim of the Professor.
+
+#floor
+(name *) concrete floor
+(descr *)
+    Did you really spend a thousand years as a popsicle just so you could stare at the floor?
+
+
+#lockers
+(name *) row of lockers
+(container *)
+(openable *)
+(descr *)
+        A row of dented lockers.
+
+#ellisonium
+(name *) Ellisonium capsule
+(dict *) purple vortex dome container
+(container *)
+(openable *)
+(* is closed)
+(appearance *)
+    Off to one side is a cylindrical container, about a foot high, with a clear dome on top.
+(descr *)
+    The container is cylindrical, about a foot high, with a transparent domed top.
+    A bright red label on the side reads: "Danger! Ellisonium! Highly Bitter!"
+    Under the clear dome you a can see a swirling vortex of glowing purplish dust.
+(prevent [open *])
+    Fortunately for you, the dome of the capsule refuses to open.

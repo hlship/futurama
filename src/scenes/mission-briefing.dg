@@ -53,9 +53,12 @@
     %% TODO: Broken?
     ~(#professor recollects #new-mission)
 (comment *)
-    You ask Bender, "What do you think about this mission?"
+    You ask, "What do you think about this mission?"
 (reply *)
-    Bender leans forward. "Yea, yea. Pick things up.
+    (if) (#mission-briefing in progress)
+    (then) Bender leans forward.
+    (endif)
+    "Yea, yea. Pick things up.
     Drop them off. Not enough bending involved, if you ask me."
     (if) (#mission-briefing in progress)
     (then)
@@ -111,7 +114,7 @@
     "And their payment is?" you ask.
     You're reallying hoping the Mirians pay in Slurm.
 (reply *)
-    The Professor becomes agisted and rasises his voice.
+    The Professor becomes agitated and raises his voice.
     "Just the most dangerous machine in the known galaxy ... The Guardian of Forever!"
     He settles down after a moment.
     "I'm getting it for quite a steal, actually.

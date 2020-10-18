@@ -1,0 +1,4 @@
+(after [leave $ $])
+    (conversation partner $NPC)
+    ~(player can see $NPC)
+    (reset conversation partner)

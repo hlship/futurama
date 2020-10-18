@@ -13,7 +13,7 @@
         where the delivery ship stands ready
     (endif)
     .
-    A steep set of stairs down into the hangar.
+    A steep set of stairs lead down into the hangar.
     The door leading back out to the access road is
     (if) (#pe-door is open)
     (then) open

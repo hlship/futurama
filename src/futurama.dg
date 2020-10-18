@@ -3,7 +3,7 @@
 (story ifid) 62DFDF29-7092-4122-9DCC-EC088C4D5249
 (story noun) Comedy
 (story blurb)
-    Missing Episode of Futurama
+   The Future: It's where you want' to be 
 (story release 0)
 
 (intro)
@@ -20,6 +20,8 @@
     blurr whizzes by overhead.
     (banner)
     (try [look])
+    (par)
+    Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
 (scoring enabled)
 (maximum score 3)

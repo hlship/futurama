@@ -1,0 +1,24 @@
+#leela
+(woman *)
+(name *) Leela
+(proper *)
+(descr *)
+    Leela is a dark haired, single eyed beauty.
+    As always, she's dressed in sensible combat boots and a white tank-top.
+(#boots/#tank-top is #wornby *)
+(appearance *)
+    Leela is fussing about the hangar, checking that the ship is ready for its next mission.
+
+#boots
+(name *) combat boots
+(pair *)
+(wearable *)
+(descr *)
+    Bulky and nearly knee high, Leela seems to favor these, rather than bare feet,
+    when providing her opinions physically.
+
+#tank-top
+(name *) tank-top
+(dict *) shirt t-shirt
+(wearable *)
+   
