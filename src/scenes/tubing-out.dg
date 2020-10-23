@@ -26,7 +26,12 @@
     %% This disables the stdlib from making (the $Room) out as "this location":
     (now) ~(current room $)
     You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign.
-    You put your hands in the pockets of your jacket and shuffle back out to (the $Room).
+    You 
+    (if) (#jacket is #wornby #fry)
+    (then)
+        put your hands in the pockets of your jacket and 
+    (endif)
+    shuffle back out to (the $Room).
     %% Dialog doesn't have a `try silently` so:
     (move player to #in $Room)
     (tick) (stop)
@@ -82,7 +87,7 @@
     "I'd like to go to (the $Room)," you announce.
     (par)
     With a sound like a great Tupperware container lid being opened, the tube sucks you in and
-    hurtles you about New New York.  You catch fleeting images of (the $SomeStops) before
+    hurtles you about New New York.  You catch fleeting glances of (the $SomeStops) before
     you are spat out of the reversal chamber at (the $Room).
     You roll gracelessly back onto your feet and look around.
     (enter $Room)

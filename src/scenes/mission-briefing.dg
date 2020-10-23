@@ -16,6 +16,19 @@
     stretched out on the table.
 (complete *)
     ~(#professor is #in #conference-room)
+(late on every tick)
+    (* in progress)
+    ~(conversation partner #professor)
+    %% Because of timing with TC, this rule triggers after the Professor's final response
+    %% but before the scene library recognizes that he's gone.
+    (player can see #professor)
+    (par)
+    The Professor stares at you and mumbles something under his breath.
+    It's probably best for you to get back to his mission briefing.
+(narrate #professor expressing ignorance)
+    (* in progress)
+    "Eh, what?" the Professor says.
+    "Never mind that, Fry!" he continues, with renewed vigor, "we need to discuss the mission."
 
 (narrate greeting #professor)
     (* in progress)
@@ -62,7 +75,7 @@
     Drop them off. Not enough bending involved, if you ask me."
     (if) (#mission-briefing in progress)
     (then)
-        He leans back, in his chair, crosses his arms behind his head,
+        He leans back in his chair, crosses his arms behind his head,
         and exhales a noxious puff of cigar smoke. 
     (endif)
 
@@ -81,7 +94,7 @@
     Make their deserts bloom? A snap!
     Change the orbit of their moon? Easy as pie!
     Or wage horrific intergalactic war?
-    It's their choice, but that doesn't matter really, it's the payment
+    It's their choice, but that doesn't matter really, it's their payment
     that's so dangerous."
 
 #about-mirians
@@ -92,8 +105,8 @@
 (comment *)
     You ask "Well, what are these Mirians like?"
 (reply *)
-    "Oh, they're just ordinary folks, " says the Professor, "at least by our standards.
-    Ordinary folks who want to ruthlessly command the powers of Nature and 
+    "Oh, they're just ordinary folks," says the Professor, "at least by our standards.
+    Ordinary folks who want to ruthlessly command the forces of Nature and 
     perhaps commit unspeakable intergalactic crimes.
     You know, a race of scientists much like me.
     I'm connected to some of the leading Mirians on LinkedIn.

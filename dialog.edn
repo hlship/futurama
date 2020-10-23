@@ -5,11 +5,11 @@
                  "src/*.dg"]
  :debug-sources ["lib/debug/*.dg"
                  {:github "hlship/threaded-conversation"
-                  :version "v0.6"
+                  :version "v0.7"
                   :path "lib/tcdebug.dg"}
                  "/usr/local/share/dialog-if/stddebug.dg"]
  :library-sources ["lib/*.dg"
                    {:github "hlship/threaded-conversation"
-                    :version "v0.6"
+                    :version "v0.7"
                     :path "lib/tc.dg"}
                    "/usr/local/share/dialog-if/stdlib.dg"]}

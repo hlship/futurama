@@ -14,7 +14,7 @@
     (endif)
     .
     A steep set of stairs lead down into the hangar.
-    The door leading back out to the access road is
+    The circular door leading back out to the access road is
     (if) (#pe-door is open)
     (then) open
     (else) rolled shut
