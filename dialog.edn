@@ -1,4 +1,6 @@
-{:sources
+{:format :zblorb
+ :name "futurama"
+ :sources
  {:story ["src/scenes/*.dg"
           "src/characters/*.dg"
           "src/locations/*.dg"
