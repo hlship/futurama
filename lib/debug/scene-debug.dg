@@ -28,4 +28,3 @@
 (annotate ($ has started) with [has started])
 (annotate ($ in progress) with [in progress])
 (annotate ($ has completed) with [has completed])
-(annotate (dramatic $) with @dramatic)

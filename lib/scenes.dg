@@ -27,7 +27,6 @@
 (scene $) (fail)
 (complete $) (fail)
 (recurring $) (fail)
-(dramatic $) (fail)
 
 (scene debugging enabled)
     (fail)
