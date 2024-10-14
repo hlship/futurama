@@ -29,15 +29,16 @@
 (recurring $) (fail)
 (dramatic $) (fail)
 
-~(scene debugging enabled)
+(scene debugging enabled)
+    (fail)
 
 %% Each scene that is in progress at the start of the tick and not completed during the tick
 %% is notified via this predicate.  It doesn't matter whether this predicate succeeds or fails.
-(on every tick during scene $) (fail)
+(on every tick during $) (fail)
 
 (on every tick)
     (identify completed scenes)
-    (tick happening scenes)
+    (tick scenes in progress)
     (identify starting scenes)
      
 (identify completed scenes)
@@ -54,7 +55,7 @@
         (now) ($Scene has completed)
     }
 
-(tick happening scenes)
+(tick scenes in progress)
     (exhaust) {
         *(scene $Scene)
         ($Scene in progress)
@@ -83,6 +84,3 @@
 (ready to start scene $Scene)
     ~($Scene in progress)
     { ~($Scene has completed) (or) (recurring $Scene) }
- 
-%% Need to provide one of these to prevent a warning:
-(on every tick during $)

@@ -1,15 +1,12 @@
-{:story-sources ["src/scenes/*.dg"
-                 "src/characters/*.dg"
-                 "src/locations/*.dg"
-                 "src/actions/*.dg"
-                 "src/*.dg"]
- :debug-sources ["lib/debug/*.dg"
-                 {:github "hlship/threaded-conversation"
-                  :version "v0.7"
-                  :path "lib/tcdebug.dg"}
-                 "/usr/local/share/dialog-if/stddebug.dg"]
- :library-sources ["lib/*.dg"
-                   {:github "hlship/threaded-conversation"
-                    :version "v0.7"
-                    :path "lib/tc.dg"}
-                   "/usr/local/share/dialog-if/stdlib.dg"]}
+{:sources
+ {:story ["src/scenes/*.dg"
+          "src/characters/*.dg"
+          "src/locations/*.dg"
+          "src/actions/*.dg"
+          "src/*.dg"]
+  :debug ["lib/debug/*.dg"
+          "lib/tc/debug/*.dg"
+          "/usr/local/share/dialog-if/stddebug.dg"]
+  :library ["lib/*.dg"
+            "lib/tc/*.dg"
+            "/usr/local/share/dialog-if/stdlib.dg"]}}

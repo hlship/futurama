@@ -28,11 +28,10 @@
 (name *) owls
 (dict *) owl
 (pair *)
-(out of reach *)
-%% (prevent [$Verb | $Words])
-%%     ($Verb != @examine)
-%%     (* is one of $Words)
-%%     The owls have learned to be cautious, and studiously keep themselves out of reach.
+(prevent [$Verb | $Words])
+    ~($Verb = @examine)
+    (* is one of $Words)
+    The owls have learned to be cautious, and studiously keep themselves out of reach.
 
 #dumpster
 (name *) grey dumpster
@@ -46,7 +45,7 @@
     Basically, it's disgusting,
     (if) (* is closed)
     (then)
-        but you fear that the worst is one the inside, mercifully closed from view
+        but you fear that the worst is on the inside, mercifully closed from view
     (else)
         all the more so for the reek wafting into the alley from the open lid
     (endif)
@@ -60,4 +59,6 @@
     Well, it's in an alien script, and despite your general befuddlement,
     you're fairly certain you are not an alien, and very certain you aren't
     an alien who can read this lettering.
+(instead of [read *])
+  (try [examine *])
 

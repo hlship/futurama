@@ -14,9 +14,14 @@
         (length of $Input into $N)
         (shuffle $Input of length $N into $Output)
 
+(interface (random chance of $<Y in $<X))        
+
 (random chance of $Y in $X)
     (random from 1 to $X into $Z)
     ($Z <= $Y)
+
+(interface ($<X <= $<Y))
+(interface ($<X >= $<Y))
 
 ($X <= $Y)
     ($X < $Y) (or) ($X = $Y)
