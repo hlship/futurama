@@ -56,7 +56,7 @@
     It has gradually gotten taller and more involved, the longer Amy continues
     her internship here.
 
-    #display-monitor
+#display-monitor
 (name *) huge video display
 (dict *) monitor
 (descr *)
