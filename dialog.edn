@@ -1,11 +1,11 @@
 {:format :zblorb
  :name "futurama"
  :sources
- {:story ["src/scenes/*.dg"
-          "src/characters/*.dg"
-          "src/locations/*.dg"
-          "src/actions/*.dg"
-          "src/*.dg"]
+ {:main ["src/scenes/*.dg"
+         "src/characters/*.dg"
+         "src/locations/*.dg"
+         "src/actions/*.dg"
+         "src/*.dg"]
   :debug ["lib/debug/*.dg"
           "lib/tc/debug/*.dg"
           "lib/dialog/stddebug.dg"]
