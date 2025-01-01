@@ -10,9 +10,9 @@
     (now) ~(scene debugging enabled)
     Scene debugging disabled.
 
-(understand command [sceneinfo])
+(understand command [scene info])
 
-(perform [sceneinfo])
+(perform [scene info])
     (scene info)
 
 (scene info)
