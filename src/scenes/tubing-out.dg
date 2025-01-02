@@ -14,7 +14,7 @@
     (tubing out start $Start)
     (2 ticks elapsed since $Start)
     (par) 
-    The raspy void announces, "I'm not getting any younger bub. Just announce where ya wanna go."
+    The raspy voice announces, "I'm not getting any younger bub. Just announce where ya wanna go."
 (on every tick during *)
     (tubing out start $Start)
     (5 ticks elapsed since $Start)

@@ -6,7 +6,7 @@
 (can perform * with [])
 (suggest * with $)
     Try (bold) inventory (roman) \(or just 
-    (bold) I (roman) \) to see what you are carrying.
+    (bold) i (roman) \) to see what you are carrying.
 (* is performed by [inventory])
 
 #examine
@@ -21,38 +21,64 @@
     ~($Object has ancestor $Player)
     *(player can see $Object)
 (suggest * with $Item)
-    Often, there will be interesting objects near by; you can get more information
+    Often, there will be interesting objects nearby; you can get more information
     about them by examining them;
     try (bold) examine (minimally name $Item) (roman)
     \(or just (bold) x (minimally name $Item) (roman) \).
 (* is performed by [examine])
     
+
+#look-self
+(tutorial suggestion *)
+(can perform * with [])
+(suggest * with $)
+    You are here in this world too. Try 
+    (bold)look at me(roman)
+    or (bold)l self(roman)
+    to get an idea of who you are.
+
 #take
 (tutorial suggestion *)
 (can perform * with $Item)
-    (player can see)
     *(item $Item)
-    ($Item is pristine)
     ~($Item is hidden)
     (player can see $Item)
     ~(out of reach $Item) 
     (current player $Player)
     ~($Item has ancestor $Player)
 (suggest * with $Item)
-    The room's description mentioned (the $Item).
+    (if) ($Item is pristine)
+    (then)
+        The room description mentioned (a $Item).
+    (else)
+        There's (a $Item) nearby.
+    (endif)
     You could (bold) take (minimally name $Item) (roman) to pick it up.
 (* is performed by [take $])
 
 #drop
 (tutorial suggestion *)
 (can perform * with $Item)
+    (#inventory has been performed)
     (current player $Player)
     *($Item is $ $Player)
 (suggest * with $Item)
-    You are carrying (the $Item); you can leave it here with
-    (bold) drop (minimally name $Item) (roman). Watch out, though 
-    (space)--(space)
-    in some worlds, there are people or things that move or steal things
-    they stumble upon!
+    You are carrying (a $Item); you can leave it here with
+    (bold) drop (minimally name $Item) (roman).
 (* is performed by [drop $])
+
+#wear
+(tutorial suggestion *)
+(can perform * with $Item)
+    (#take has been performed)
+    (current player $Player)
+    *(wearable $Item)
+    ~($Item has ancestor $Player)
+    (player can see $Item)
+    ~(out of reach $Item) 
+(suggest * with $Item)
+    (The $Item) is a piece of clothing; you can
+    (bold) wear (minimally name $Item) (roman) to put it on.
+(* is performed by [wear $])
+
 

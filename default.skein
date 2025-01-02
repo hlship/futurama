@@ -28,7 +28,8 @@ an otherwise bright and colorful city. The alley is divided in two by a tall
 fence, topped with razor wire, to the east. A busy street is just outside the
 alley to the west. There's not much activity here, beyond a pair of owls who
 watch you carefully, eager to scavenge any crumbs you might drop. At the back of
-the alley is a graffiti-festooned dumpster.
+the alley is a graffiti-festooned dumpster on top of which is perched a precious
+can of Slurm!
 
 Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
@@ -44,7 +45,7 @@ command: honk
 > honk
 Thanks for your support!
 
-[Try inventory (or just I) to see what you are carrying.]
+[Try inventory (or just i) to see what you are carrying.]
 
 (Your score has gone up by one point.)
 
@@ -65,7 +66,7 @@ command: honk
 > honk
 Don't be greedy.
 
-[Often, there will be interesting objects near by; you can get more information
+[Often, there will be interesting objects nearby; you can get more information
 about them by examining them; try examine fence (or just x fence).]
 
 --------------------------------------------------------------------------------
@@ -74,9 +75,9 @@ parent-id: 0
 command: i
 --------------------------------------------------------------------------------
 > i
-You have a candy-bar wrapper and a can of Slurm. You're wearing your red jacket.
+You have a candy-bar wrapper. You're wearing your red jacket.
 
-[Often, there will be interesting objects near by; you can get more information
+[Often, there will be interesting objects nearby; you can get more information
 about them by examining them; try examine fence (or just x fence).]
 
 --------------------------------------------------------------------------------
@@ -85,9 +86,10 @@ parent-id: 1728874698406
 command: drop slurm
 --------------------------------------------------------------------------------
 > drop slurm
-With considerable mental effort, you convince your fingers to open, allowing the
-can to drop free of your grasp. You never feel quite right without a can of
-Slurm handy, even an empty one.
+You're not holding the can of Slurm.
+
+[You are here in this world too. Try look at me or l self to get an idea of who
+you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698408
@@ -95,7 +97,9 @@ parent-id: 1728874698407
 command: take can
 --------------------------------------------------------------------------------
 > take can
-Ah. Better. Back where it belongs.
+You feel a tingle of excitement as you grab hold of the can.
+
+[You are carrying a can of Slurm; you can leave it here with drop can.]
 
 --------------------------------------------------------------------------------
 id: 1728874698409
@@ -142,6 +146,8 @@ command: drop it
 You take off your red jacket.
 
 Your red jacket falls to the ground.
+
+[Your red jacket is a piece of clothing; you can wear jacket to put it on.]
 
 --------------------------------------------------------------------------------
 id: 1728874698414
@@ -252,7 +258,7 @@ command: x owls
 > x owls
 They seem to be harmless.
 
-[Try inventory (or just I) to see what you are carrying.]
+[Try inventory (or just i) to see what you are carrying.]
 
 --------------------------------------------------------------------------------
 id: 1728874698429
@@ -263,7 +269,7 @@ command: take owls
 The owls have learned to be cautious, and studiously keep themselves out of
 reach.
 
-[Often, there will be interesting objects near by; you can get more information
+[Often, there will be interesting objects nearby; you can get more information
 about them by examining them; try examine fence (or just x fence).]
 
 --------------------------------------------------------------------------------
@@ -276,9 +282,8 @@ command: attack owls
 The owls have learned to be cautious, and studiously keep themselves out of
 reach.
 
-[You are carrying the candy-bar wrapper; you can leave it here with drop wrapper
-. Watch out, though -- in some worlds, there are people or things that move or
-steal things they stumble upon!]
+[You are here in this world too. Try look at me or l self to get an idea of who
+you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698431
@@ -297,7 +302,7 @@ road from you to the west; beyond that is the river. People are everywhere,
 moving north and south along the street and zipping in and out of the transport
 tube system.
 
-[Try inventory (or just I) to see what you are carrying.]
+[Try inventory (or just i) to see what you are carrying.]
 
 --------------------------------------------------------------------------------
 id: 1728874698432
@@ -311,7 +316,7 @@ the queue. You duck your head and walk inside the transparent bubble. A raspy,
 elderly voice, barely recognizable as a woman's, announces, "What's your,
 whadjamacallit, destination?"
 
-[Often, there will be interesting objects near by; you can get more information
+[Often, there will be interesting objects nearby; you can get more information
 about them by examining them; try examine yorkers (or just x yorkers).]
 
 --------------------------------------------------------------------------------
@@ -326,9 +331,8 @@ will ya?"
 A New New Yorker elbows past you impatiently, announces "Planet Express," and is
 immediately sucked up into the tube system and away.
 
-[You are carrying the candy-bar wrapper; you can leave it here with drop wrapper
-. Watch out, though -- in some worlds, there are people or things that move or
-steal things they stumble upon!]
+[You are here in this world too. Try look at me or l self to get an idea of who
+you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698434
@@ -399,8 +403,8 @@ into his chair with his feet stretched out on the table.
 
 You could ask about the new mission.
 
-[The room's description mentioned the white lab coat. You could take coat to
-pick it up.]
+[The room description mentioned a white lab coat. You could take coat to pick it
+up.]
 
 --------------------------------------------------------------------------------
 id: 1728874698438
@@ -588,8 +592,10 @@ command: tutorial status
 Tutorial suggestions:
 #inventory (suggested)
 #examine (suggested)
+#look-self (suggested)
 #take
-#drop (suggested)
+#drop
+#wear
 
 --------------------------------------------------------------------------------
 id: 1735783208265
@@ -597,7 +603,10 @@ parent-id: 1735783208264
 command: i
 --------------------------------------------------------------------------------
 > i
-You have a candy-bar wrapper and a can of Slurm. You're wearing your red jacket.
+You have a candy-bar wrapper. You're wearing your red jacket.
+
+[The room description mentioned a can of Slurm. You could take can to pick it
+up.]
 
 --------------------------------------------------------------------------------
 id: 1735783208266
@@ -608,8 +617,10 @@ command: tutorial status
 Tutorial suggestions:
 #inventory (performed, suggested)
 #examine (suggested)
-#take
-#drop (suggested)
+#look-self (suggested)
+#take (suggested)
+#drop
+#wear
 
 --------------------------------------------------------------------------------
 id: 1735783208267
@@ -627,55 +638,30 @@ command: roominfo
     #conference-chair #in
         #fry #in
             #wrapper #heldby
-            #slurm #heldby
             #jacket #wornby
     #metal-railing #in
     #display-monitor #in
     #bender #in (animate)
 
 --------------------------------------------------------------------------------
-id: 1735783208268
-parent-id: 0
-command: tutorial status
---------------------------------------------------------------------------------
-> tutorial status
-Tutorial suggestions:
-#inventory
-#examine
-#take
-#drop
-
---------------------------------------------------------------------------------
 id: 1735783208269
-parent-id: 1735783208268
+parent-id: 0
 command: z
 --------------------------------------------------------------------------------
 > z
 A moment slips away.
 
-[Try inventory (or just I) to see what you are carrying.]
-
---------------------------------------------------------------------------------
-id: 1735783208270
-parent-id: 1735783208269
-command: tutorial status
---------------------------------------------------------------------------------
-> tutorial status
-Tutorial suggestions:
-#inventory (suggested)
-#examine
-#take
-#drop
+[Try inventory (or just i) to see what you are carrying.]
 
 --------------------------------------------------------------------------------
 id: 1735783208271
-parent-id: 1735783208270
+parent-id: 1735783208269
 command: i
 --------------------------------------------------------------------------------
 > i
-You have a candy-bar wrapper and a can of Slurm. You're wearing your red jacket.
+You have a candy-bar wrapper. You're wearing your red jacket.
 
-[Often, there will be interesting objects near by; you can get more information
+[Often, there will be interesting objects nearby; you can get more information
 about them by examining them; try examine fence (or just x fence).]
 
 --------------------------------------------------------------------------------
@@ -688,6 +674,8 @@ command: tutorial status
 Tutorial suggestions:
 #inventory (performed, suggested)
 #examine (suggested)
+#look-self
 #take
 #drop
+#wear
 

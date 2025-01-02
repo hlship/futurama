@@ -28,6 +28,8 @@
     (tutorial mode is enabled)
     (make tutorial suggestion)
 
+(interface (can perform $<Suggestion with $>Operand))
+
 (make tutorial suggestion)
     *(tutorial suggestion $Suggestion)
     ~($Suggestion has been performed)
@@ -42,6 +44,16 @@
     ~($Suggestion has been performed)
     ($Suggestion is performed by $Command)
     (now) ($Suggestion has been performed)
+
+%% Optional rule for objects that want to override how (minimally name $) operates.
+
+(interface (command name <$Object))
+
+(command name $)
+    (fail)
+
+(minimally name $Object)
+    (command name $Object)
 
 (minimally name $Object)
     (collect words)

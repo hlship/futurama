@@ -8,7 +8,13 @@
     A busy street is just outside the alley to the west.
     There's not much activity here, beyond a pair of owls who watch you carefully,
     eager to scavenge any crumbs you might drop.
-    At the back of the alley is a graffiti-festooned dumpster.
+    At the back of the alley is a graffiti-festooned dumpster
+    (if) (#slurm is pristine)
+        (then)
+            on top of which is perched a precious can of Slurm!
+        (else)
+            .
+        (endif)
 (prevent [leave * #east])
     Tall fence. Check. Razor wire. Check. Fry going east of the tall fence
     with the razor wire? No check.
@@ -37,6 +43,7 @@
 (name *) grey dumpster
 (openable *)
 (container *)
+(supporter *)
 (descr *)
     The dumpster is made of gun-metal grey heavy plastic and has seen better days.
     It has smelled much better days.
@@ -51,6 +58,12 @@
     (endif)
     .
 (#graffiti is #partof *)
+(after [open *])
+    (#slurm is pristine)
+    As you force the lid of the dumpster open, the soda can on top rolls off and lands
+    in the alley.
+    (now) (#slurm is handled)
+    (now) (#slurm is #in #alley)
 
 #graffiti
 (name *) graffiti
@@ -62,3 +75,34 @@
 (instead of [read *])
   (try [examine *])
 
+
+#slurm
+(item *)
+(name *) can of Slurm
+(dict *) soft drink
+(potable *)
+(command name *) can
+(* is #on #dumpster)
+(descr *)
+    An empty can of Slurm soft drink.
+    (if) (* has ancestor #fry)
+    (then)
+        You hold onto it with a desperate junkie's grip.
+        "Maybe it has just one more delicious drop?" you think and
+        give it a quick shake.
+        No dice.
+    (endif)
+(narrate dropping *)
+    With considerable mental effort, you convince your fingers to open, 
+    allowing the can to drop free of your grasp.
+    You never feel quite right without a can of Slurm handy, even an empty one.
+(narrate taking *)
+    (select)
+        You feel a tingle of excitement as you grab hold of the can.
+    (or)
+        Ah. Better. Back where it belongs.
+    (stopping)
+(prevent [drink *])
+    You tip the can towards your mouth, hoping against hope that there's even one more
+    drop of precious Slurm in there.
+    There isn't.

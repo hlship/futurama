@@ -1,7 +1,7 @@
 #fry
 (current player *)
 (* is #in #alley)
-(#wrapper/#slurm is #heldby *)
+(#wrapper is #heldby *)
 (#jacket is #wornby *)
 (descr *)
     Being in cold storage for a thousand years didn't change the 'classic' Fry look:
@@ -14,31 +14,6 @@
 (descr *)
     Written on the inside of the wrapper, in crayon, is the urgent
     message: "WORK PANLET EXPERS GO!", but you are not sure what that means.
-
-#slurm
-(item *)
-(name *) can of Slurm
-(dict *) soft drink
-(potable *)
-(descr *)
-    An empty can of Slurm soft drink.
-    (if) (* has ancestor #fry)
-    (then)
-        You hold onto it with a desperate junkie's grip.
-        "Maybe it has just one more delicious drop?" you think and
-        give it a quick shake.
-        No dice.
-    (endif)
-(narrate dropping *)
-    With considerable mental effort, you convince your fingers to open, 
-    allowing the can to drop free of your grasp.
-    You never feel quite right without a can of Slurm handy, even an empty one.
-(narrate taking *)
-    Ah. Better. Back where it belongs.
-(prevent [drink *])
-    You tip the can towards your mouth, hoping against hope that there's even one more
-    drop of precious Slurm in there.
-    There isn't.
 
 
 #jacket
