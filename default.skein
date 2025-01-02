@@ -1,0 +1,693 @@
+seed: 5972
+--------------------------------------------------------------------------------
+id: 0
+label: START
+--------------------------------------------------------------------------------
+
+
+[Futurama: Honk If You Like Bytecode]
+
+You wish you could say this is the first time you've woken up in a dark, dirty
+alley... really, you wish you could say for sure. You can't seem to remember.
+You feel a bit disoriented, and your tortured neurons cough up just a couple of
+memories... you were out on a bender, or out with a Bender? A loud buzzing sound
+startles you out of your reverie, as a fast moving, colorful blur whizzes by
+overhead.
+
+Futurama: Untitled Episode
+Comedy by Howard M. Lewis Ship.
+Release 0. Serial number DEBUG.
+Dialog Interactive Debugger (dgdebug) version 0m/03. Library version 0.46.
+Debugging extension 1.1.
+Threaded Conversation 0.7 by Howard Lewis Ship
+Tutorial Mode 0.1 by Howard Lewis Ship
+
+Alley
+A short alley not far from Planet Express, notable for being dark and dingy in
+an otherwise bright and colorful city. The alley is divided in two by a tall
+fence, topped with razor wire, to the east. A busy street is just outside the
+alley to the west. There's not much activity here, beyond a pair of owls who
+watch you carefully, eager to scavenge any crumbs you might drop. At the back of
+the alley is a graffiti-festooned dumpster.
+
+Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
+
+[This game has a built-in tutorial mode for players new to interactive fiction;
+it suggests common commands that you can try. You can turn this off with
+tutorial off or back on with tutorial on.]
+
+--------------------------------------------------------------------------------
+id: 1728874698403
+parent-id: 0
+command: honk
+--------------------------------------------------------------------------------
+> honk
+Thanks for your support!
+
+[Try inventory (or just I) to see what you are carrying.]
+
+(Your score has gone up by one point.)
+
+--------------------------------------------------------------------------------
+id: 1728874698404
+parent-id: 1728874698403
+command: score
+--------------------------------------------------------------------------------
+> score
+You currently have 1 point out of a maximum of 3.
+
+--------------------------------------------------------------------------------
+id: 1728874698405
+label: honk for points
+parent-id: 1728874698404
+command: honk
+--------------------------------------------------------------------------------
+> honk
+Don't be greedy.
+
+[Often, there will be interesting objects near by; you can get more information
+about them by examining them; try examine fence (or just x fence).]
+
+--------------------------------------------------------------------------------
+id: 1728874698406
+parent-id: 0
+command: i
+--------------------------------------------------------------------------------
+> i
+You have a candy-bar wrapper and a can of Slurm. You're wearing your red jacket.
+
+[Often, there will be interesting objects near by; you can get more information
+about them by examining them; try examine fence (or just x fence).]
+
+--------------------------------------------------------------------------------
+id: 1728874698407
+parent-id: 1728874698406
+command: drop slurm
+--------------------------------------------------------------------------------
+> drop slurm
+With considerable mental effort, you convince your fingers to open, allowing the
+can to drop free of your grasp. You never feel quite right without a can of
+Slurm handy, even an empty one.
+
+--------------------------------------------------------------------------------
+id: 1728874698408
+parent-id: 1728874698407
+command: take can
+--------------------------------------------------------------------------------
+> take can
+Ah. Better. Back where it belongs.
+
+--------------------------------------------------------------------------------
+id: 1728874698409
+parent-id: 1728874698408
+command: i
+--------------------------------------------------------------------------------
+> i
+You have a can of Slurm and a candy-bar wrapper. You're wearing your red jacket.
+
+--------------------------------------------------------------------------------
+id: 1728874698410
+parent-id: 1728874698409
+command: x can
+--------------------------------------------------------------------------------
+> x can
+An empty can of Slurm soft drink. You hold onto it with a desperate junkie's
+grip. "Maybe it has just one more delicious drop?" you think and give it a quick
+shake. No dice.
+
+--------------------------------------------------------------------------------
+id: 1728874698411
+parent-id: 1728874698410
+command: x wrapper
+--------------------------------------------------------------------------------
+> x wrapper
+Written on the inside of the wrapper, in crayon, is the urgent message: "WORK
+PANLET EXPERS GO!", but you are not sure what that means.
+
+--------------------------------------------------------------------------------
+id: 1728874698412
+parent-id: 1728874698411
+command: x jacket
+--------------------------------------------------------------------------------
+> x jacket
+Members only. Seriously.
+
+--------------------------------------------------------------------------------
+id: 1728874698413
+parent-id: 1728874698412
+command: drop it
+--------------------------------------------------------------------------------
+> drop it
+(first attempting to remove your red jacket)
+You take off your red jacket.
+
+Your red jacket falls to the ground.
+
+--------------------------------------------------------------------------------
+id: 1728874698414
+parent-id: 1728874698413
+command: l
+--------------------------------------------------------------------------------
+> l
+Alley
+A short alley not far from Planet Express, notable for being dark and dingy in
+an otherwise bright and colorful city. The alley is divided in two by a tall
+fence, topped with razor wire, to the east. A busy street is just outside the
+alley to the west. There's not much activity here, beyond a pair of owls who
+watch you carefully, eager to scavenge any crumbs you might drop. At the back of
+the alley is a graffiti-festooned dumpster.
+
+You see your red jacket here.
+
+--------------------------------------------------------------------------------
+id: 1728874698415
+parent-id: 1728874698414
+command: x dumpster
+--------------------------------------------------------------------------------
+> x dumpster
+The dumpster is made of gun-metal grey heavy plastic and has seen better days.
+It has smelled much better days. You hate to think what it has tasted. The
+dumpster is worn and battered, and festooned with graffiti in an alien script.
+Basically, it's disgusting, but you fear that the worst is on the inside,
+mercifully closed from view.
+
+--------------------------------------------------------------------------------
+id: 1728874698416
+parent-id: 1728874698415
+command: climb in dumpster
+--------------------------------------------------------------------------------
+> climb in dumpster
+It's not possible to get into the grey dumpster.
+
+--------------------------------------------------------------------------------
+id: 1728874698417
+parent-id: 1728874698416
+command: close it
+--------------------------------------------------------------------------------
+> close it
+The grey dumpster is already closed.
+
+--------------------------------------------------------------------------------
+id: 1728874698418
+parent-id: 1728874698417
+command: open it
+--------------------------------------------------------------------------------
+> open it
+You open the grey dumpster.
+
+--------------------------------------------------------------------------------
+id: 1728874698419
+parent-id: 1728874698418
+command: x it
+--------------------------------------------------------------------------------
+> x it
+The dumpster is made of gun-metal grey heavy plastic and has seen better days.
+It has smelled much better days. You hate to think what it has tasted. The
+dumpster is worn and battered, and festooned with graffiti in an alien script.
+Basically, it's disgusting, all the more so for the reek wafting into the alley
+from the open lid.
+
+--------------------------------------------------------------------------------
+id: 1728874698420
+parent-id: 1728874698419
+command: smell it
+--------------------------------------------------------------------------------
+> smell it
+The grey dumpster smells as expected.
+
+--------------------------------------------------------------------------------
+id: 1728874698421
+parent-id: 1728874698420
+command: get in it
+--------------------------------------------------------------------------------
+> get in it
+It's not possible to get into the grey dumpster.
+
+--------------------------------------------------------------------------------
+id: 1728874698422
+parent-id: 1728874698421
+command: read script
+--------------------------------------------------------------------------------
+> read script
+Well, it's in an alien script, and despite your general befuddlement, you're
+fairly certain you are not an alien, and very certain you aren't an alien who
+can read this lettering.
+
+--------------------------------------------------------------------------------
+id: 1728874698424
+label: objects in the alley (start)
+parent-id: 1728874698422
+command: x graffiti
+--------------------------------------------------------------------------------
+> x graffiti
+Well, it's in an alien script, and despite your general befuddlement, you're
+fairly certain you are not an alien, and very certain you aren't an alien who
+can read this lettering.
+
+--------------------------------------------------------------------------------
+id: 1728874698428
+parent-id: 0
+command: x owls
+--------------------------------------------------------------------------------
+> x owls
+They seem to be harmless.
+
+[Try inventory (or just I) to see what you are carrying.]
+
+--------------------------------------------------------------------------------
+id: 1728874698429
+parent-id: 1728874698428
+command: take owls
+--------------------------------------------------------------------------------
+> take owls
+The owls have learned to be cautious, and studiously keep themselves out of
+reach.
+
+[Often, there will be interesting objects near by; you can get more information
+about them by examining them; try examine fence (or just x fence).]
+
+--------------------------------------------------------------------------------
+id: 1728874698430
+label: owls are not interactive
+parent-id: 1728874698429
+command: attack owls
+--------------------------------------------------------------------------------
+> attack owls
+The owls have learned to be cautious, and studiously keep themselves out of
+reach.
+
+[You are carrying the candy-bar wrapper; you can leave it here with drop wrapper
+. Watch out, though -- in some worlds, there are people or things that move or
+steal things they stumble upon!]
+
+--------------------------------------------------------------------------------
+id: 1728874698431
+parent-id: 0
+command: w
+--------------------------------------------------------------------------------
+> w
+You walk west.
+
+Access Road
+You are next to a wide access road frequented by heavy freight skimmers moving
+north and south at high speed. From here you can see a portion of the Manhattan
+skyline, all glittering spires and transport tubes endlessly flowing with
+passengers. You can see the transport tube servicing Planet Express across the
+road from you to the west; beyond that is the river. People are everywhere,
+moving north and south along the street and zipping in and out of the transport
+tube system.
+
+[Try inventory (or just I) to see what you are carrying.]
+
+--------------------------------------------------------------------------------
+id: 1728874698432
+parent-id: 1728874698431
+command: enter tube
+--------------------------------------------------------------------------------
+> enter tube
+You shuffle on to the end of the fast moving line. The New New Yorkers ahead of
+you flit off to all parts of the city. Before you know it, you're at the head of
+the queue. You duck your head and walk inside the transparent bubble. A raspy,
+elderly voice, barely recognizable as a woman's, announces, "What's your,
+whadjamacallit, destination?"
+
+[Often, there will be interesting objects near by; you can get more information
+about them by examining them; try examine yorkers (or just x yorkers).]
+
+--------------------------------------------------------------------------------
+id: 1728874698433
+parent-id: 1728874698432
+command: say planet express
+--------------------------------------------------------------------------------
+> say planet express
+The raspy voice responds: "How about announcing someplace with a tube innit,
+will ya?"
+
+A New New Yorker elbows past you impatiently, announces "Planet Express," and is
+immediately sucked up into the tube system and away.
+
+[You are carrying the candy-bar wrapper; you can leave it here with drop wrapper
+. Watch out, though -- in some worlds, there are people or things that move or
+steal things they stumble upon!]
+
+--------------------------------------------------------------------------------
+id: 1728874698434
+label: Reach Planet Express
+parent-id: 1728874698433
+command: planet express
+--------------------------------------------------------------------------------
+> planet express
+"I'd like to go to Planet Express," you announce.
+
+With a sound like a great Tupperware container lid being opened, the tube sucks
+you in and hurtles you about New New York. You catch fleeting glances of Madison
+Cube Garden, the Robot Arms Apartments, and Liberty Island before you are spat
+out of the reversal chamber at Planet Express. You roll gracelessly back onto
+your feet and look around.
+
+Planet Express
+You are standing outside Professor Farnsworth's curious tower of science and
+commerce, situated on a parcel of industrial real-estate adjacent to the river.
+Planet Express is an oddly shaped red building, consisting of a largely conical
+tower, attached to a large blocky hangar for the delivery ship itself. On the
+side of the building is a wide circular door which is currently rolled shut. To
+the east, beyond a blur of fast moving freight skimmers, is the access road.
+Fortunately, the transport tube system extends this far.
+
+From the upper turret of Planet Express, you hear Professor Farnsworth's
+demanding, querulous voice call out to you: "Fry! Where have you been? We're
+about to start a very dangerous mission and we're going to need someone to mop
+up the blood, er, I mean, provide moral support. Get on in here!" He disappears
+back into the tower.
+
+(Your score has gone up by one point.)
+
+--------------------------------------------------------------------------------
+id: 1728874698435
+parent-id: 1728874698434
+command: open door
+--------------------------------------------------------------------------------
+> open door
+With some effort, you are able to roll the door to the side.
+
+--------------------------------------------------------------------------------
+id: 1728874698437
+label: Start of mission conversation
+parent-id: 1728874698435
+command: enter
+--------------------------------------------------------------------------------
+> enter
+You walk in through the circular door.
+
+Conference Room
+The conference room is the central hub of Planet Express, the place where most
+of the griping and chit-chat takes place, outside of the occasional delivery
+mission. A large circular conference table sits in the center of the room,
+loomed over by a huge video display monitor. A metal railing divides this room
+from the hangar. A steep set of stairs lead down into the hangar. The circular
+door leading back out to the access road is open.
+
+Bender, your not-exactly-trusty robot friend and co-enabler, lounges nearby.
+
+You hear the Professor's voice above you: "Good News, Everyone!" His oversized
+chair descends from the upper levels on two telescoping arms, which retreat back
+into the ceiling after depositing him at the head of the conference table. He
+continues: "I have a new and incredibly dangerous mission for you!"
+
+You sit down at the conference table. Bender sits down as well, leaning far back
+into his chair with his feet stretched out on the table.
+
+You could ask about the new mission.
+
+[The room's description mentioned the white lab coat. You could take coat to
+pick it up.]
+
+--------------------------------------------------------------------------------
+id: 1728874698438
+parent-id: 1735783208267
+command: bender, hello
+--------------------------------------------------------------------------------
+> bender, hello
+"Hiya, Bender," you say. "Backatcha, meatbag" he replies.
+
+The Professor stares at you and mumbles something under his breath. It's
+probably best for you to get back to his mission briefing.
+
+--------------------------------------------------------------------------------
+id: 1728874698440
+parent-id: 1728874698438
+command: talk to professor
+--------------------------------------------------------------------------------
+> talk to professor
+You direct your attention, or as much of it as you can muster, back to the
+Professor.
+
+You could ask about the new mission.
+
+--------------------------------------------------------------------------------
+id: 1728874698441
+parent-id: 1728874698440
+command: mission
+--------------------------------------------------------------------------------
+> mission
+"So, Professor, you said something about a mission?" you ask.
+
+"The, oh, what?" The Professor seems confused for a moment, then remembers:
+"Yes, yes, you must make a delivery to Miri Alpha Prime. Very dangerous, I'm
+afraid." Hearing this, Bender asks "Is it the kind of danger only fragile meat
+bags need to worry about, or is it real danger?" The Professor ignores him.
+
+You could ask about the danger or ask about the Mirians.
+
+--------------------------------------------------------------------------------
+id: 1728874698442
+parent-id: 1728874698441
+command: danger
+--------------------------------------------------------------------------------
+> danger
+"What's so dangerous about this mission, Professor?" you ask.
+
+"Oh, the Ellisonium, yes, the bitterest, mostly-stable element in the known
+universe. Who knows what strange and terrible uses the Mirians will use it for!
+Make their deserts bloom? A snap! Change the orbit of their moon? Easy as pie!
+Or wage horrific intergalactic war? It's their choice, but that doesn't matter
+really, it's their payment that's so dangerous."
+
+You could ask about the Mirians or ask about the payment.
+
+--------------------------------------------------------------------------------
+id: 1728874698443
+parent-id: 1728874698442
+command: payment
+--------------------------------------------------------------------------------
+> payment
+You try to tease some useful information out of the old codger. "And their
+payment is?" you ask. You're really hoping the Mirians pay in Slurm.
+
+The Professor becomes agitated and raises his voice. "Just the most dangerous
+machine in the known galaxy... The Guardian of Forever!" He settles down after a
+moment. "I'm getting it for quite a steal, actually. And really, it shouldn't be
+so dangerous as long as you don't go fooling around with it! Maybe you'll listen
+to Leela for once... where is she?"
+
+You could ask about the Guardian of Forever or suggest finding Leela.
+
+--------------------------------------------------------------------------------
+id: 1728874698444
+parent-id: 1728874698443
+command: guardian
+--------------------------------------------------------------------------------
+> guardian
+"So Professor, what exactly is this Guardian thing?"
+
+The Professor responds a bit crankily: "It's a machine that needs to be
+delivered back here to Planet Express." He looks at you. "By a delivery boy."
+
+You could ask about the Mirians or suggest finding Leela.
+
+--------------------------------------------------------------------------------
+id: 1728874698445
+parent-id: 1728874698444
+command: mirians
+--------------------------------------------------------------------------------
+> mirians
+You ask "Well, what are these Mirians like?"
+
+"Oh, they're just ordinary folks," says the Professor, "at least by our
+standards. Ordinary folks who want to ruthlessly command the forces of Nature
+and perhaps commit unspeakable intergalactic crimes. You know, a race of
+scientists much like me. I'm connected to some of the leading Mirians on
+LinkedIn. That's how I knew they were desperate for the Ellisonium in the first
+place!"
+
+You could suggest finding Leela.
+
+--------------------------------------------------------------------------------
+id: 1728874698446
+label: End of Mission Conversation
+parent-id: 1728874698445
+command: leela
+--------------------------------------------------------------------------------
+> leela
+You say "I don't know where Leela is, maybe we should go look for her?"
+
+"Very good. You find Leela, grab this mechanical buffoon," he gestures towards
+Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke,
+"and get that Ellisonium delivered!"
+
+The Professor pushes back from the table, and punches a button on his chair. The
+telescoping arms return, grab the chair, and raise it up into the ceiling. You
+and Bender stand up as well.
+
+--------------------------------------------------------------------------------
+id: 1728874698447
+parent-id: 1728874698446
+command: d
+--------------------------------------------------------------------------------
+> d
+You climb down.
+
+Delivery Ship Hangar
+This very large room, the largest open space inside Planet Express, is where the
+delivery ship is parked. The floor is heavy concrete, capable of supporting the
+great mass of the ship, but still showing stains, scorches, and wear marks. A
+row of lockers lines one side of the hangar, and a steep flight of stairs,
+almost a ladder, leads back to the conference room.
+
+The Planet Express Delivery Ship overshadows everything else in the hangar,
+resting on three huge landing struts. It stands ready for the next mission, or
+the next whim of the Professor.
+
+Off to one side is a cylindrical container, about a foot high, with a clear dome
+on top.
+
+Leela is fussing about the hangar, checking that the ship is ready for its next
+mission.
+
+--------------------------------------------------------------------------------
+id: 1728874698448
+parent-id: 1728874698447
+command: x container
+--------------------------------------------------------------------------------
+> x container
+The container is cylindrical, about a foot high, with a transparent domed top. A
+bright red label on the side reads: "Danger! Ellisonium! Highly Bitter!" Under
+the clear dome you a can see a swirling vortex of glowing purplish dust.
+
+--------------------------------------------------------------------------------
+id: 1728874698449
+label: ellisonium
+parent-id: 1728874698448
+command: open it
+--------------------------------------------------------------------------------
+> open it
+Fortunately for you, the dome of the capsule refuses to open.
+
+--------------------------------------------------------------------------------
+id: 1735774129200
+parent-id: 1728874698441
+command: mirians
+--------------------------------------------------------------------------------
+> mirians
+You ask "Well, what are these Mirians like?"
+
+"Oh, they're just ordinary folks," says the Professor, "at least by our
+standards. Ordinary folks who want to ruthlessly command the forces of Nature
+and perhaps commit unspeakable intergalactic crimes. You know, a race of
+scientists much like me. I'm connected to some of the leading Mirians on
+LinkedIn."
+
+You could ask about the danger.
+
+--------------------------------------------------------------------------------
+id: 1735783208264
+parent-id: 1728874698430
+command: tutorial status
+--------------------------------------------------------------------------------
+> tutorial status
+Tutorial suggestions:
+#inventory (suggested)
+#examine (suggested)
+#take
+#drop (suggested)
+
+--------------------------------------------------------------------------------
+id: 1735783208265
+parent-id: 1735783208264
+command: i
+--------------------------------------------------------------------------------
+> i
+You have a candy-bar wrapper and a can of Slurm. You're wearing your red jacket.
+
+--------------------------------------------------------------------------------
+id: 1735783208266
+parent-id: 1735783208265
+command: tutorial status
+--------------------------------------------------------------------------------
+> tutorial status
+Tutorial suggestions:
+#inventory (performed, suggested)
+#examine (suggested)
+#take
+#drop (suggested)
+
+--------------------------------------------------------------------------------
+id: 1735783208267
+parent-id: 1728874698437
+command: roominfo
+--------------------------------------------------------------------------------
+> roominfo
+#conference-room
+    #pe-door #in
+    #steep-stairs #in
+    #professor #in (animate)
+        #lab-coat #wornby
+        #eyeglasses #wornby
+    #conference-table #in
+    #conference-chair #in
+        #fry #in
+            #wrapper #heldby
+            #slurm #heldby
+            #jacket #wornby
+    #metal-railing #in
+    #display-monitor #in
+    #bender #in (animate)
+
+--------------------------------------------------------------------------------
+id: 1735783208268
+parent-id: 0
+command: tutorial status
+--------------------------------------------------------------------------------
+> tutorial status
+Tutorial suggestions:
+#inventory
+#examine
+#take
+#drop
+
+--------------------------------------------------------------------------------
+id: 1735783208269
+parent-id: 1735783208268
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+[Try inventory (or just I) to see what you are carrying.]
+
+--------------------------------------------------------------------------------
+id: 1735783208270
+parent-id: 1735783208269
+command: tutorial status
+--------------------------------------------------------------------------------
+> tutorial status
+Tutorial suggestions:
+#inventory (suggested)
+#examine
+#take
+#drop
+
+--------------------------------------------------------------------------------
+id: 1735783208271
+parent-id: 1735783208270
+command: i
+--------------------------------------------------------------------------------
+> i
+You have a candy-bar wrapper and a can of Slurm. You're wearing your red jacket.
+
+[Often, there will be interesting objects near by; you can get more information
+about them by examining them; try examine fence (or just x fence).]
+
+--------------------------------------------------------------------------------
+id: 1735783208272
+label: tutorial status
+parent-id: 1735783208271
+command: tutorial status
+--------------------------------------------------------------------------------
+> tutorial status
+Tutorial suggestions:
+#inventory (performed, suggested)
+#examine (suggested)
+#take
+#drop
+

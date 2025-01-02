@@ -1,0 +1,53 @@
+(extension version)
+    (line)
+    Tutorial Mode 0.1 by Howard Lewis Ship
+
+(tutorial mode is enabled)
+
+(understand command [tutorial off])
+
+(perform [tutorial off])
+    (now) ~(tutorial mode is enabled)
+    Tutorial mode has been turned off; you can re-enable tutorials with 
+    (bold) tutorial on (roman).
+
+(understand command [tutorial on])
+
+(perform [tutorial on])
+    (now) (tutorial mode is enabled)
+    Tutorial mode has been turned on; you can turn it off with 
+    (bold) tutorial off (roman).
+
+(tutorial intro)
+    \[This game has a built-in tutorial mode for players new to interactive fiction;
+    it suggests common commands that you can try.  You can turn this off with
+    (bold) tutorial off (roman)
+    or back on with (bold) tutorial on (roman).\]
+
+(late on every tick)
+    (tutorial mode is enabled)
+    (make tutorial suggestion)
+
+(make tutorial suggestion)
+    *(tutorial suggestion $Suggestion)
+    ~($Suggestion has been performed)
+    ~($Suggestion has been suggested)
+    (can perform $Suggestion with $Operand)
+    (par)
+    \[(suggest $Suggestion with $Operand)\]
+    (now) ($Suggestion has been suggested)
+
+(after $Command)
+    *(tutorial suggestion $Suggestion)
+    ~($Suggestion has been performed)
+    ($Suggestion is performed by $Command)
+    (now) ($Suggestion has been performed)
+
+(minimally name $Object)
+    (collect words)
+        (name $Object)
+    (into $NameWords)
+    (last $NameWords $Name)
+    %% We assume the last word is most significant and in a tutorial, will
+    %% be sufficient to identify the object uniquely.
+    $Name

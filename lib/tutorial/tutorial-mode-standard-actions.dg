@@ -1,0 +1,58 @@
+
+%% The order here is important.
+
+#inventory
+(tutorial suggestion *)
+(can perform * with [])
+(suggest * with $)
+    Try (bold) inventory (roman) \(or just 
+    (bold) I (roman) \) to see what you are carrying.
+(* is performed by [inventory])
+
+#examine
+(tutorial suggestion *)
+(can perform * with $Object) 
+    (current player $Player)
+    %% Choose an object in the current room
+    (current room $Room)
+    *($Object is #in $Room)
+    %% Exclude what the player carries
+    ~($Object = $Player)
+    ~($Object has ancestor $Player)
+    *(player can see $Object)
+(suggest * with $Item)
+    Often, there will be interesting objects near by; you can get more information
+    about them by examining them;
+    try (bold) examine (minimally name $Item) (roman)
+    \(or just (bold) x (minimally name $Item) (roman) \).
+(* is performed by [examine])
+    
+#take
+(tutorial suggestion *)
+(can perform * with $Item)
+    (player can see)
+    *(item $Item)
+    ($Item is pristine)
+    ~($Item is hidden)
+    (player can see $Item)
+    ~(out of reach $Item) 
+    (current player $Player)
+    ~($Item has ancestor $Player)
+(suggest * with $Item)
+    The room's description mentioned (the $Item).
+    You could (bold) take (minimally name $Item) (roman) to pick it up.
+(* is performed by [take $])
+
+#drop
+(tutorial suggestion *)
+(can perform * with $Item)
+    (current player $Player)
+    *($Item is $ $Player)
+(suggest * with $Item)
+    You are carrying (the $Item); you can leave it here with
+    (bold) drop (minimally name $Item) (roman). Watch out, though 
+    (space)--(space)
+    in some worlds, there are people or things that move or steal things
+    they stumble upon!
+(* is performed by [drop $])
+

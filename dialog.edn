@@ -8,7 +8,9 @@
          "src/*.dg"]
   :debug ["lib/debug/*.dg"
           "lib/tc/debug/*.dg"
+          "lib/tutorial/debug/*.dg"
           "lib/dialog/debug/stddebug.dg"]
   :library ["lib/*.dg"
             "lib/tc/*.dg"
+            "lib/tutorial/*.dg"
             "lib/dialog/stdlib.dg"]}}

@@ -22,6 +22,8 @@
     (try [look])
     (par)
     Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
+    (par)
+    (tutorial intro)
 
 (scoring enabled)
 (maximum score 3)
