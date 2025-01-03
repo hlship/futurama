@@ -1,5 +1,9 @@
 {:format :zblorb
  :name "futurama"
+  :build
+ {:zblorb
+  {:options ["--cover" "cover.png"
+             "--cover-alt" "Futurama: Lost Episode"]}}
  :sources
  {:main ["src/scenes/*.dg"
          "src/characters/*.dg"

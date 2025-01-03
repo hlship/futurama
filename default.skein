@@ -287,7 +287,7 @@ you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698431
-parent-id: 0
+parent-id: 1735798155169
 command: w
 --------------------------------------------------------------------------------
 > w
@@ -302,8 +302,6 @@ road from you to the west; beyond that is the river. People are everywhere,
 moving north and south along the street and zipping in and out of the transport
 tube system.
 
-[Try inventory (or just i) to see what you are carrying.]
-
 --------------------------------------------------------------------------------
 id: 1728874698432
 parent-id: 1728874698431
@@ -316,9 +314,6 @@ the queue. You duck your head and walk inside the transparent bubble. A raspy,
 elderly voice, barely recognizable as a woman's, announces, "What's your,
 whadjamacallit, destination?"
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine yorkers (or just x yorkers).]
-
 --------------------------------------------------------------------------------
 id: 1728874698433
 parent-id: 1728874698432
@@ -330,9 +325,6 @@ will ya?"
 
 A New New Yorker elbows past you impatiently, announces "Planet Express," and is
 immediately sucked up into the tube system and away.
-
-[You are here in this world too. Try look at me or l self to get an idea of who
-you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698434
@@ -403,12 +395,9 @@ into his chair with his feet stretched out on the table.
 
 You could ask about the new mission.
 
-[The room description mentioned a white lab coat. You could take coat to pick it
-up.]
-
 --------------------------------------------------------------------------------
 id: 1728874698438
-parent-id: 1735783208267
+parent-id: 1728874698437
 command: bender, hello
 --------------------------------------------------------------------------------
 > bender, hello
@@ -584,22 +573,8 @@ LinkedIn."
 You could ask about the danger.
 
 --------------------------------------------------------------------------------
-id: 1735783208264
-parent-id: 1728874698430
-command: tutorial status
---------------------------------------------------------------------------------
-> tutorial status
-Tutorial suggestions:
-#inventory (suggested)
-#examine (suggested)
-#look-self (suggested)
-#take
-#drop
-#wear
-
---------------------------------------------------------------------------------
 id: 1735783208265
-parent-id: 1735783208264
+parent-id: 1728874698430
 command: i
 --------------------------------------------------------------------------------
 > i
@@ -607,41 +582,6 @@ You have a candy-bar wrapper. You're wearing your red jacket.
 
 [The room description mentioned a can of Slurm. You could take can to pick it
 up.]
-
---------------------------------------------------------------------------------
-id: 1735783208266
-parent-id: 1735783208265
-command: tutorial status
---------------------------------------------------------------------------------
-> tutorial status
-Tutorial suggestions:
-#inventory (performed, suggested)
-#examine (suggested)
-#look-self (suggested)
-#take (suggested)
-#drop
-#wear
-
---------------------------------------------------------------------------------
-id: 1735783208267
-parent-id: 1728874698437
-command: roominfo
---------------------------------------------------------------------------------
-> roominfo
-#conference-room
-    #pe-door #in
-    #steep-stairs #in
-    #professor #in (animate)
-        #lab-coat #wornby
-        #eyeglasses #wornby
-    #conference-table #in
-    #conference-chair #in
-        #fry #in
-            #wrapper #heldby
-            #jacket #wornby
-    #metal-railing #in
-    #display-monitor #in
-    #bender #in (animate)
 
 --------------------------------------------------------------------------------
 id: 1735783208269
@@ -678,4 +618,12 @@ Tutorial suggestions:
 #take
 #drop
 #wear
+
+--------------------------------------------------------------------------------
+id: 1735798155169
+parent-id: 0
+command: tutorial off
+--------------------------------------------------------------------------------
+> tutorial off
+Tutorial mode has been turned off; you can re-enable tutorials with tutorial on.
 
