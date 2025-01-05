@@ -19,7 +19,8 @@ Comedy by Howard M. Lewis Ship.
 Release 0. Serial number DEBUG.
 Dialog Interactive Debugger (dgdebug) version 0m/03. Library version 0.46.
 Debugging extension 1.1.
-Threaded Conversation 0.7 by Howard Lewis Ship
+Scenes 0.8 by Howard Lewis Ship
+Threaded Conversation 0.8 by Howard Lewis Ship
 Tutorial Mode 0.1 by Howard Lewis Ship
 
 Alley
@@ -323,8 +324,8 @@ command: say planet express
 The raspy voice responds: "How about announcing someplace with a tube innit,
 will ya?"
 
-A New New Yorker elbows past you impatiently, announces "Planet Express," and is
-immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, announces "Madison Cube Garden,"
+and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1728874698434
@@ -336,10 +337,10 @@ command: planet express
 "I'd like to go to Planet Express," you announce.
 
 With a sound like a great Tupperware container lid being opened, the tube sucks
-you in and hurtles you about New New York. You catch fleeting glances of Madison
-Cube Garden, the Robot Arms Apartments, and Liberty Island before you are spat
-out of the reversal chamber at Planet Express. You roll gracelessly back onto
-your feet and look around.
+you in and hurtles you about New New York. You catch fleeting glances of the
+Robot Arms Apartments, Liberty Island, and Madison Cube Garden before you are
+spat out of the reversal chamber at Planet Express. You roll gracelessly back
+onto your feet and look around.
 
 Planet Express
 You are standing outside Professor Farnsworth's curious tower of science and

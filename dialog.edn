@@ -5,16 +5,15 @@
   {:options ["--cover" "cover.png"
              "--cover-alt" "Futurama: Lost Episode"]}}
  :sources
- {:main ["src/scenes/*.dg"
-         "src/characters/*.dg"
-         "src/locations/*.dg"
-         "src/actions/*.dg"
-         "src/*.dg"]
-  :debug ["lib/debug/*.dg"
-          "lib/tc/debug/*.dg"
-          "lib/tutorial/debug/*.dg"
-          "lib/dialog/debug/stddebug.dg"]
-  :library ["lib/*.dg"
-            "lib/tc/*.dg"
-            "lib/tutorial/*.dg"
-            "lib/dialog/stdlib.dg"]}}
+ {:main ["src/scenes"
+         "src/characters"
+         "src/locations"
+         "src/actions"
+         "src"]
+  :debug ["lib/tc/debug"
+          "lib/tutorial/debug"
+          "lib/dialog/debug"]
+  :library ["lib"
+            "lib/tc"
+            "lib/tutorial"
+            "lib/dialog"]}}

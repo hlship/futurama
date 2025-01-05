@@ -2,17 +2,17 @@
 
 (understand command [debug scenes])
 (perform [debug scenes])
-    (now) (scene debugging enabled)
     Scene debugging enabled.
+    (now) (scene debugging enabled)
 
 (understand command [debug scenes off])
 (perform [debug scenes off])
-    (now) ~(scene debugging enabled)
     Scene debugging disabled.
+    (now) ~(scene debugging enabled)
 
-(understand command [scene info])
+(understand command [sceneinfo])
 
-(perform [scene info])
+(perform [sceneinfo])
     (scene info)
 
 (scene info)
