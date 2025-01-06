@@ -312,11 +312,6 @@ road from you to the west; beyond that is the river. People are everywhere,
 moving north and south along the street and zipping in and out of the transport
 tube system.
 
-[The world is not on a perfect grid; sometimes you go east, and return to where
-you started by going south (not west). Sometimes a direction is one-way trip,
-and you have to find a entirely different route back to where you started, if
-that is even possible.]
-
 --------------------------------------------------------------------------------
 id: 1728874698432
 parent-id: 1728874698431
@@ -642,4 +637,24 @@ command: tutorial off
 --------------------------------------------------------------------------------
 > tutorial off
 Tutorial mode has been turned off; you can re-enable tutorials with tutorial on.
+
+--------------------------------------------------------------------------------
+id: 1736203161331
+label: No after narrate if suggestion performed w/o being suggested
+parent-id: 0
+command: west
+--------------------------------------------------------------------------------
+> west
+You walk west.
+
+Access Road
+You are next to a wide access road frequented by heavy freight skimmers moving
+north and south at high speed. From here you can see a portion of the Manhattan
+skyline, all glittering spires and transport tubes endlessly flowing with
+passengers. You can see the transport tube servicing Planet Express across the
+road from you to the west; beyond that is the river. People are everywhere,
+moving north and south along the street and zipping in and out of the transport
+tube system.
+
+[Try inventory (or just i) to see what you are carrying.]
 

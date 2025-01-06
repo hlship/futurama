@@ -45,6 +45,9 @@
     ~($Suggestion has been performed)
     ($Suggestion is performed by $Command)
     (now) ($Suggestion has been performed)
+    %% Only want to narrate the after if the suggestion has been made; otherwise
+    %% the after is a non-sequitor.
+    ($Suggestion has been suggested)
     (exhaust) (narrate after suggestion $Suggestion)
 
 %% Optional rule for objects that want to override how (minimally name $) operates.
