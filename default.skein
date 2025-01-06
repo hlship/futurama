@@ -89,8 +89,8 @@ command: drop slurm
 > drop slurm
 You're not holding the can of Slurm.
 
-[You are here in this world too. Try look at me or l self to get an idea of who
-you are.]
+[You are present as part of this world too. Try look at me or l self to get an
+idea of who you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698408
@@ -109,6 +109,15 @@ command: i
 --------------------------------------------------------------------------------
 > i
 You have a can of Slurm and a candy-bar wrapper. You're wearing your red jacket.
+
+[The world consists of distinct locations your can visit. You started in Alley,
+but could go west (or just west) to see move to a different location.
+
+Direction names include the eight cardinal directions (north, northeast, east,
+etc.) as well as up, down, in, and out.
+
+Finally, you can abbreviate most directions: n for north, ne for northeast, and
+so forth.]
 
 --------------------------------------------------------------------------------
 id: 1728874698410
@@ -283,8 +292,8 @@ command: attack owls
 The owls have learned to be cautious, and studiously keep themselves out of
 reach.
 
-[You are here in this world too. Try look at me or l self to get an idea of who
-you are.]
+[You are present as part of this world too. Try look at me or l self to get an
+idea of who you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698431
@@ -302,6 +311,11 @@ passengers. You can see the transport tube servicing Planet Express across the
 road from you to the west; beyond that is the river. People are everywhere,
 moving north and south along the street and zipping in and out of the transport
 tube system.
+
+[The world is not on a perfect grid; sometimes you go east, and return to where
+you started by going south (not west). Sometimes a direction is one-way trip,
+and you have to find a entirely different route back to where you started, if
+that is even possible.]
 
 --------------------------------------------------------------------------------
 id: 1728874698432
@@ -609,9 +623,9 @@ about them by examining them; try examine fence (or just x fence).]
 id: 1735783208272
 label: tutorial status
 parent-id: 1735783208271
-command: tutorial status
+command: tutorialinfo
 --------------------------------------------------------------------------------
-> tutorial status
+> tutorialinfo
 Tutorial suggestions:
 #inventory (performed, suggested)
 #examine (suggested)
@@ -619,6 +633,7 @@ Tutorial suggestions:
 #take
 #drop
 #wear
+#leave
 
 --------------------------------------------------------------------------------
 id: 1735798155169

@@ -27,12 +27,11 @@
     \(or just (bold) x (minimally name $Item) (roman) \).
 (* is performed by [examine])
     
-
 #look-self
 (tutorial suggestion *)
 (can perform * with [])
 (suggest * with $)
-    You are here in this world too. Try 
+    You are present as part of this world too. Try 
     (bold)look at me(roman)
     or (bold)l self(roman)
     to get an idea of who you are.
@@ -80,5 +79,39 @@
     (The $Item) is a piece of clothing; you can
     (bold) wear (minimally name $Item) (roman) to put it on.
 (* is performed by [wear $])
+
+#leave
+(tutorial suggestion *)
+(can perform * with $Direction)
+    (current room $Room)
+    (from $Room go $Direction to $)
+(suggest * with $Direction)
+    (current room $Room)
+    The world consists of distinct locations your can visit.
+    You started in (name $Room), but could
+    (bold)go (name $Direction)(roman)
+    \( or just (name $Direction) \) to see 
+    move to a different location.
+    (par)
+    Direction names include the eight cardinal directions \( 
+    (bold)north (roman), 
+    (bold)northeast(roman), 
+    (bold)east(roman), etc.\)
+    as well as (bold) up (roman),
+    (bold)down(roman),
+    (bold)in(roman), and
+    (bold)out(roman)
+    .
+    (par)
+    Finally, you can abbreviate most directions:
+    (bold)n(roman) for (bold)north(roman),
+    (bold)ne(roman) for (bold)northeast(roman), and so forth.
+(* is performed by [go $])
+(narrate after suggestion *)
+    (par)
+    \[The world is not on a perfect grid; sometimes you go east, and return to
+    where you started by going south \(not west\).  
+    Sometimes a direction is one-way trip, and you have to find a entirely different
+    route back to where you started, if that is even possible.\]
 
 

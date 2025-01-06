@@ -1,6 +1,6 @@
-(understand command [tutorial status])
+(understand command [tutorialinfo])
 
-(perform [tutorial status])
+(perform [tutorialinfo])
     Tutorial suggestions:
     (exhaust)  {
         *(tutorial suggestion $Suggestion)

@@ -29,6 +29,7 @@
     (make tutorial suggestion)
 
 (interface (can perform $<Suggestion with $>Operand))
+(interface (narrate after suggestion $<Suggestion))
 
 (make tutorial suggestion)
     *(tutorial suggestion $Suggestion)
@@ -44,6 +45,7 @@
     ~($Suggestion has been performed)
     ($Suggestion is performed by $Command)
     (now) ($Suggestion has been performed)
+    (exhaust) (narrate after suggestion $Suggestion)
 
 %% Optional rule for objects that want to override how (minimally name $) operates.
 
@@ -60,6 +62,6 @@
         (name $Object)
     (into $NameWords)
     (last $NameWords $Name)
-    %% We assume the last word is most significant and in a tutorial, will
+    %% We assume the last word is most significant, and in a tutorial, will
     %% be sufficient to identify the object uniquely.
     $Name
