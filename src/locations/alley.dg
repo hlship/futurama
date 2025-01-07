@@ -34,10 +34,11 @@
 (name *) owls
 (dict *) owl
 (pair *)
-(prevent [$Verb | $Words])
-    ~($Verb = @examine)
-    (* is one of $Words)
+(out of reach *)
+(when * is out of reach)
     The owls have learned to be cautious, and studiously keep themselves out of reach.
+(descr *)
+    Just indistinct blurs of grey feathers, far up out of reach.
 
 #dumpster
 (name *) grey dumpster
@@ -87,7 +88,7 @@
 (* is #on #dumpster)
 (descr *)
     An empty can of Slurm soft drink.
-    (if) (* has ancestor #fry)
+    (if) (* is #heldby #fry)
     (then)
         You hold onto it with a desperate junkie's grip.
         "Maybe it has just one more delicious drop?" you think and

@@ -266,7 +266,7 @@ parent-id: 0
 command: x owls
 --------------------------------------------------------------------------------
 > x owls
-They seem to be harmless.
+Just indistinct blurs of grey feathers, far up out of reach.
 
 [Try inventory (or just i) to see what you are carrying.]
 
@@ -279,9 +279,6 @@ command: take owls
 The owls have learned to be cautious, and studiously keep themselves out of
 reach.
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine fence (or just x fence).]
-
 --------------------------------------------------------------------------------
 id: 1728874698430
 label: owls are not interactive
@@ -291,9 +288,6 @@ command: attack owls
 > attack owls
 The owls have learned to be cautious, and studiously keep themselves out of
 reach.
-
-[You are present as part of this world too. Try look at me or l self to get an
-idea of who you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698431
@@ -590,8 +584,8 @@ command: i
 > i
 You have a candy-bar wrapper. You're wearing your red jacket.
 
-[The room description mentioned a can of Slurm. You could take can to pick it
-up.]
+[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try examine fence (or just x fence).]
 
 --------------------------------------------------------------------------------
 id: 1735783208269
