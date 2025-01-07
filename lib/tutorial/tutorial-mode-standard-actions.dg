@@ -23,8 +23,8 @@
 (suggest * with $Item)
     Often, there will be interesting objects nearby; you can get more information
     about them by examining them;
-    try (bold) examine (minimally name $Item) (roman)
-    \(or just (bold) x (minimally name $Item) (roman) \).
+    try (bold) examine (suggestible name $Item) (roman)
+    \(or just (bold) x (suggestible name $Item) (roman) \).
 (* is performed by [examine])
     
 #look-self
@@ -52,7 +52,7 @@
     (else)
         There's (a $Item) nearby.
     (endif)
-    You could (bold) take (minimally name $Item) (roman) to pick it up.
+    You could (bold) take (suggestible name $Item) (roman) to pick it up.
 (* is performed by [take $])
 
 #drop
@@ -63,7 +63,7 @@
     *($Item is $ $Player)
 (suggest * with $Item)
     You are carrying (a $Item); you can leave it here with
-    (bold) drop (minimally name $Item) (roman).
+    (bold) drop (suggestible name $Item) (roman).
 (* is performed by [drop $])
 
 #wear
@@ -77,7 +77,7 @@
     ~(out of reach $Item) 
 (suggest * with $Item)
     (The $Item) is a piece of clothing; you can
-    (bold) wear (minimally name $Item) (roman) to put it on.
+    (bold) wear (suggestible name $Item) (roman) to put it on.
 (* is performed by [wear $])
 (narrate after suggestion *)
     We try to be (italic)kind(roman); 
@@ -126,7 +126,7 @@
 (suggest * with $Container)
     Sometimes, you move around the world not by walking in any particular direction,
     but by going inside some of the things you find.  For example,
-    you can (bold)enter (minimally name $Container)(roman)
+    you can (bold)enter (suggestible name $Container)(roman)
     to see what's inside (the $Container).
 (* is performed by [enter $])
 (narrate after suggestion *)

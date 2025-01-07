@@ -48,9 +48,9 @@
     ($Suggestion is performed by $Command)
     (now) ($Suggestion has been performed)
     %% Only want to narrate the after if the suggestion has been made; otherwise
-    %% the after is a non-sequitor.
+    %% the after is a non-sequitur.
     ($Suggestion has been suggested)
-    %% This is clumsy, by keeps each narrate after from having to supply the (par)
+    %% This is clumsy, but keeps each narrate after from having to supply the (par)
     %% and brackets.
     (collect words)
        (narrate after suggestion $Suggestion)
@@ -63,17 +63,11 @@
     (now) (just narrated after suggestion)
 
 
-%% Optional rule for objects that want to override how (minimally name $) operates.
+%% Optional rule for objects that want to override how (suggestible name $) operates.
 
-(interface (command name <$Object))
+(interface (suggestible name <$Object))
 
-(command name $)
-    (fail)
-
-(minimally name $Object)
-    (command name $Object)
-
-(minimally name $Object)
+(suggestible name $Object)
     (collect words)
         (name $Object)
     (into $NameWords)

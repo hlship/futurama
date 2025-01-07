@@ -83,7 +83,7 @@
 (potable *)
 %% this name is used when tutorial is presenting a command involving the item,
 %% otherwise it would be 'Slurm' (last word in name)
-(command name *) can
+(suggestible name *) can
 (* is #on #dumpster)
 (descr *)
     An empty can of Slurm soft drink.
