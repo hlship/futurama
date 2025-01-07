@@ -10,6 +10,7 @@
 
 (annotate (consultable $) with @consultable)
 (annotate (door $) with @door)
+(annotate ($ blocks passage) with [blocks passage])
 (annotate (edible $) with @edible)
 (annotate (in-seat $) with [in seat])
 (annotate (intangible $) with @intangible)
@@ -18,6 +19,7 @@
 (annotate (not here $) with [not here])
 (annotate (on-seat $) with [on seat])
 (annotate (openable $) with @openable)
+(annotate (opaque $) with @opaque)
 (annotate (out of reach $) with [out of reach])
 (annotate (potable $) with @potable)
 (annotate (pushable $) with @pushable)

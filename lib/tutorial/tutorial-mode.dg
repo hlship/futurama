@@ -61,7 +61,7 @@
     (collect words)
        (narrate after suggestion $Suggestion)
     (into $Output)
-    ~($Output = [])
+    ~(empty $Output)
     (par)
     \[
     (narrate after suggestion $Suggestion)

@@ -111,7 +111,7 @@ command: i
 You have a can of Slurm and a candy-bar wrapper. You're wearing your red jacket.
 
 [The world consists of distinct locations your can visit. You started in Alley,
-but could go west (or just west) to see move to a different location.
+but could go west (or just west) to move to a different location.
 
 Direction names include the eight cardinal directions (north, northeast, east,
 etc.) as well as up, down, in, and out.
@@ -616,7 +616,7 @@ command: tutorialinfo
 --------------------------------------------------------------------------------
 > tutorialinfo
 Tutorial suggestions:
-#inventory (performed, suggested)
+#inventory (suggested, performed)
 #examine (suggested)
 #look-self
 #take
@@ -694,7 +694,7 @@ command: z
 A moment slips away.
 
 [The world consists of distinct locations your can visit. You started in Alley,
-but could go west (or just west) to see move to a different location.
+but could go west (or just west) to move to a different location.
 
 Direction names include the eight cardinal directions (north, northeast, east,
 etc.) as well as up, down, in, and out.
