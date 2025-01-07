@@ -79,6 +79,10 @@
     (The $Item) is a piece of clothing; you can
     (bold) wear (minimally name $Item) (roman) to put it on.
 (* is performed by [wear $])
+(narrate after suggestion *)
+    We try to be (italic)kind(roman); 
+    if an object is nearby but not actually in your inventory, we'll automatically try to pick it up
+    before wearing it. This applies to most verbs.
 
 #leave
 (tutorial suggestion *)
@@ -108,10 +112,24 @@
     (bold)ne(roman) for (bold)northeast(roman), and so forth.
 (* is performed by [go $])
 (narrate after suggestion *)
-    (par)
-    \[The world is not on a perfect grid; sometimes you go east, and return to
+    The world is not on a perfect grid; sometimes you go east, and return to
     where you started by going south \(not west\).  
-    Sometimes a direction is one-way trip, and you have to find a entirely different
-    route back to where you started, if that is even possible.\]
+    Sometimes a direction is a one-way trip, and you have to find a entirely different
+    route back to where you started, if that is even possible.
+
+#enter 
+(tutorial suggestion *)
+(can perform * with $Container)
+    (current room $Room)
+    *($Container is #in $Room)
+    (actor container $Container)
+(suggest * with $Container)
+    Sometimes, you move around the world not by walking in any particular direction,
+    but by going inside some of the things you find.  For example,
+    you can (bold)enter (minimally name $Container)(roman)
+    to see what's inside (the $Container).
+(* is performed by [enter $])
+(narrate after suggestion *)
+    If you can (bold)enter(roman), you can probably (bold)leave(roman) as well.
 
 

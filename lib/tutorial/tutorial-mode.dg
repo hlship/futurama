@@ -32,6 +32,7 @@
 (interface (narrate after suggestion $<Suggestion))
 
 (make tutorial suggestion)
+    ~(just narrated after suggestion)
     *(tutorial suggestion $Suggestion)
     ~($Suggestion has been performed)
     ~($Suggestion has been suggested)
@@ -41,6 +42,7 @@
     (now) ($Suggestion has been suggested)
 
 (after $Command)
+    (now) ~(just narrated after suggestion)
     *(tutorial suggestion $Suggestion)
     ~($Suggestion has been performed)
     ($Suggestion is performed by $Command)
@@ -48,7 +50,18 @@
     %% Only want to narrate the after if the suggestion has been made; otherwise
     %% the after is a non-sequitor.
     ($Suggestion has been suggested)
-    (exhaust) (narrate after suggestion $Suggestion)
+    %% This is clumsy, by keeps each narrate after from having to supply the (par)
+    %% and brackets.
+    (collect words)
+       (narrate after suggestion $Suggestion)
+    (into $Output)
+    ~($Output = [])
+    (par)
+    \[
+    (narrate after suggestion $Suggestion)
+    \]
+    (now) (just narrated after suggestion)
+
 
 %% Optional rule for objects that want to override how (minimally name $) operates.
 

@@ -1,0 +1,10 @@
+%% These will eventually migrate to the dialog-libs repo
+
+(annotate $Container with @enterable)
+    (actor container $Container)
+    ~(room $Container)
+
+(annotate $This with @attracted)
+    (current room $Room) %% must come first
+    ($Room attracts $This)
+    

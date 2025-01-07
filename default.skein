@@ -629,6 +629,7 @@ Tutorial suggestions:
 #drop
 #wear
 #leave
+#enter
 
 --------------------------------------------------------------------------------
 id: 1735798155169
@@ -657,4 +658,101 @@ moving north and south along the street and zipping in and out of the transport
 tube system.
 
 [Try inventory (or just i) to see what you are carrying.]
+
+--------------------------------------------------------------------------------
+id: 1736213165089
+parent-id: 1735783208271
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+[You are present as part of this world too. Try look at me or l self to get an
+idea of who you are.]
+
+--------------------------------------------------------------------------------
+id: 1736213165090
+parent-id: 1736213165089
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+[The room description mentioned a can of Slurm. You could take can to pick it
+up.]
+
+--------------------------------------------------------------------------------
+id: 1736213165091
+parent-id: 1736213165090
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+[You are carrying a candy-bar wrapper; you can leave it here with drop wrapper.]
+
+--------------------------------------------------------------------------------
+id: 1736213165092
+parent-id: 1736213165091
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+[The world consists of distinct locations your can visit. You started in Alley,
+but could go west (or just west) to see move to a different location.
+
+Direction names include the eight cardinal directions (north, northeast, east,
+etc.) as well as up, down, in, and out.
+
+Finally, you can abbreviate most directions: n for north, ne for northeast, and
+so forth.]
+
+--------------------------------------------------------------------------------
+id: 1736213165093
+parent-id: 1736213165092
+command: west
+--------------------------------------------------------------------------------
+> west
+You walk west.
+
+Access Road
+You are next to a wide access road frequented by heavy freight skimmers moving
+north and south at high speed. From here you can see a portion of the Manhattan
+skyline, all glittering spires and transport tubes endlessly flowing with
+passengers. You can see the transport tube servicing Planet Express across the
+road from you to the west; beyond that is the river. People are everywhere,
+moving north and south along the street and zipping in and out of the transport
+tube system.
+
+[The world is not on a perfect grid; sometimes you go east, and return to where
+you started by going south (not west). Sometimes a direction is a one-way trip,
+and you have to find a entirely different route back to where you started, if
+that is even possible.]
+
+--------------------------------------------------------------------------------
+id: 1736213165094
+parent-id: 1736213165093
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+[Sometimes, you move around the world not by walking in any particular
+direction, but by going inside some of the things you find. For example, you can
+enter bubble to see what's inside the Transport Tube Entrance Bubble.]
+
+--------------------------------------------------------------------------------
+id: 1736213165095
+parent-id: 1736213165094
+command: enter bubble
+--------------------------------------------------------------------------------
+> enter bubble
+You shuffle on to the end of the fast moving line. The New New Yorkers ahead of
+you flit off to all parts of the city. Before you know it, you're at the head of
+the queue. You duck your head and walk inside the transparent bubble. A raspy,
+elderly voice, barely recognizable as a woman's, announces, "What's your,
+whadjamacallit, destination?"
+
+[If you can enter, you can probably leave as well.]
 

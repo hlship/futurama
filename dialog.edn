@@ -10,7 +10,8 @@
          "src/locations"
          "src/actions"
          "src"]
-  :debug ["lib/hls/debug"
+  :debug ["lib/debug"
+          "lib/hls/debug"
           "lib/tutorial/debug"
           "lib/dialog/debug"]
   :library ["lib"
