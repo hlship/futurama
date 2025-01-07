@@ -9,5 +9,5 @@
         (output annotations for $Suggestion)
     }
 
-(annotate ($ has been performed) with @performed)
 (annotate ($ has been suggested) with @suggested)
+(annotate ($ has been performed) with @performed)

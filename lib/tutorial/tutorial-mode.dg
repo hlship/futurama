@@ -9,20 +9,20 @@
 (perform [tutorial off])
     (now) ~(tutorial mode is enabled)
     Tutorial mode has been turned off; you can re-enable tutorials with 
-    (bold) tutorial on (roman).
+    (suggest command {tutorial on}).
 
 (understand command [tutorial on])
 
 (perform [tutorial on])
     (now) (tutorial mode is enabled)
     Tutorial mode has been turned on; you can turn it off with 
-    (bold) tutorial off (roman).
+    (suggest command {tutorial off}).
 
 (tutorial intro)
     \[This game has a built-in tutorial mode for players new to interactive fiction;
     it suggests common commands that you can try.  You can turn this off with
-    (bold) tutorial off (roman)
-    or back on with (bold) tutorial on (roman).\]
+    (suggest command{ tutorial off })
+    or back on with (suggest command {tutorial on}).\]
 
 (late on every tick)
     (tutorial mode is enabled)
@@ -30,6 +30,12 @@
 
 (interface (can perform $<Suggestion with $>Operand))
 (interface (narrate after suggestion $<Suggestion))
+
+(suggest command $Closure)
+    (bold)
+    %% TODO: Find a way to output the closure in all caps
+    (query $Closure)
+    (roman)
 
 (make tutorial suggestion)
     ~(just narrated after suggestion)

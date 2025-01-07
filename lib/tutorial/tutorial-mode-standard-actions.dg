@@ -5,8 +5,8 @@
 (tutorial suggestion *)
 (can perform * with [])
 (suggest * with $)
-    Try (bold) inventory (roman) \(or just 
-    (bold) i (roman) \) to see what you are carrying.
+    Try (suggest command {inventory})\(or just 
+    (suggest command {i})\) to see what you are carrying.
 (* is performed by [inventory])
 
 #examine
@@ -23,8 +23,8 @@
 (suggest * with $Item)
     Often, there will be interesting objects nearby; you can get more information
     about them by examining them;
-    try (bold) examine (suggestible name $Item) (roman)
-    \(or just (bold) x (suggestible name $Item) (roman) \).
+    try (suggest command {examine (suggestible name $Item)})
+    \(or just (suggest command { x (suggestible name $Item)}) \).
 (* is performed by [examine])
     
 #look-self
@@ -32,8 +32,8 @@
 (can perform * with [])
 (suggest * with $)
     You are present as part of this world too. Try 
-    (bold)look at me(roman)
-    or (bold)l self(roman)
+    (suggest command {look at me})
+    or (suggest command {l self})
     to get an idea of who you are.
 
 #take
@@ -52,7 +52,7 @@
     (else)
         There's (a $Item) nearby.
     (endif)
-    You could (bold) take (suggestible name $Item) (roman) to pick it up.
+    You could (suggest command {take (suggestible name $Item)})to pick it up.
 (* is performed by [take $])
 
 #drop
@@ -63,7 +63,7 @@
     *($Item is $ $Player)
 (suggest * with $Item)
     You are carrying (a $Item); you can leave it here with
-    (bold) drop (suggestible name $Item) (roman).
+    (suggest command {drop (suggestible name $Item) }).
 (* is performed by [drop $])
 
 #wear
@@ -77,7 +77,7 @@
     ~(out of reach $Item) 
 (suggest * with $Item)
     (The $Item) is a piece of clothing; you can
-    (bold) wear (suggestible name $Item) (roman) to put it on.
+    (suggest command {wear (suggestible name $Item)})to put it on.
 (* is performed by [wear $])
 (narrate after suggestion *)
     We try to be (italic)kind(roman); 
@@ -93,23 +93,24 @@
     (current room $Room)
     The world consists of distinct locations your can visit.
     You started in (name $Room), but could
-    (bold)go (name $Direction)(roman)
-    \( or just (name $Direction) \) to see 
+    (suggest command {go (name $Direction)})
+    \( or just 
+    (suggest command { (name $Direction) }) \) to 
     move to a different location.
     (par)
     Direction names include the eight cardinal directions \( 
-    (bold)north (roman), 
-    (bold)northeast(roman), 
-    (bold)east(roman), etc.\)
-    as well as (bold) up (roman),
-    (bold)down(roman),
-    (bold)in(roman), and
-    (bold)out(roman)
+    (suggest command {north }), 
+    (suggest command {northeast}), 
+    (suggest command {east}), etc.\)
+    as well as (suggest command {up }),
+    (suggest command {down}),
+    (suggest command {in}), and
+    (suggest command {out})
     .
     (par)
     Finally, you can abbreviate most directions:
-    (bold)n(roman) for (bold)north(roman),
-    (bold)ne(roman) for (bold)northeast(roman), and so forth.
+    (suggest command {n}) for (suggest command {north}),
+    (suggest command {ne}) for (suggest command {northeast}), and so forth.
 (* is performed by [go $])
 (narrate after suggestion *)
     The world is not on a perfect grid; sometimes you go east, and return to
@@ -126,10 +127,10 @@
 (suggest * with $Container)
     Sometimes, you move around the world not by walking in any particular direction,
     but by going inside some of the things you find.  For example,
-    you can (bold)enter (suggestible name $Container)(roman)
+    you can (suggest command {enter (suggestible name $Container)})
     to see what's inside (the $Container).
 (* is performed by [enter $])
 (narrate after suggestion *)
-    If you can (bold)enter(roman), you can probably (bold)leave(roman) as well.
+    If you can (suggest command {enter}), you can probably (suggest command {leave})as well.
 
 
