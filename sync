@@ -1,0 +1,10 @@
+#!/bin/bash
+# Execute this from root directory.  You must have watchexec installed.
+set -exuo pipefail
+
+
+watchexec  \
+   --project-origin . \
+   --watch ../dialog-libs/lib/hls \
+   --debounce=500ms \
+   cp -Rf ../dialog-libs/lib/hls lib

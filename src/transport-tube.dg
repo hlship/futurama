@@ -32,6 +32,7 @@
 #people
 (name *) New New Yorkers
 (dict *) people crowd mob
+(command word *) people
 ((tube location $) attracts *)
 (plural *)
 (descr *)

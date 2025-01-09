@@ -19,9 +19,7 @@ Comedy by Howard M. Lewis Ship.
 Release 0. Serial number DEBUG.
 Dialog Interactive Debugger (dgdebug) version 0m/03. Library version 0.46.
 Debugging extension 1.1.
-Scenes 0.8 by Howard Lewis Ship
-Threaded Conversation 0.8 by Howard Lewis Ship
-Tutorial Mode 0.1 by Howard Lewis Ship
+Dialog Libs 0.8 by Howard Lewis Ship
 
 Alley
 A short alley not far from Planet Express, notable for being dark and dingy in
@@ -35,7 +33,7 @@ can of Slurm!
 Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
 [This game has a built-in tutorial mode for players new to interactive fiction;
-it suggests common commands that you can try. You can turn this off with
+it suggests common commands that you can try. You can turn this off with 
 tutorial off or back on with tutorial on.]
 
 --------------------------------------------------------------------------------
@@ -615,7 +613,8 @@ parent-id: 1735783208271
 command: tutorialinfo
 --------------------------------------------------------------------------------
 > tutorialinfo
-Tutorial suggestions:
+Tutorial mode (enabled) suggestions:
+#disable-tutorial (suggested)
 #inventory (suggested, performed)
 #examine (suggested)
 #look-self
@@ -733,7 +732,7 @@ command: z
 A moment slips away.
 
 [Sometimes, you move around the world not by walking in any particular
-direction, but by going inside some of the things you find. For example, you can
+direction, but by going inside some of the things you find. For example, you can 
 enter bubble to see what's inside the Transport Tube Entrance Bubble.]
 
 --------------------------------------------------------------------------------
@@ -748,5 +747,91 @@ the queue. You duck your head and walk inside the transparent bubble. A raspy,
 elderly voice, barely recognizable as a woman's, announces, "What's your,
 whadjamacallit, destination?"
 
-[If you can enter, you can probably leave as well.]
+[If you can enter something, you can probably leave as well.]
+
+--------------------------------------------------------------------------------
+id: 1736298201758
+parent-id: 1728874698405
+command: tutorialinfo
+--------------------------------------------------------------------------------
+> tutorialinfo
+Tutorial mode (enabled) suggestions:
+#disable-tutorial (suggested)
+#inventory (suggested)
+#examine (suggested)
+#look-self
+#take
+#drop
+#wear
+#leave
+#enter
+
+--------------------------------------------------------------------------------
+id: 1736359072478
+parent-id: 1736203161331
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try examine people (or just x people).]
+
+--------------------------------------------------------------------------------
+id: 1736359072479
+parent-id: 1736359072478
+command: enter bubble
+--------------------------------------------------------------------------------
+> enter bubble
+You shuffle on to the end of the fast moving line. The New New Yorkers ahead of
+you flit off to all parts of the city. Before you know it, you're at the head of
+the queue. You duck your head and walk inside the transparent bubble. A raspy,
+elderly voice, barely recognizable as a woman's, announces, "What's your,
+whadjamacallit, destination?"
+
+[You are present as part of this world too. Try look at me or l self to get an
+idea of who you are.]
+
+--------------------------------------------------------------------------------
+id: 1736359072480
+parent-id: 1728874698409
+command: tutorial off
+--------------------------------------------------------------------------------
+> tutorial off
+Tutorial mode has been turned off; you can re-enable tutorials with tutorial on.
+
+--------------------------------------------------------------------------------
+id: 1736359072481
+parent-id: 1736359072480
+command: w
+--------------------------------------------------------------------------------
+> w
+You walk west.
+
+Access Road
+You are next to a wide access road frequented by heavy freight skimmers moving
+north and south at high speed. From here you can see a portion of the Manhattan
+skyline, all glittering spires and transport tubes endlessly flowing with
+passengers. You can see the transport tube servicing Planet Express across the
+road from you to the west; beyond that is the river. People are everywhere,
+moving north and south along the street and zipping in and out of the transport
+tube system.
+
+--------------------------------------------------------------------------------
+id: 1736359072482
+label: narrate after skipped if performed w/ tutorial disabled
+parent-id: 1736359072481
+command: tutorialinfo
+--------------------------------------------------------------------------------
+> tutorialinfo
+Tutorial mode (disabled) suggestions:
+#disable-tutorial (suggested, performed)
+#inventory (performed)
+#examine (suggested)
+#look-self (suggested)
+#take (performed)
+#drop (suggested)
+#wear
+#leave (suggested, performed)
+#enter
 

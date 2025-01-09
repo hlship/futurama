@@ -12,9 +12,7 @@
          "src"]
   :debug ["lib/debug"
           "lib/hls/debug"
-          "lib/tutorial/debug"
           "lib/dialog/debug"]
   :library ["lib"
             "lib/hls"
-            "lib/tutorial"
             "lib/dialog"]}}
