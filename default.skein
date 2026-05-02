@@ -3,25 +3,27 @@ seed: 5972
 id: 0
 label: START
 --------------------------------------------------------------------------------
-
+[1m[36mDialog Interactive Debugger (dgdebug) version 1a/01.[0m[36m
+Type @help at the game prompt for a brief introduction.
+[0m
 
 [Futurama: Honk If You Like Bytecode]
 
 You wish you could say this is the first time you've woken up in a dark, dirty
 alley... really, you wish you could say for sure. You can't seem to remember.
 You feel a bit disoriented, and your tortured neurons cough up just a couple of
-memories... you were out on a bender, or out with a Bender? A loud buzzing sound
+memories... you were out on a bender, or out [0m[4mwith[0m a Bender? A loud buzzing sound
 startles you out of your reverie, as a fast moving, colorful blur whizzes by
 overhead.
 
-Futurama: Untitled Episode
-Comedy by Howard M. Lewis Ship.
+[0m[1mFuturama: Untitled Episode
+[0mComedy by Howard M. Lewis Ship.
 Release 0. Serial number DEBUG.
-Dialog Interactive Debugger (dgdebug) version 0m/03. Library version 0.46.
+Dialog Interactive Debugger (dgdebug) version 1a/01. Library version 1.1.0.
 Debugging extension 1.1.
-Dialog Libs 0.8 by Howard Lewis Ship
+Dialog extensions 0.8 by Howard Lewis Ship
 
-Alley
+[0m[1mAlley[0m
 A short alley not far from Planet Express, notable for being dark and dingy in
 an otherwise bright and colorful city. The alley is divided in two by a tall
 fence, topped with razor wire, to the east. A busy street is just outside the
@@ -33,7 +35,7 @@ can of Slurm!
 Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
 [This game has a built-in tutorial mode for players new to interactive fiction;
-it suggests common commands that you can try. You can turn this off with 
+it suggests common commands that you can try. You can turn this off with
 tutorial off or back on with tutorial on.]
 
 --------------------------------------------------------------------------------
@@ -46,16 +48,16 @@ Thanks for your support!
 
 [Try inventory (or just i) to see what you are carrying.]
 
-(Your score has gone up by one point.)
-
+[0m[4m(Your score has gone up by one point.)
+[0m
 --------------------------------------------------------------------------------
 id: 1728874698404
 parent-id: 1728874698403
 command: score
 --------------------------------------------------------------------------------
 > score
-You currently have 1 point out of a maximum of 3.
-
+[0m[4mYou currently have 1 point out of a maximum of 3.
+[0m
 --------------------------------------------------------------------------------
 id: 1728874698405
 label: honk for points
@@ -76,8 +78,7 @@ command: i
 > i
 You have a candy-bar wrapper. You're wearing your red jacket.
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine fence (or just x fence).]
+[Try inventory (or just i) to see what you are carrying.]
 
 --------------------------------------------------------------------------------
 id: 1728874698407
@@ -87,8 +88,8 @@ command: drop slurm
 > drop slurm
 You're not holding the can of Slurm.
 
-[You are present as part of this world too. Try look at me or l self to get an
-idea of who you are.]
+[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try examine fence (or just x fence).]
 
 --------------------------------------------------------------------------------
 id: 1728874698408
@@ -98,7 +99,8 @@ command: take can
 > take can
 You feel a tingle of excitement as you grab hold of the can.
 
-[You are carrying a can of Slurm; you can leave it here with drop can.]
+[You are present as part of this world too. Try look at me or l self to get an
+idea of who you are.]
 
 --------------------------------------------------------------------------------
 id: 1728874698409
@@ -108,14 +110,7 @@ command: i
 > i
 You have a can of Slurm and a candy-bar wrapper. You're wearing your red jacket.
 
-[The world consists of distinct locations your can visit. You started in Alley,
-but could go west (or just west) to move to a different location.
-
-Direction names include the eight cardinal directions (north, northeast, east,
-etc.) as well as up, down, in, and out.
-
-Finally, you can abbreviate most directions: n for north, ne for northeast, and
-so forth.]
+[You are carrying a can of Slurm; you can leave it here with drop can.]
 
 --------------------------------------------------------------------------------
 id: 1728874698410
@@ -127,6 +122,15 @@ An empty can of Slurm soft drink. You hold onto it with a desperate junkie's
 grip. "Maybe it has just one more delicious drop?" you think and give it a quick
 shake. No dice.
 
+[The world consists of distinct locations you can visit. You started in Alley,
+but could go west (or just west) to move to a different location.
+
+Direction names include the eight cardinal directions (north, northeast, east,
+etc.) as well as up, down, in, and out.
+
+Finally, you can abbreviate most directions: n for north, ne for northeast, and
+so forth.]
+
 --------------------------------------------------------------------------------
 id: 1728874698411
 parent-id: 1728874698410
@@ -135,6 +139,9 @@ command: x wrapper
 > x wrapper
 Written on the inside of the wrapper, in crayon, is the urgent message: "WORK
 PANLET EXPERS GO!", but you are not sure what that means.
+
+[We try to be [0m[4mkind[0m. If you are in doubt, try exits to list all the directions
+you can move. Well, except for any secret ones!]
 
 --------------------------------------------------------------------------------
 id: 1728874698412
@@ -155,7 +162,7 @@ You take off your red jacket.
 
 Your red jacket falls to the ground.
 
-[Your red jacket is a piece of clothing; you can wear jacket to put it on.]
+[Your red jacket is nearby. You could take jacket to pick it up.]
 
 --------------------------------------------------------------------------------
 id: 1728874698414
@@ -163,7 +170,7 @@ parent-id: 1728874698413
 command: l
 --------------------------------------------------------------------------------
 > l
-Alley
+[0m[1mAlley[0m
 A short alley not far from Planet Express, notable for being dark and dingy in
 an otherwise bright and colorful city. The alley is divided in two by a tall
 fence, topped with razor wire, to the east. A busy street is just outside the
@@ -295,7 +302,7 @@ command: w
 > w
 You walk west.
 
-Access Road
+[0m[1mAccess Road[0m
 You are next to a wide access road frequented by heavy freight skimmers moving
 north and south at high speed. From here you can see a portion of the Manhattan
 skyline, all glittering spires and transport tubes endlessly flowing with
@@ -343,7 +350,7 @@ Robot Arms Apartments, Liberty Island, and Madison Cube Garden before you are
 spat out of the reversal chamber at Planet Express. You roll gracelessly back
 onto your feet and look around.
 
-Planet Express
+[0m[1mPlanet Express[0m
 You are standing outside Professor Farnsworth's curious tower of science and
 commerce, situated on a parcel of industrial real-estate adjacent to the river.
 Planet Express is an oddly shaped red building, consisting of a largely conical
@@ -354,12 +361,12 @@ Fortunately, the transport tube system extends this far.
 
 From the upper turret of Planet Express, you hear Professor Farnsworth's
 demanding, querulous voice call out to you: "Fry! Where have you been? We're
-about to start a very dangerous mission and we're going to need someone to mop
+about to start a [0m[4mvery dangerous[0m mission and we're going to need someone to mop
 up the blood, er, I mean, provide moral support. Get on in here!" He disappears
 back into the tower.
 
-(Your score has gone up by one point.)
-
+[0m[4m(Your score has gone up by one point.)
+[0m
 --------------------------------------------------------------------------------
 id: 1728874698435
 parent-id: 1728874698434
@@ -377,13 +384,14 @@ command: enter
 > enter
 You walk in through the circular door.
 
-Conference Room
+[0m[1mConference Room[0m
 The conference room is the central hub of Planet Express, the place where most
 of the griping and chit-chat takes place, outside of the occasional delivery
 mission. A large circular conference table sits in the center of the room,
 loomed over by a huge video display monitor. A metal railing divides this room
-from the hangar. A steep set of stairs lead down into the hangar. The circular
-door leading back out to the access road is open.
+from the hangar where the delivery ship stands ready. A steep set of stairs lead
+down into the hangar. The circular door leading back out to the access road is
+open.
 
 Bender, your not-exactly-trusty robot friend and co-enabler, lounges nearby.
 
@@ -522,12 +530,12 @@ command: d
 > d
 You climb down.
 
-Delivery Ship Hangar
+[0m[1mDelivery Ship Hangar[0m
 This very large room, the largest open space inside Planet Express, is where the
-delivery ship is parked. The floor is heavy concrete, capable of supporting the
-great mass of the ship, but still showing stains, scorches, and wear marks. A
-row of lockers lines one side of the hangar, and a steep flight of stairs,
-almost a ladder, leads back to the conference room.
+delivery ship is currently parked. The floor is heavy concrete, capable of
+supporting the great mass of the ship, but still showing stains, scorches, and
+wear marks. A row of lockers lines one side of the hangar, and a steep flight of
+stairs, almost a ladder, leads back to the conference room.
 
 The Planet Express Delivery Ship overshadows everything else in the hangar,
 resting on three huge landing struts. It stands ready for the next mission, or
@@ -614,15 +622,18 @@ command: tutorialinfo
 --------------------------------------------------------------------------------
 > tutorialinfo
 Tutorial mode (enabled) suggestions:
-#disable-tutorial (suggested)
 #inventory (suggested, performed)
-#examine (suggested)
+#examine-something (suggested)
 #look-self
-#take
-#drop
-#wear
-#leave
-#enter
+#take-something
+#drop-something
+#wear-some-clothing
+#go-somewhere
+#ask-for-exits
+#enter-something
+#climb-something
+#enter-conversation
+#make-conversation
 
 --------------------------------------------------------------------------------
 id: 1735798155169
@@ -641,7 +652,7 @@ command: west
 > west
 You walk west.
 
-Access Road
+[0m[1mAccess Road[0m
 You are next to a wide access road frequented by heavy freight skimmers moving
 north and south at high speed. From here you can see a portion of the Manhattan
 skyline, all glittering spires and transport tubes endlessly flowing with
@@ -692,7 +703,7 @@ command: z
 > z
 A moment slips away.
 
-[The world consists of distinct locations your can visit. You started in Alley,
+[The world consists of distinct locations you can visit. You started in Alley,
 but could go west (or just west) to move to a different location.
 
 Direction names include the eight cardinal directions (north, northeast, east,
@@ -709,7 +720,7 @@ command: west
 > west
 You walk west.
 
-Access Road
+[0m[1mAccess Road[0m
 You are next to a wide access road frequented by heavy freight skimmers moving
 north and south at high speed. From here you can see a portion of the Manhattan
 skyline, all glittering spires and transport tubes endlessly flowing with
@@ -720,7 +731,7 @@ tube system.
 
 [The world is not on a perfect grid; sometimes you go east, and return to where
 you started by going south (not west). Sometimes a direction is a one-way trip,
-and you have to find a entirely different route back to where you started, if
+and you have to find an entirely different route back to where you started, if
 that is even possible.]
 
 --------------------------------------------------------------------------------
@@ -731,13 +742,12 @@ command: z
 > z
 A moment slips away.
 
-[Sometimes, you move around the world not by walking in any particular
-direction, but by going inside some of the things you find. For example, you can 
-enter bubble to see what's inside the Transport Tube Entrance Bubble.]
+[We try to be [0m[4mkind[0m. If you are in doubt, try exits to list all the directions
+you can move. Well, except for any secret ones!]
 
 --------------------------------------------------------------------------------
 id: 1736213165095
-parent-id: 1736213165094
+parent-id: 1777687935335
 command: enter bubble
 --------------------------------------------------------------------------------
 > enter bubble
@@ -747,7 +757,9 @@ the queue. You duck your head and walk inside the transparent bubble. A raspy,
 elderly voice, barely recognizable as a woman's, announces, "What's your,
 whadjamacallit, destination?"
 
-[If you can enter something, you can probably leave as well.]
+[Sometimes, you move around the world not by walking in any particular
+direction, but by going inside some of the things you find. For example, you can
+enter bubble to see what's inside the Transport Tube Entrance Bubble.]
 
 --------------------------------------------------------------------------------
 id: 1736298201758
@@ -756,15 +768,18 @@ command: tutorialinfo
 --------------------------------------------------------------------------------
 > tutorialinfo
 Tutorial mode (enabled) suggestions:
-#disable-tutorial (suggested)
 #inventory (suggested)
-#examine (suggested)
+#examine-something (suggested)
 #look-self
-#take
-#drop
-#wear
-#leave
-#enter
+#take-something
+#drop-something
+#wear-some-clothing
+#go-somewhere
+#ask-for-exits
+#enter-something
+#climb-something
+#enter-conversation
+#make-conversation
 
 --------------------------------------------------------------------------------
 id: 1736359072478
@@ -808,7 +823,7 @@ command: w
 > w
 You walk west.
 
-Access Road
+[0m[1mAccess Road[0m
 You are next to a wide access road frequented by heavy freight skimmers moving
 north and south at high speed. From here you can see a portion of the Manhattan
 skyline, all glittering spires and transport tubes endlessly flowing with
@@ -825,13 +840,38 @@ command: tutorialinfo
 --------------------------------------------------------------------------------
 > tutorialinfo
 Tutorial mode (disabled) suggestions:
-#disable-tutorial (suggested, performed)
-#inventory (performed)
-#examine (suggested)
+#inventory (suggested, performed)
+#examine-something (suggested)
 #look-self (suggested)
-#take (performed)
-#drop (suggested)
-#wear
-#leave (suggested, performed)
-#enter
+#take-something
+#drop-something (suggested)
+#wear-some-clothing
+#go-somewhere
+#ask-for-exits
+#enter-something
+#climb-something
+#enter-conversation
+#make-conversation
 
+--------------------------------------------------------------------------------
+id: 1746387604748
+parent-id: 1735774129200
+command: danger
+--------------------------------------------------------------------------------
+> danger
+"What's so dangerous about this mission, Professor?" you ask.
+
+"Oh, the Ellisonium, yes, the bitterest, mostly-stable element in the known
+universe. Who knows what strange and terrible uses the Mirians will use it for!
+Make their deserts bloom? A snap! Change the orbit of their moon? Easy as pie!
+Or wage horrific intergalactic war? It's their choice, but that doesn't matter
+really, it's their payment that's so dangerous."
+
+You could ask about the payment.
+
+--------------------------------------------------------------------------------
+id: 1777687935335
+parent-id: 1736213165094
+command: * Possible bug: it suggest enter bubble just after you enter the bubble.
+--------------------------------------------------------------------------------
+> * Possible bug: it suggest enter bubble just after you enter the bubble.

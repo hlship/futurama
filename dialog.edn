@@ -11,8 +11,8 @@
          "src/actions"
          "src"]
   :debug ["lib/debug"
-          "lib/hls/debug"
+          "lib/ext/debug"
           "lib/dialog/debug"]
   :library ["lib"
-            "lib/hls"
+            "lib/ext"
             "lib/dialog"]}}

@@ -5,6 +5,6 @@ set -exuo pipefail
 
 watchexec  \
    --project-origin . \
-   --watch ../dialog-libs/lib/hls \
+   --watch ../dialog-extensions/lib \
    --debounce=500ms \
-   cp -Rf ../dialog-libs/lib/hls lib
+   cp -Rf ../dialog-extensions/lib .

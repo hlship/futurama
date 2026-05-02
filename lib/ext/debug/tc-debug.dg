@@ -1,4 +1,4 @@
-%% dependencies: annoations.dg
+%% dependencies: annotations.dg
 
 %%
 %% Debugging tools for Threaded Conversation
@@ -26,9 +26,10 @@
     (endif)
     (line)
     Quips:
-    (line) (space 2) Current: { (current quip $Current) $Current (or) <unset> }
-    (line) (space 2) Previous: { (previous quip $Prev) $Prev (or) <unset> }
-    (line) (space 2) Grandparent: { (grandparent quip $Grand) $Grand (or) <unset> }
+    (line) (space 2) Current: { (current quip $Current) $Current (or) none }
+    (line) (space 2) Previous: { (previous quip $Prev) $Prev (or) none }
+    (line) (space 2) Grandparent: { (grandparent quip $Grand) $Grand (or) none }
+    (just)
     (par)
     (discussable quips $Quips)
     (nonempty $Quips)
@@ -39,7 +40,7 @@
         (line)
         (space 2) 
         $Quip
-        (output annotations for $Quip)
+        (print annotations for $Quip)
         (collect $Earlier)
             *($Quip continues from $Earlier)
         (into $Continues)
@@ -89,6 +90,22 @@
 (annotate (quip $Quip) with [changes the subject])
     ($Quip changes the subject)
 
+(annotate (quip $Quip) with @dead-ended)
+    ($Quip is dead-ended)
+
+(annotate (quip $Quip) with @mid-thread)
+    ($Quip is mid-thread)
+
 (annotate (dubious $) with @dubious)
 
 (annotate ($ is relevant to current thread) with @relevant)
+
+(understand command [conversation debug on])
+
+(perform [conversation debug on])
+    (enable conversation debug logging)
+
+(understand command [conversation debug off])
+
+(perform [conversation debug off])
+    (disable conversation debug logging)

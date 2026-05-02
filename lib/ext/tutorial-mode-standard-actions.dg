@@ -9,7 +9,7 @@
     \(or just (suggest command [i]) \) to see what you are carrying.
 (* is performed by [inventory])
 
-#examine
+#examine-something
 (tutorial suggestion *)
 (can perform * with $Object) 
     (current player $Player)
@@ -20,28 +20,30 @@
     %% Exclude what the player carries
     ~($Object has ancestor $Player)
     *(player can see $Object)
-    ~($Object is hidden)
+    ~(ignored by tutorial $Object)
 (suggest * with $Item)
     Often, there will be interesting objects nearby; you can get more information
     about them by examining them;
     try (suggest command [examine $Item])
     \(or just (suggest command [x $Item]) \).
-(* is performed by [examine])
+(* is performed by [examine $])
     
 #look-self
 (tutorial suggestion *)
 (can perform * with [])
+(* is performed by [examine $Self])
+    (current player $Self)
 (suggest * with $)
     You are present as part of this world too. Try 
     (suggest command [look at me])
     or (suggest command [l self])
     to get an idea of who you are.
 
-#take
+#take-something
 (tutorial suggestion *)
 (can perform * with $Item)
     *(item $Item)
-    ~($Item is hidden)
+    ~(ignored by tutorial $Item)
     (player can see $Item)
     ~(out of reach $Item) 
     (current player $Player)
@@ -51,48 +53,54 @@
     (then)
         The room description mentioned (a $Item).
     (else)
-        There's (a $Item) nearby.
+        (A $Item) is nearby.
     (endif)
     You could (suggest command [take $Item]) to pick it up.
 (* is performed by [take $])
 
-#drop
+#drop-something
 (tutorial suggestion *)
 (can perform * with $Item)
     (#inventory has been performed)
     (current player $Player)
-    *($Item is $ $Player)
+    *($Item is #heldby $Player)     %% not clothing
+    ~(ignored by tutorial $Item)
 (suggest * with $Item)
-    You are carrying (a $Item); you can leave it here with
+    You are carrying (a $Item); you can leave (them $Item) here with
     (suggest command [drop $Item]).
 (* is performed by [drop $])
 
-#wear
+#wear-some-clothing
 (tutorial suggestion *)
 (can perform * with $Item)
-    (#take has been performed)
+    (#take-something has been performed)
     (current player $Player)
     *(wearable $Item)
-    ~($Item has ancestor $Player)
+    ~($Item is #wornby $Player)
     (player can see $Item)
+    ~(ignored by tutorial $Item)
     ~(out of reach $Item) 
 (suggest * with $Item)
     (The $Item) is a piece of clothing; you can
     (suggest command [wear $Item]) to put it on.
 (* is performed by [wear $])
-(narrate after suggestion *)
+(after performance suggest *)    %% This is slightly wasted if the clothing was already held, but it still reads ok.
     We try to be (italic)kind(roman); 
     if an object is nearby but not actually in your inventory, we'll automatically try to pick it up
     before wearing it. This applies to most verbs.
 
-#leave
+#go-somewhere
 (tutorial suggestion *)
 (can perform * with $Direction)
     (current room $Room)
     (from $Room go $Direction to $)
 (suggest * with $Direction)
+    %% If you create a game w/ its own distinct set of directions (like a ship, or Discworld), you-ll probably 
+    %% need to rewrite this entire rule.
     (current room $Room)
-    The world consists of distinct locations your can visit.
+    The world consists of distinct locations you can visit.
+    %% This is an assumption that will hold for most cases; it's rare in games for your first movement
+    %% to be an 'enter object' rather than a 'go direction'.
     You started in (name $Room), but could
     (suggest command [go $Direction])
     \( or just 
@@ -113,27 +121,54 @@
     (suggest command [n]) for (suggest command [north]),
     (suggest command [ne]) for (suggest command [northeast]), and so forth.
 (* is performed by [go $])
-(narrate after suggestion *)
+(after performance suggest *)
     The world is not on a perfect grid; sometimes you go east, and return to
     where you started by going south \(not west\).  
-    Sometimes a direction is a one-way trip, and you have to find a entirely different
+    Sometimes a direction is a one-way trip, and you have to find an entirely different
     route back to where you started, if that is even possible.
 
-#enter 
+#ask-for-exits
+(tutorial suggestion *)
+(can perform * with [])
+(suggest * with $)
+    We try to be (italic)kind(roman). If you are in doubt, try
+    (suggest command [exits]) to list all the directions you can move.
+    Well, except for any secret ones!
+(* is performed by [exits])
+
+#enter-something
 (tutorial suggestion *)
 (can perform * with $Container)
     (current room $Room)
     *($Container is #in $Room)
     (actor container $Container)
     (player can see $Container)
-    ~($Container is hidden)
+    ~(ignored by tutorial $Container)
 (suggest * with $Container)
     Sometimes, you move around the world not by walking in any particular direction,
     but by going inside some of the things you find.  For example,
     you can (suggest command [enter $Container])
     to see what's inside (the $Container).
 (* is performed by [enter $])
-(narrate after suggestion *)
+(after performance suggest *)
     If you can (suggest command [enter]) something, you can probably (suggest command [leave]) as well.
-
+ 
+#climb-something
+(tutorial suggestion *)
+(can perform * with $Supporter)
+    (current room $Room)
+    *($Supporter is #in $Room)
+    (actor supporter $Supporter)
+    (player can see $Supporter)
+    ~(ignored by tutorial $Supporter)    
+(suggest * with $Supporter)
+    Some objects, such as (the $Supporter), are big enough for you to stand on.
+    Try (suggest command [climb $Supporter]).
+(* is performed by [climb $])
+(after performance suggest *)    After climbing something, you can (suggest command [get down]) 
+    \(or just (suggest command [down]), or even just (suggest command [d])
+    \) to return to floor level.
+    (par)
+    We try to be (italic) kind (roman).  
+    If you enter a command that requires getting down first, that will happen automatically.
 

@@ -21,17 +21,15 @@
 
 %% By default, scenes execute once (once a scene has completed, there are no further checks
 %% to see if it should start).
-%% Scenes with the (recurring $) trait can start again even once completed.
-
-%% The predicate (scene debugging enabled) will enable debug output as scenes are started, completed, or 'ticked'.
-
-(scene debugging enabled)
-    (fail)
+%% Scenes with the (recurring $) trait can start again once completed.
 
 (start $) (fail)
 (scene $) (fail)
 (complete $) (fail)
 (recurring $) (fail)
+
+($Scene in progress)
+    ($Scene has duration $)
 
 %% Each scene that is in progress at the start of the tick and not completed during the tick
 %% is notified via this predicate.  It doesn't matter whether this predicate succeeds or fails.
@@ -45,13 +43,12 @@
 (identify completed scenes)
     (exhaust) {
         *(scene $Scene)
-        ($Scene in progress)
+        ($Scene has duration $D)
+        %% Increment the duration
+        ($D plus 1 into $NewD)
+        (now) ($Scene has duration $NewD)
         (complete $Scene)
-        (if) (scene debugging enabled)
-        (then)
-            (log) { scene $Scene completed }
-        (endif)
-        (now) ~($Scene in progress)
+        (now) ~($Scene has duration $)
         %% The scene has completed, at least once
         (now) ($Scene has completed)
     }
@@ -60,10 +57,6 @@
     (exhaust) {
         *(scene $Scene)
         ($Scene in progress)
-        (if) (scene debugging enabled)
-        (then)
-             (log) { scene $Scene in progress }
-        (endif)
         (exhaust) *(on every tick during $Scene)
     }
 
@@ -72,11 +65,7 @@
         *(scene $Scene)
         (ready to start scene $Scene)
         (start $Scene)
-        (if) (scene debugging enabled)
-        (then)
-          (log) { scene $Scene started }
-        (endif)
-        (now) ($Scene in progress)
+        (now) ($Scene has duration 0)
         %% The scene has started, at least once.
         %% Important for recurring scenes.
         (now) ($Scene has started)

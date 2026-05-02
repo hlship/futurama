@@ -63,7 +63,7 @@
 %% Quips are usually available; a quip that is off limits is simply treated
 %% as if it does not exist. This is not the final word, as quips may be
 %% further filtered down based on other factors, such as following prior quips,
-%% repeatablilty etc.
+%% repeatablilty, and so forth.
 
 @(available $Quip)   ~(off limits $Quip)
 (off limits $) (fail)
@@ -225,6 +225,13 @@
 %% #postponed-optional - casual, cleared on change of subject
 %% #immediate-optional - casual, cleared on any player comment
 
+%% Establish these as known object names
+
+#immediate-obligatory
+#postponed-obligatory
+#postponed-optional
+#immediate-optional
+
 (interface (queue $<Quip for $<NPC))
 
 (queue $Quip for $NPC)
@@ -253,6 +260,14 @@
     ~($NPC recollects $Quip)
     (queue $Quip for $NPC as #postponed-optional)
 
+%% Queues the quip for the current NPC as #postponed-obligatory
+
+(interface (queue postponed $<Quip))
+
+(queue postponed $Quip)
+    (conversation partner $NPC) 
+    (queue $Quip for $NPC as #postponed-obligatory)
+
 (interface (queue $<Quip for $<NPC as $<Precedence))
 
 (queue $Quip for $NPC as $Precedence)
@@ -260,6 +275,10 @@
     %% how it is queued. That just doesn't feel right.
     { ($NPC has conversation queue $Queue) (or) ($Queue = []) }
     %% TODO: May need to ensure quip or tuple not already queued?
+    (if) (conversation debug logging)
+    (then)
+        (log) { conv: queue $Quip for $NPC as $Precedence}
+    (endif)
     (now) ($NPC has conversation queue [[$Precedence $Quip] | $Queue])
     
 (interface (extract next quip for $<NPC as $>Quip))
@@ -291,6 +310,11 @@
 (purge optional conversation for $NPC)
     (purge #postponed-optional from conversation queue for $NPC)
     (purge #immediate-optional from conversation queue for $NPC)
+    (if) (conversation debug logging)
+    (then)
+      { ($NPC has conversation queue $NewQueue) (or) ($NewQueue = []) }
+      (log) { conv: $NPC queue is now $NewQueue }
+    (endif)
 
 (interface (record current quip $<Quip))
 
@@ -393,6 +417,10 @@
     (conversation partner $NPC)
     ($NPC has discussable quips $Quips)
     (now) (discussable quips $Quips)
+    (if) (conversation debug logging)
+    (then)
+        (log) { conv: $NPC discussable quips $Quips }
+    (endif)
 
 %% When the player does anything but discuss a quip when there's a quip hanging
 %% properly, output the nag.
@@ -448,7 +476,7 @@
     (conversation partner $NPC)
 
 (list quips $Quips)
-    (listing $Quips { (describe quip $_) } @or [] 0)
+    (listing $Quips { (describe suggested quip $_) } @or [] 0)
 
 %% (describe quip $) is only used in the context of an active conversation partner,
 %% so it's preferable to converting the quip to an action and describing the action, as
@@ -743,14 +771,14 @@
 
 (describe action $Action)
     ($Action = [perform quip $Quip])
-    %% Contrary to the documentation, using (link) (at least in the debugger), produces
-    %% odd output, so protecting it as here makes sense.
-    (if) (library links enabled)
-    (then)
-        (link) (describe quip $Quip)
-    (else)
-        (describe quip $Quip)
-    (endif)
+    (describe suggested quip $Quip)
+
+(describe suggested quip $Quip)
+    (library links enabled)
+    (link) (describe quip $Quip)
+
+(describe suggested quip $Quip)
+    (describe quip $Quip)
 
 %% Clears the conversation partner and deletes most queued content.
 (interface (reset conversation partner))
@@ -778,7 +806,6 @@
 
 (perform [change subject])
     (discussable quips $Quips)
-    (nonempty $Quips)
     (current player $Player)
     (collect $Quip)
         *($Quip is one of $Quips)
@@ -809,3 +836,16 @@
         *($Term is one of $List)
         ~($Term = $Value)
     (into $NewList)
+
+%%
+%% Control over logging
+%%
+
+(interface (enable conversation debug logging))
+(interface (disable conversation debug logging))
+
+(enable conversation debug logging)
+    (now) (conversation debug logging)
+
+(disable conversation debug logging)
+    (now) ~(conversation debug logging)

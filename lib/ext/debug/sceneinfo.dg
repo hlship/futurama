@@ -1,0 +1,20 @@
+%% dependencies: annotations.dg
+
+(understand command [sceneinfo])
+
+(perform [sceneinfo])
+    (scene info)
+
+(scene info)
+    (exhaust) {
+        *(scene $Scene)
+        $Scene
+        (print annotations for $Scene)
+
+        (line)
+    }
+
+(annotate (recurring $) with @recurring)
+(annotate ($ has started) with [has started])
+(annotate ($ has duration $Duration) with [in progress for $Duration])
+(annotate ($ has completed) with [has completed])
