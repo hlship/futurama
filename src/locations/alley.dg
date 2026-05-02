@@ -16,17 +16,17 @@
             .
         (endif)
 (prevent [leave * #east])
-    Tall fence. Check. Razor wire. Check. Fry going east of the tall fence
+    Tall fence. Check. Razor wire. Check. Fry going east through the tall fence
     with the razor wire? No check.
 (#tall-fence/#owls/#dumpster is #in *)
 (from * go #west to #access-road)
 
 #tall-fence
 (name *) tall fence
-(dict *) razor wire wirelink
+(dict *) razor wire wirelink chain link
 (descr *)
     It's just like the one you tried to climb as a kid ... you know,
-    the time you hung upside-down for 12 hours?
+    the time you got left hanging upside-down for 12 hours?
 (instead of [climb *])
     (try [go #east])
 

@@ -875,3 +875,30 @@ parent-id: 1736213165094
 command: * Possible bug: it suggest enter bubble just after you enter the bubble.
 --------------------------------------------------------------------------------
 > * Possible bug: it suggest enter bubble just after you enter the bubble.
+--------------------------------------------------------------------------------
+id: 1777687935342
+parent-id: 1735798155169
+command: x fence
+--------------------------------------------------------------------------------
+> x fence
+It's just like the one you tried to climb as a kid... you know, the time you got
+left hanging upside-down for 12 hours?
+
+--------------------------------------------------------------------------------
+id: 1777687935343
+parent-id: 1777687935342
+command: climb fence
+--------------------------------------------------------------------------------
+> climb fence
+Tall fence. Check. Razor wire. Check. Fry going east through the tall fence with
+the razor wire? No check.
+
+--------------------------------------------------------------------------------
+id: 1777687935344
+parent-id: 1777687935343
+command: e
+--------------------------------------------------------------------------------
+> e
+Tall fence. Check. Razor wire. Check. Fry going east through the tall fence with
+the razor wire? No check.
+
