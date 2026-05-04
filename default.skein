@@ -872,9 +872,10 @@ You could ask about the payment.
 --------------------------------------------------------------------------------
 id: 1777687935335
 parent-id: 1736213165094
-command: * Possible bug: it suggest enter bubble just after you enter the bubble.
 --------------------------------------------------------------------------------
-> * Possible bug: it suggest enter bubble just after you enter the bubble.
+> null
+[0m[4m(I'm sorry, I didn't understand what you wanted to do.)
+[0m
 --------------------------------------------------------------------------------
 id: 1777687935342
 parent-id: 1735798155169
