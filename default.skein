@@ -3,7 +3,7 @@ seed: 5972
 id: 0
 label: START
 --------------------------------------------------------------------------------
-[1m[36mDialog Interactive Debugger (dgdebug) version 1a/01.[0m[36m
+[1m[36mDialog Interactive Debugger (dgdebug) version 1b/01.[0m[36m
 Type @help at the game prompt for a brief introduction.
 [0m
 
@@ -12,14 +12,14 @@ Type @help at the game prompt for a brief introduction.
 You wish you could say this is the first time you've woken up in a dark, dirty
 alley... really, you wish you could say for sure. You can't seem to remember.
 You feel a bit disoriented, and your tortured neurons cough up just a couple of
-memories... you were out on a bender, or out [0m[4mwith[0m a Bender? A loud buzzing sound
+memories... you were out on a bender, or out[0m[4m with[0m a Bender? A loud buzzing sound
 startles you out of your reverie, as a fast moving, colorful blur whizzes by
 overhead.
 
 [0m[1mFuturama: Untitled Episode
 [0mComedy by Howard M. Lewis Ship.
 Release 0. Serial number DEBUG.
-Dialog Interactive Debugger (dgdebug) version 1a/01. Library version 1.1.0.
+Dialog Interactive Debugger (dgdebug) version 1b/01. Library version 1.2.0.
 Debugging extension 1.1.
 Dialog extensions 0.8 by Howard Lewis Ship
 
@@ -34,9 +34,10 @@ can of Slurm!
 
 Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
-[This game has a built-in tutorial mode for players new to interactive fiction;
-it suggests common commands that you can try. You can turn this off with
-tutorial off or back on with tutorial on.]
+[0m[4m[This game has a built-in tutorial mode for players new to interactive fiction;
+it suggests common commands that you can use to get started.
+
+You can turn this off with [0m[1m[4mtutorial off[0m[4m or back on with [0m[1m[4mtutorial on[0m[4m.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698403
@@ -46,7 +47,7 @@ command: honk
 > honk
 Thanks for your support!
 
-[Try inventory (or just i) to see what you are carrying.]
+[0m[4m[Try [0m[1m[4minventory[0m[4m (or just [0m[1m[4mi[0m[4m) to see what you are carrying.][0m
 
 [0m[4m(Your score has gone up by one point.)
 [0m
@@ -67,8 +68,8 @@ command: honk
 > honk
 Don't be greedy.
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine fence (or just x fence).]
+[0m[4m[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698406
@@ -78,7 +79,7 @@ command: i
 > i
 You have a candy-bar wrapper. You're wearing your red jacket.
 
-[Try inventory (or just i) to see what you are carrying.]
+[0m[4m[Try [0m[1m[4minventory[0m[4m (or just [0m[1m[4mi[0m[4m) to see what you are carrying.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698407
@@ -88,8 +89,8 @@ command: drop slurm
 > drop slurm
 You're not holding the can of Slurm.
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine fence (or just x fence).]
+[0m[4m[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698408
@@ -99,8 +100,8 @@ command: take can
 > take can
 You feel a tingle of excitement as you grab hold of the can.
 
-[You are present as part of this world too. Try look at me or l self to get an
-idea of who you are.]
+[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an
+idea of who you are.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698409
@@ -110,7 +111,7 @@ command: i
 > i
 You have a can of Slurm and a candy-bar wrapper. You're wearing your red jacket.
 
-[You are carrying a can of Slurm; you can leave it here with drop can.]
+[0m[4m[You are carrying a can of Slurm; you can leave it here with [0m[1m[4mdrop can[0m[4m.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698410
@@ -122,14 +123,14 @@ An empty can of Slurm soft drink. You hold onto it with a desperate junkie's
 grip. "Maybe it has just one more delicious drop?" you think and give it a quick
 shake. No dice.
 
-[The world consists of distinct locations you can visit. You started in Alley,
-but could go west (or just west) to move to a different location.
+[0m[4m[The world consists of distinct locations you can visit. You are currently in
+Alley, but could [0m[1m[4mgo west[0m[4m (or just [0m[1m[4mwest[0m[4m) to move to a different location.
 
-Direction names include the eight cardinal directions (north, northeast, east,
-etc.) as well as up, down, in, and out.
+Direction names include the eight cardinal directions ([0m[1m[4mnorth[0m[4m, [0m[1m[4mnortheast[0m[4m, [0m[1m[4meast[0m[4m,
+etc.) as well as [0m[1m[4mup[0m[4m, [0m[1m[4mdown[0m[4m, [0m[1m[4min[0m[4m, and [0m[1m[4mout[0m[4m.
 
-Finally, you can abbreviate most directions: n for north, ne for northeast, and
-so forth.]
+Finally, you can abbreviate most directions: [0m[1m[4mn[0m[4m for [0m[1m[4mnorth[0m[4m, [0m[1m[4mne[0m[4m for [0m[1m[4mnortheast[0m[4m, and
+so forth.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698411
@@ -140,8 +141,8 @@ command: x wrapper
 Written on the inside of the wrapper, in crayon, is the urgent message: "WORK
 PANLET EXPERS GO!", but you are not sure what that means.
 
-[We try to be [0m[4mkind[0m. If you are in doubt, try exits to list all the directions
-you can move. Well, except for any secret ones!]
+[0m[4m[We try to be kind; if you are in doubt, try [0m[1m[4mexits[0m[4m to list all the directions
+you can move. Well, except for any secret ones!][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698412
@@ -162,7 +163,7 @@ You take off your red jacket.
 
 Your red jacket falls to the ground.
 
-[Your red jacket is nearby. You could take jacket to pick it up.]
+[0m[4m[Your red jacket is nearby. You could [0m[1m[4mtake jacket[0m[4m to pick it up.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698414
@@ -273,7 +274,7 @@ command: x owls
 > x owls
 Just indistinct blurs of grey feathers, far up out of reach.
 
-[Try inventory (or just i) to see what you are carrying.]
+[0m[4m[Try [0m[1m[4minventory[0m[4m (or just [0m[1m[4mi[0m[4m) to see what you are carrying.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698429
@@ -361,7 +362,7 @@ Fortunately, the transport tube system extends this far.
 
 From the upper turret of Planet Express, you hear Professor Farnsworth's
 demanding, querulous voice call out to you: "Fry! Where have you been? We're
-about to start a [0m[4mvery dangerous[0m mission and we're going to need someone to mop
+about to start a[0m[4m very dangerous[0m mission and we're going to need someone to mop
 up the blood, er, I mean, provide moral support. Get on in here!" He disappears
 back into the tower.
 
@@ -590,8 +591,8 @@ command: i
 > i
 You have a candy-bar wrapper. You're wearing your red jacket.
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine fence (or just x fence).]
+[0m[4m[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1735783208269
@@ -601,7 +602,7 @@ command: z
 > z
 A moment slips away.
 
-[Try inventory (or just i) to see what you are carrying.]
+[0m[4m[Try [0m[1m[4minventory[0m[4m (or just [0m[1m[4mi[0m[4m) to see what you are carrying.][0m
 
 --------------------------------------------------------------------------------
 id: 1735783208271
@@ -611,8 +612,8 @@ command: i
 > i
 You have a candy-bar wrapper. You're wearing your red jacket.
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine fence (or just x fence).]
+[0m[4m[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1735783208272
@@ -641,7 +642,9 @@ parent-id: 0
 command: tutorial off
 --------------------------------------------------------------------------------
 > tutorial off
-Tutorial mode has been turned off; you can re-enable tutorials with tutorial on.
+
+[0m[4m[Tutorial mode has been turned off; you can re-enable tutorials with [0m[1m[4mtutorial on
+[0m[4m.][0m
 
 --------------------------------------------------------------------------------
 id: 1736203161331
@@ -661,7 +664,7 @@ road from you to the west; beyond that is the river. People are everywhere,
 moving north and south along the street and zipping in and out of the transport
 tube system.
 
-[Try inventory (or just i) to see what you are carrying.]
+[0m[4m[Try [0m[1m[4minventory[0m[4m (or just [0m[1m[4mi[0m[4m) to see what you are carrying.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165089
@@ -671,8 +674,8 @@ command: z
 > z
 A moment slips away.
 
-[You are present as part of this world too. Try look at me or l self to get an
-idea of who you are.]
+[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an
+idea of who you are.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165090
@@ -682,8 +685,8 @@ command: z
 > z
 A moment slips away.
 
-[The room description mentioned a can of Slurm. You could take can to pick it
-up.]
+[0m[4m[The room description mentioned a can of Slurm. You could [0m[1m[4mtake can[0m[4m to pick it
+up.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165091
@@ -693,7 +696,7 @@ command: z
 > z
 A moment slips away.
 
-[You are carrying a candy-bar wrapper; you can leave it here with drop wrapper.]
+[0m[4m[You are carrying a candy-bar wrapper; you can leave it here with [0m[1m[4mdrop wrapper[0m[4m.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165092
@@ -703,14 +706,14 @@ command: z
 > z
 A moment slips away.
 
-[The world consists of distinct locations you can visit. You started in Alley,
-but could go west (or just west) to move to a different location.
+[0m[4m[The world consists of distinct locations you can visit. You are currently in
+Alley, but could [0m[1m[4mgo west[0m[4m (or just [0m[1m[4mwest[0m[4m) to move to a different location.
 
-Direction names include the eight cardinal directions (north, northeast, east,
-etc.) as well as up, down, in, and out.
+Direction names include the eight cardinal directions ([0m[1m[4mnorth[0m[4m, [0m[1m[4mnortheast[0m[4m, [0m[1m[4meast[0m[4m,
+etc.) as well as [0m[1m[4mup[0m[4m, [0m[1m[4mdown[0m[4m, [0m[1m[4min[0m[4m, and [0m[1m[4mout[0m[4m.
 
-Finally, you can abbreviate most directions: n for north, ne for northeast, and
-so forth.]
+Finally, you can abbreviate most directions: [0m[1m[4mn[0m[4m for [0m[1m[4mnorth[0m[4m, [0m[1m[4mne[0m[4m for [0m[1m[4mnortheast[0m[4m, and
+so forth.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165093
@@ -729,10 +732,10 @@ road from you to the west; beyond that is the river. People are everywhere,
 moving north and south along the street and zipping in and out of the transport
 tube system.
 
-[The world is not on a perfect grid; sometimes you go east, and return to where
+[0m[4m[The world is not on a perfect grid; sometimes you go east, and return to where
 you started by going south (not west). Sometimes a direction is a one-way trip,
 and you have to find an entirely different route back to where you started, if
-that is even possible.]
+that is even possible.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165094
@@ -742,8 +745,8 @@ command: z
 > z
 A moment slips away.
 
-[We try to be [0m[4mkind[0m. If you are in doubt, try exits to list all the directions
-you can move. Well, except for any secret ones!]
+[0m[4m[We try to be kind; if you are in doubt, try [0m[1m[4mexits[0m[4m to list all the directions
+you can move. Well, except for any secret ones!][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165095
@@ -757,9 +760,9 @@ the queue. You duck your head and walk inside the transparent bubble. A raspy,
 elderly voice, barely recognizable as a woman's, announces, "What's your,
 whadjamacallit, destination?"
 
-[Sometimes, you move around the world not by walking in any particular
-direction, but by going inside some of the things you find. For example, you can
-enter bubble to see what's inside the Transport Tube Entrance Bubble.]
+[0m[4m[Sometimes, you move around the world not by walking in any particular
+direction, but by going inside some of the things you find. For example, you can 
+[0m[1m[4menter bubble[0m[4m to see what's inside the Transport Tube Entrance Bubble.][0m
 
 --------------------------------------------------------------------------------
 id: 1736298201758
@@ -789,8 +792,8 @@ command: z
 > z
 A moment slips away.
 
-[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try examine people (or just x people).]
+[0m[4m[Often, there will be interesting objects nearby; you can get more information
+about them by examining them; try [0m[1m[4mexamine people[0m[4m (or just [0m[1m[4mx people[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1736359072479
@@ -804,8 +807,8 @@ the queue. You duck your head and walk inside the transparent bubble. A raspy,
 elderly voice, barely recognizable as a woman's, announces, "What's your,
 whadjamacallit, destination?"
 
-[You are present as part of this world too. Try look at me or l self to get an
-idea of who you are.]
+[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an
+idea of who you are.][0m
 
 --------------------------------------------------------------------------------
 id: 1736359072480
@@ -813,7 +816,9 @@ parent-id: 1728874698409
 command: tutorial off
 --------------------------------------------------------------------------------
 > tutorial off
-Tutorial mode has been turned off; you can re-enable tutorials with tutorial on.
+
+[0m[4m[Tutorial mode has been turned off; you can re-enable tutorials with [0m[1m[4mtutorial on
+[0m[4m.][0m
 
 --------------------------------------------------------------------------------
 id: 1736359072481
