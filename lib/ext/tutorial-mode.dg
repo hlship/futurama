@@ -33,7 +33,6 @@
 (style class @tutorial)
   font-style: italic;
 
-%% Produces unwanted trailing spaces in dgdebug
 (style class @suggestion)
   font-weight: bold;
 
@@ -84,8 +83,6 @@
 (suggest command $Action)
     (print suggested command $Action)
 
-%% In dgdebug (but not frotz, or the web) the span results in a space after the last word
-%% that seems immune to (no space).
 (print suggested command $Action)
     (span @suggestion) {
         (exhaust) {

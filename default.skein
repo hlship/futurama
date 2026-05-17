@@ -3,39 +3,24 @@ seed: 5972
 id: 0
 label: START
 --------------------------------------------------------------------------------
-[1m[36mDialog Interactive Debugger (dgdebug) version 1b/01.[0m[36m
-Type @help at the game prompt for a brief introduction.
-[0m
+
 
 [Futurama: Honk If You Like Bytecode]
 
-You wish you could say this is the first time you've woken up in a dark, dirty
-alley... really, you wish you could say for sure. You can't seem to remember.
-You feel a bit disoriented, and your tortured neurons cough up just a couple of
-memories... you were out on a bender, or out[0m[4m with[0m a Bender? A loud buzzing sound
-startles you out of your reverie, as a fast moving, colorful blur whizzes by
-overhead.
+You wish you could say this is the first time you've woken up in a dark, dirty alley... really, you wish you could say for sure. You can't seem to remember. You feel a bit disoriented, and your tortured neurons cough up just a couple of memories... you were out on a bender, or out[0m[4m with[0m a Bender? A loud buzzing sound startles you out of your reverie, as a fast moving, colorful blur whizzes by overhead.
 
 [0m[1mFuturama: Untitled Episode
 [0mComedy by Howard M. Lewis Ship.
 Release 0. Serial number DEBUG.
-Dialog Interactive Debugger (dgdebug) version 1b/01. Library version 1.2.0.
-Debugging extension 1.1.
+Dialog Interactive Debugger (dgdebug) version 1b/02. Library version 1.2.0. Debugging extension 1.1.
 Dialog extensions 0.8 by Howard Lewis Ship
 
 [0m[1mAlley[0m
-A short alley not far from Planet Express, notable for being dark and dingy in
-an otherwise bright and colorful city. The alley is divided in two by a tall
-fence, topped with razor wire, to the east. A busy street is just outside the
-alley to the west. There's not much activity here, beyond a pair of owls who
-watch you carefully, eager to scavenge any crumbs you might drop. At the back of
-the alley is a graffiti-festooned dumpster on top of which is perched a precious
-can of Slurm!
+A short alley not far from Planet Express, notable for being dark and dingy in an otherwise bright and colorful city. The alley is divided in two by a tall fence, topped with razor wire, to the east. A busy street is just outside the alley to the west. There's not much activity here, beyond a pair of owls who watch you carefully, eager to scavenge any crumbs you might drop. At the back of the alley is a graffiti-festooned dumpster on top of which is perched a precious can of Slurm!
 
 Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
-[0m[4m[This game has a built-in tutorial mode for players new to interactive fiction;
-it suggests common commands that you can use to get started.
+[0m[4m[This game has a built-in tutorial mode for players new to interactive fiction; it suggests common commands that you can use to get started.
 
 You can turn this off with [0m[1m[4mtutorial off[0m[4m or back on with [0m[1m[4mtutorial on[0m[4m.][0m
 
@@ -68,8 +53,7 @@ command: honk
 > honk
 Don't be greedy.
 
-[0m[4m[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
+[0m[4m[Often, there will be interesting objects nearby; you can get more information about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698406
@@ -89,8 +73,7 @@ command: drop slurm
 > drop slurm
 You're not holding the can of Slurm.
 
-[0m[4m[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
+[0m[4m[Often, there will be interesting objects nearby; you can get more information about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698408
@@ -100,8 +83,7 @@ command: take can
 > take can
 You feel a tingle of excitement as you grab hold of the can.
 
-[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an
-idea of who you are.][0m
+[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an idea of who you are.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698409
@@ -119,18 +101,13 @@ parent-id: 1728874698409
 command: x can
 --------------------------------------------------------------------------------
 > x can
-An empty can of Slurm soft drink. You hold onto it with a desperate junkie's
-grip. "Maybe it has just one more delicious drop?" you think and give it a quick
-shake. No dice.
+An empty can of Slurm soft drink. You hold onto it with a desperate junkie's grip. "Maybe it has just one more delicious drop?" you think and give it a quick shake. No dice.
 
-[0m[4m[The world consists of distinct locations you can visit. You are currently in
-Alley, but could [0m[1m[4mgo west[0m[4m (or just [0m[1m[4mwest[0m[4m) to move to a different location.
+[0m[4m[The world consists of distinct locations you can visit. You are currently in Alley, but could [0m[1m[4mgo west[0m[4m (or just [0m[1m[4mwest[0m[4m) to move to a different location.
 
-Direction names include the eight cardinal directions ([0m[1m[4mnorth[0m[4m, [0m[1m[4mnortheast[0m[4m, [0m[1m[4meast[0m[4m,
-etc.) as well as [0m[1m[4mup[0m[4m, [0m[1m[4mdown[0m[4m, [0m[1m[4min[0m[4m, and [0m[1m[4mout[0m[4m.
+Direction names include the eight cardinal directions ([0m[1m[4mnorth[0m[4m, [0m[1m[4mnortheast[0m[4m, [0m[1m[4meast[0m[4m, etc.) as well as [0m[1m[4mup[0m[4m, [0m[1m[4mdown[0m[4m, [0m[1m[4min[0m[4m, and [0m[1m[4mout[0m[4m.
 
-Finally, you can abbreviate most directions: [0m[1m[4mn[0m[4m for [0m[1m[4mnorth[0m[4m, [0m[1m[4mne[0m[4m for [0m[1m[4mnortheast[0m[4m, and
-so forth.][0m
+Finally, you can abbreviate most directions: [0m[1m[4mn[0m[4m for [0m[1m[4mnorth[0m[4m, [0m[1m[4mne[0m[4m for [0m[1m[4mnortheast[0m[4m, and so forth.][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698411
@@ -138,11 +115,9 @@ parent-id: 1728874698410
 command: x wrapper
 --------------------------------------------------------------------------------
 > x wrapper
-Written on the inside of the wrapper, in crayon, is the urgent message: "WORK
-PANLET EXPERS GO!", but you are not sure what that means.
+Written on the inside of the wrapper, in crayon, is the urgent message: "WORK PANLET EXPERS GO!", but you are not sure what that means.
 
-[0m[4m[We try to be kind; if you are in doubt, try [0m[1m[4mexits[0m[4m to list all the directions
-you can move. Well, except for any secret ones!][0m
+[0m[4m[We try to be kind; if you are in doubt, try [0m[1m[4mexits[0m[4m to list all the directions you can move. Well, except for any secret ones!][0m
 
 --------------------------------------------------------------------------------
 id: 1728874698412
@@ -172,12 +147,7 @@ command: l
 --------------------------------------------------------------------------------
 > l
 [0m[1mAlley[0m
-A short alley not far from Planet Express, notable for being dark and dingy in
-an otherwise bright and colorful city. The alley is divided in two by a tall
-fence, topped with razor wire, to the east. A busy street is just outside the
-alley to the west. There's not much activity here, beyond a pair of owls who
-watch you carefully, eager to scavenge any crumbs you might drop. At the back of
-the alley is a graffiti-festooned dumpster.
+A short alley not far from Planet Express, notable for being dark and dingy in an otherwise bright and colorful city. The alley is divided in two by a tall fence, topped with razor wire, to the east. A busy street is just outside the alley to the west. There's not much activity here, beyond a pair of owls who watch you carefully, eager to scavenge any crumbs you might drop. At the back of the alley is a graffiti-festooned dumpster.
 
 You see your red jacket here.
 
@@ -187,11 +157,7 @@ parent-id: 1728874698414
 command: x dumpster
 --------------------------------------------------------------------------------
 > x dumpster
-The dumpster is made of gun-metal grey heavy plastic and has seen better days.
-It has smelled much better days. You hate to think what it has tasted. The
-dumpster is worn and battered, and festooned with graffiti in an alien script.
-Basically, it's disgusting, but you fear that the worst is on the inside,
-mercifully closed from view.
+The dumpster is made of gun-metal grey heavy plastic and has seen better days. It has smelled much better days. You hate to think what it has tasted. The dumpster is worn and battered, and festooned with graffiti in an alien script. Basically, it's disgusting, but you fear that the worst is on the inside, mercifully closed from view.
 
 --------------------------------------------------------------------------------
 id: 1728874698416
@@ -223,11 +189,7 @@ parent-id: 1728874698418
 command: x it
 --------------------------------------------------------------------------------
 > x it
-The dumpster is made of gun-metal grey heavy plastic and has seen better days.
-It has smelled much better days. You hate to think what it has tasted. The
-dumpster is worn and battered, and festooned with graffiti in an alien script.
-Basically, it's disgusting, all the more so for the reek wafting into the alley
-from the open lid.
+The dumpster is made of gun-metal grey heavy plastic and has seen better days. It has smelled much better days. You hate to think what it has tasted. The dumpster is worn and battered, and festooned with graffiti in an alien script. Basically, it's disgusting, all the more so for the reek wafting into the alley from the open lid.
 
 --------------------------------------------------------------------------------
 id: 1728874698420
@@ -251,9 +213,7 @@ parent-id: 1728874698421
 command: read script
 --------------------------------------------------------------------------------
 > read script
-Well, it's in an alien script, and despite your general befuddlement, you're
-fairly certain you are not an alien, and very certain you aren't an alien who
-can read this lettering.
+Well, it's in an alien script, and despite your general befuddlement, you're fairly certain you are not an alien, and very certain you aren't an alien who can read this lettering.
 
 --------------------------------------------------------------------------------
 id: 1728874698424
@@ -262,9 +222,7 @@ parent-id: 1728874698422
 command: x graffiti
 --------------------------------------------------------------------------------
 > x graffiti
-Well, it's in an alien script, and despite your general befuddlement, you're
-fairly certain you are not an alien, and very certain you aren't an alien who
-can read this lettering.
+Well, it's in an alien script, and despite your general befuddlement, you're fairly certain you are not an alien, and very certain you aren't an alien who can read this lettering.
 
 --------------------------------------------------------------------------------
 id: 1728874698428
@@ -282,8 +240,7 @@ parent-id: 1728874698428
 command: take owls
 --------------------------------------------------------------------------------
 > take owls
-The owls have learned to be cautious, and studiously keep themselves out of
-reach.
+The owls have learned to be cautious, and studiously keep themselves out of reach.
 
 --------------------------------------------------------------------------------
 id: 1728874698430
@@ -292,8 +249,7 @@ parent-id: 1728874698429
 command: attack owls
 --------------------------------------------------------------------------------
 > attack owls
-The owls have learned to be cautious, and studiously keep themselves out of
-reach.
+The owls have learned to be cautious, and studiously keep themselves out of reach.
 
 --------------------------------------------------------------------------------
 id: 1728874698431
@@ -304,13 +260,7 @@ command: w
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving
-north and south at high speed. From here you can see a portion of the Manhattan
-skyline, all glittering spires and transport tubes endlessly flowing with
-passengers. You can see the transport tube servicing Planet Express across the
-road from you to the west; beyond that is the river. People are everywhere,
-moving north and south along the street and zipping in and out of the transport
-tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
 
 --------------------------------------------------------------------------------
 id: 1728874698432
@@ -318,11 +268,7 @@ parent-id: 1728874698431
 command: enter tube
 --------------------------------------------------------------------------------
 > enter tube
-You shuffle on to the end of the fast moving line. The New New Yorkers ahead of
-you flit off to all parts of the city. Before you know it, you're at the head of
-the queue. You duck your head and walk inside the transparent bubble. A raspy,
-elderly voice, barely recognizable as a woman's, announces, "What's your,
-whadjamacallit, destination?"
+You shuffle on to the end of the fast moving line. The New New Yorkers ahead of you flit off to all parts of the city. Before you know it, you're at the head of the queue. You duck your head and walk inside the transparent bubble. A raspy, elderly voice, barely recognizable as a woman's, announces, "What's your, whadjamacallit, destination?"
 
 --------------------------------------------------------------------------------
 id: 1728874698433
@@ -330,11 +276,9 @@ parent-id: 1728874698432
 command: say planet express
 --------------------------------------------------------------------------------
 > say planet express
-The raspy voice responds: "How about announcing someplace with a tube innit,
-will ya?"
+The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
 
-A New New Yorker elbows past you impatiently, announces "Madison Cube Garden,"
-and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1728874698434
@@ -345,26 +289,12 @@ command: planet express
 > planet express
 "I'd like to go to Planet Express," you announce.
 
-With a sound like a great Tupperware container lid being opened, the tube sucks
-you in and hurtles you about New New York. You catch fleeting glances of the
-Robot Arms Apartments, Liberty Island, and Madison Cube Garden before you are
-spat out of the reversal chamber at Planet Express. You roll gracelessly back
-onto your feet and look around.
+With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of the Robot Arms Apartments, Liberty Island, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
 
 [0m[1mPlanet Express[0m
-You are standing outside Professor Farnsworth's curious tower of science and
-commerce, situated on a parcel of industrial real-estate adjacent to the river.
-Planet Express is an oddly shaped red building, consisting of a largely conical
-tower, attached to a large blocky hangar for the delivery ship itself. On the
-side of the building is a wide circular door which is currently rolled shut. To
-the east, beyond a blur of fast moving freight skimmers, is the access road.
-Fortunately, the transport tube system extends this far.
+You are standing outside Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the river. Planet Express is an oddly shaped red building, consisting of a largely conical tower, attached to a large blocky hangar for the delivery ship itself. On the side of the building is a wide circular door which is currently rolled shut. To the east, beyond a blur of fast moving freight skimmers, is the access road. Fortunately, the transport tube system extends this far.
 
-From the upper turret of Planet Express, you hear Professor Farnsworth's
-demanding, querulous voice call out to you: "Fry! Where have you been? We're
-about to start a[0m[4m very dangerous[0m mission and we're going to need someone to mop
-up the blood, er, I mean, provide moral support. Get on in here!" He disappears
-back into the tower.
+From the upper turret of Planet Express, you hear Professor Farnsworth's demanding, querulous voice call out to you: "Fry! Where have you been? We're about to start a[0m[4m very dangerous[0m mission and we're going to need someone to mop up the blood, er, I mean, provide moral support. Get on in here!" He disappears back into the tower.
 
 [0m[4m(Your score has gone up by one point.)
 [0m
@@ -386,23 +316,13 @@ command: enter
 You walk in through the circular door.
 
 [0m[1mConference Room[0m
-The conference room is the central hub of Planet Express, the place where most
-of the griping and chit-chat takes place, outside of the occasional delivery
-mission. A large circular conference table sits in the center of the room,
-loomed over by a huge video display monitor. A metal railing divides this room
-from the hangar where the delivery ship stands ready. A steep set of stairs lead
-down into the hangar. The circular door leading back out to the access road is
-open.
+The conference room is the central hub of Planet Express, the place where most of the griping and chit-chat takes place, outside of the occasional delivery mission. A large circular conference table sits in the center of the room, loomed over by a huge video display monitor. A metal railing divides this room from the hangar where the delivery ship stands ready. A steep set of stairs lead down into the hangar. The circular door leading back out to the access road is open.
 
 Bender, your not-exactly-trusty robot friend and co-enabler, lounges nearby.
 
-You hear the Professor's voice above you: "Good News, Everyone!" His oversized
-chair descends from the upper levels on two telescoping arms, which retreat back
-into the ceiling after depositing him at the head of the conference table. He
-continues: "I have a new and incredibly dangerous mission for you!"
+You hear the Professor's voice above you: "Good News, Everyone!" His oversized chair descends from the upper levels on two telescoping arms, which retreat back into the ceiling after depositing him at the head of the conference table. He continues: "I have a new and incredibly dangerous mission for you!"
 
-You sit down at the conference table. Bender sits down as well, leaning far back
-into his chair with his feet stretched out on the table.
+You sit down at the conference table. Bender sits down as well, leaning far back into his chair with his feet stretched out on the table.
 
 You could ask about the new mission.
 
@@ -414,8 +334,7 @@ command: bender, hello
 > bender, hello
 "Hiya, Bender," you say. "Backatcha, meatbag" he replies.
 
-The Professor stares at you and mumbles something under his breath. It's
-probably best for you to get back to his mission briefing.
+The Professor stares at you and mumbles something under his breath. It's probably best for you to get back to his mission briefing.
 
 --------------------------------------------------------------------------------
 id: 1728874698440
@@ -423,8 +342,7 @@ parent-id: 1728874698438
 command: talk to professor
 --------------------------------------------------------------------------------
 > talk to professor
-You direct your attention, or as much of it as you can muster, back to the
-Professor.
+You direct your attention, or as much of it as you can muster, back to the Professor.
 
 You could ask about the new mission.
 
@@ -436,10 +354,7 @@ command: mission
 > mission
 "So, Professor, you said something about a mission?" you ask.
 
-"The, oh, what?" The Professor seems confused for a moment, then remembers:
-"Yes, yes, you must make a delivery to Miri Alpha Prime. Very dangerous, I'm
-afraid." Hearing this, Bender asks "Is it the kind of danger only fragile meat
-bags need to worry about, or is it real danger?" The Professor ignores him.
+"The, oh, what?" The Professor seems confused for a moment, then remembers: "Yes, yes, you must make a delivery to Miri Alpha Prime. Very dangerous, I'm afraid." Hearing this, Bender asks "Is it the kind of danger only fragile meat bags need to worry about, or is it real danger?" The Professor ignores him.
 
 You could ask about the danger or ask about the Mirians.
 
@@ -451,11 +366,7 @@ command: danger
 > danger
 "What's so dangerous about this mission, Professor?" you ask.
 
-"Oh, the Ellisonium, yes, the bitterest, mostly-stable element in the known
-universe. Who knows what strange and terrible uses the Mirians will use it for!
-Make their deserts bloom? A snap! Change the orbit of their moon? Easy as pie!
-Or wage horrific intergalactic war? It's their choice, but that doesn't matter
-really, it's their payment that's so dangerous."
+"Oh, the Ellisonium, yes, the bitterest, mostly-stable element in the known universe. Who knows what strange and terrible uses the Mirians will use it for! Make their deserts bloom? A snap! Change the orbit of their moon? Easy as pie! Or wage horrific intergalactic war? It's their choice, but that doesn't matter really, it's their payment that's so dangerous."
 
 You could ask about the Mirians or ask about the payment.
 
@@ -465,14 +376,9 @@ parent-id: 1728874698442
 command: payment
 --------------------------------------------------------------------------------
 > payment
-You try to tease some useful information out of the old codger. "And their
-payment is?" you ask. You're really hoping the Mirians pay in Slurm.
+You try to tease some useful information out of the old codger. "And their payment is?" you ask. You're really hoping the Mirians pay in Slurm.
 
-The Professor becomes agitated and raises his voice. "Just the most dangerous
-machine in the known galaxy... The Guardian of Forever!" He settles down after a
-moment. "I'm getting it for quite a steal, actually. And really, it shouldn't be
-so dangerous as long as you don't go fooling around with it! Maybe you'll listen
-to Leela for once... where is she?"
+The Professor becomes agitated and raises his voice. "Just the most dangerous machine in the known galaxy... The Guardian of Forever!" He settles down after a moment. "I'm getting it for quite a steal, actually. And really, it shouldn't be so dangerous as long as you don't go fooling around with it! Maybe you'll listen to Leela for once... where is she?"
 
 You could ask about the Guardian of Forever or suggest finding Leela.
 
@@ -484,8 +390,7 @@ command: guardian
 > guardian
 "So Professor, what exactly is this Guardian thing?"
 
-The Professor responds a bit crankily: "It's a machine that needs to be
-delivered back here to Planet Express." He looks at you. "By a delivery boy."
+The Professor responds a bit crankily: "It's a machine that needs to be delivered back here to Planet Express." He looks at you. "By a delivery boy."
 
 You could ask about the Mirians or suggest finding Leela.
 
@@ -497,12 +402,7 @@ command: mirians
 > mirians
 You ask "Well, what are these Mirians like?"
 
-"Oh, they're just ordinary folks," says the Professor, "at least by our
-standards. Ordinary folks who want to ruthlessly command the forces of Nature
-and perhaps commit unspeakable intergalactic crimes. You know, a race of
-scientists much like me. I'm connected to some of the leading Mirians on
-LinkedIn. That's how I knew they were desperate for the Ellisonium in the first
-place!"
+"Oh, they're just ordinary folks," says the Professor, "at least by our standards. Ordinary folks who want to ruthlessly command the forces of Nature and perhaps commit unspeakable intergalactic crimes. You know, a race of scientists much like me. I'm connected to some of the leading Mirians on LinkedIn. That's how I knew they were desperate for the Ellisonium in the first place!"
 
 You could suggest finding Leela.
 
@@ -515,13 +415,9 @@ command: leela
 > leela
 You say "I don't know where Leela is, maybe we should go look for her?"
 
-"Very good. You find Leela, grab this mechanical buffoon," he gestures towards
-Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke,
-"and get that Ellisonium delivered!"
+"Very good. You find Leela, grab this mechanical buffoon," he gestures towards Bender, who arches his vision tubes and blows out a puff of noxious cigar smoke, "and get that Ellisonium delivered!"
 
-The Professor pushes back from the table, and punches a button on his chair. The
-telescoping arms return, grab the chair, and raise it up into the ceiling. You
-and Bender stand up as well.
+The Professor pushes back from the table, and punches a button on his chair. The telescoping arms return, grab the chair, and raise it up into the ceiling. You and Bender stand up as well.
 
 --------------------------------------------------------------------------------
 id: 1728874698447
@@ -532,21 +428,13 @@ command: d
 You climb down.
 
 [0m[1mDelivery Ship Hangar[0m
-This very large room, the largest open space inside Planet Express, is where the
-delivery ship is currently parked. The floor is heavy concrete, capable of
-supporting the great mass of the ship, but still showing stains, scorches, and
-wear marks. A row of lockers lines one side of the hangar, and a steep flight of
-stairs, almost a ladder, leads back to the conference room.
+This very large room, the largest open space inside Planet Express, is where the delivery ship is currently parked. The floor is heavy concrete, capable of supporting the great mass of the ship, but still showing stains, scorches, and wear marks. A row of lockers lines one side of the hangar, and a steep flight of stairs, almost a ladder, leads back to the conference room.
 
-The Planet Express Delivery Ship overshadows everything else in the hangar,
-resting on three huge landing struts. It stands ready for the next mission, or
-the next whim of the Professor.
+The Planet Express Delivery Ship overshadows everything else in the hangar, resting on three huge landing struts. It stands ready for the next mission, or the next whim of the Professor.
 
-Off to one side is a cylindrical container, about a foot high, with a clear dome
-on top.
+Off to one side is a cylindrical container, about a foot high, with a clear dome on top.
 
-Leela is fussing about the hangar, checking that the ship is ready for its next
-mission.
+Leela is fussing about the hangar, checking that the ship is ready for its next mission.
 
 --------------------------------------------------------------------------------
 id: 1728874698448
@@ -554,9 +442,7 @@ parent-id: 1728874698447
 command: x container
 --------------------------------------------------------------------------------
 > x container
-The container is cylindrical, about a foot high, with a transparent domed top. A
-bright red label on the side reads: "Danger! Ellisonium! Highly Bitter!" Under
-the clear dome you a can see a swirling vortex of glowing purplish dust.
+The container is cylindrical, about a foot high, with a transparent domed top. A bright red label on the side reads: "Danger! Ellisonium! Highly Bitter!" Under the clear dome you a can see a swirling vortex of glowing purplish dust.
 
 --------------------------------------------------------------------------------
 id: 1728874698449
@@ -575,11 +461,7 @@ command: mirians
 > mirians
 You ask "Well, what are these Mirians like?"
 
-"Oh, they're just ordinary folks," says the Professor, "at least by our
-standards. Ordinary folks who want to ruthlessly command the forces of Nature
-and perhaps commit unspeakable intergalactic crimes. You know, a race of
-scientists much like me. I'm connected to some of the leading Mirians on
-LinkedIn."
+"Oh, they're just ordinary folks," says the Professor, "at least by our standards. Ordinary folks who want to ruthlessly command the forces of Nature and perhaps commit unspeakable intergalactic crimes. You know, a race of scientists much like me. I'm connected to some of the leading Mirians on LinkedIn."
 
 You could ask about the danger.
 
@@ -591,8 +473,7 @@ command: i
 > i
 You have a candy-bar wrapper. You're wearing your red jacket.
 
-[0m[4m[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
+[0m[4m[Often, there will be interesting objects nearby; you can get more information about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1735783208269
@@ -612,8 +493,7 @@ command: i
 > i
 You have a candy-bar wrapper. You're wearing your red jacket.
 
-[0m[4m[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
+[0m[4m[Often, there will be interesting objects nearby; you can get more information about them by examining them; try [0m[1m[4mexamine fence[0m[4m (or just [0m[1m[4mx fence[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1735783208272
@@ -643,8 +523,7 @@ command: tutorial off
 --------------------------------------------------------------------------------
 > tutorial off
 
-[0m[4m[Tutorial mode has been turned off; you can re-enable tutorials with [0m[1m[4mtutorial on
-[0m[4m.][0m
+[0m[4m[Tutorial mode has been turned off; you can re-enable tutorials with [0m[1m[4mtutorial on[0m[4m.][0m
 
 --------------------------------------------------------------------------------
 id: 1736203161331
@@ -656,13 +535,7 @@ command: west
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving
-north and south at high speed. From here you can see a portion of the Manhattan
-skyline, all glittering spires and transport tubes endlessly flowing with
-passengers. You can see the transport tube servicing Planet Express across the
-road from you to the west; beyond that is the river. People are everywhere,
-moving north and south along the street and zipping in and out of the transport
-tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
 
 [0m[4m[Try [0m[1m[4minventory[0m[4m (or just [0m[1m[4mi[0m[4m) to see what you are carrying.][0m
 
@@ -674,8 +547,7 @@ command: z
 > z
 A moment slips away.
 
-[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an
-idea of who you are.][0m
+[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an idea of who you are.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165090
@@ -685,8 +557,7 @@ command: z
 > z
 A moment slips away.
 
-[0m[4m[The room description mentioned a can of Slurm. You could [0m[1m[4mtake can[0m[4m to pick it
-up.][0m
+[0m[4m[The room description mentioned a can of Slurm. You could [0m[1m[4mtake can[0m[4m to pick it up.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165091
@@ -706,14 +577,11 @@ command: z
 > z
 A moment slips away.
 
-[0m[4m[The world consists of distinct locations you can visit. You are currently in
-Alley, but could [0m[1m[4mgo west[0m[4m (or just [0m[1m[4mwest[0m[4m) to move to a different location.
+[0m[4m[The world consists of distinct locations you can visit. You are currently in Alley, but could [0m[1m[4mgo west[0m[4m (or just [0m[1m[4mwest[0m[4m) to move to a different location.
 
-Direction names include the eight cardinal directions ([0m[1m[4mnorth[0m[4m, [0m[1m[4mnortheast[0m[4m, [0m[1m[4meast[0m[4m,
-etc.) as well as [0m[1m[4mup[0m[4m, [0m[1m[4mdown[0m[4m, [0m[1m[4min[0m[4m, and [0m[1m[4mout[0m[4m.
+Direction names include the eight cardinal directions ([0m[1m[4mnorth[0m[4m, [0m[1m[4mnortheast[0m[4m, [0m[1m[4meast[0m[4m, etc.) as well as [0m[1m[4mup[0m[4m, [0m[1m[4mdown[0m[4m, [0m[1m[4min[0m[4m, and [0m[1m[4mout[0m[4m.
 
-Finally, you can abbreviate most directions: [0m[1m[4mn[0m[4m for [0m[1m[4mnorth[0m[4m, [0m[1m[4mne[0m[4m for [0m[1m[4mnortheast[0m[4m, and
-so forth.][0m
+Finally, you can abbreviate most directions: [0m[1m[4mn[0m[4m for [0m[1m[4mnorth[0m[4m, [0m[1m[4mne[0m[4m for [0m[1m[4mnortheast[0m[4m, and so forth.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165093
@@ -724,18 +592,9 @@ command: west
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving
-north and south at high speed. From here you can see a portion of the Manhattan
-skyline, all glittering spires and transport tubes endlessly flowing with
-passengers. You can see the transport tube servicing Planet Express across the
-road from you to the west; beyond that is the river. People are everywhere,
-moving north and south along the street and zipping in and out of the transport
-tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
 
-[0m[4m[The world is not on a perfect grid; sometimes you go east, and return to where
-you started by going south (not west). Sometimes a direction is a one-way trip,
-and you have to find an entirely different route back to where you started, if
-that is even possible.][0m
+[0m[4m[The world is not on a perfect grid; sometimes you go east, and return to where you started by going south (not west). Sometimes a direction is a one-way trip, and you have to find an entirely different route back to where you started, if that is even possible.][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165094
@@ -745,8 +604,7 @@ command: z
 > z
 A moment slips away.
 
-[0m[4m[We try to be kind; if you are in doubt, try [0m[1m[4mexits[0m[4m to list all the directions
-you can move. Well, except for any secret ones!][0m
+[0m[4m[We try to be kind; if you are in doubt, try [0m[1m[4mexits[0m[4m to list all the directions you can move. Well, except for any secret ones!][0m
 
 --------------------------------------------------------------------------------
 id: 1736213165095
@@ -754,15 +612,9 @@ parent-id: 1777687935335
 command: enter bubble
 --------------------------------------------------------------------------------
 > enter bubble
-You shuffle on to the end of the fast moving line. The New New Yorkers ahead of
-you flit off to all parts of the city. Before you know it, you're at the head of
-the queue. You duck your head and walk inside the transparent bubble. A raspy,
-elderly voice, barely recognizable as a woman's, announces, "What's your,
-whadjamacallit, destination?"
+You shuffle on to the end of the fast moving line. The New New Yorkers ahead of you flit off to all parts of the city. Before you know it, you're at the head of the queue. You duck your head and walk inside the transparent bubble. A raspy, elderly voice, barely recognizable as a woman's, announces, "What's your, whadjamacallit, destination?"
 
-[0m[4m[Sometimes, you move around the world not by walking in any particular
-direction, but by going inside some of the things you find. For example, you can 
-[0m[1m[4menter bubble[0m[4m to see what's inside the Transport Tube Entrance Bubble.][0m
+[0m[4m[Sometimes, you move around the world not by walking in any particular direction, but by going inside some of the things you find. For example, you can [0m[1m[4menter bubble[0m[4m to see what's inside the Transport Tube Entrance Bubble.][0m
 
 --------------------------------------------------------------------------------
 id: 1736298201758
@@ -792,8 +644,7 @@ command: z
 > z
 A moment slips away.
 
-[0m[4m[Often, there will be interesting objects nearby; you can get more information
-about them by examining them; try [0m[1m[4mexamine people[0m[4m (or just [0m[1m[4mx people[0m[4m).][0m
+[0m[4m[Often, there will be interesting objects nearby; you can get more information about them by examining them; try [0m[1m[4mexamine people[0m[4m (or just [0m[1m[4mx people[0m[4m).][0m
 
 --------------------------------------------------------------------------------
 id: 1736359072479
@@ -801,14 +652,9 @@ parent-id: 1736359072478
 command: enter bubble
 --------------------------------------------------------------------------------
 > enter bubble
-You shuffle on to the end of the fast moving line. The New New Yorkers ahead of
-you flit off to all parts of the city. Before you know it, you're at the head of
-the queue. You duck your head and walk inside the transparent bubble. A raspy,
-elderly voice, barely recognizable as a woman's, announces, "What's your,
-whadjamacallit, destination?"
+You shuffle on to the end of the fast moving line. The New New Yorkers ahead of you flit off to all parts of the city. Before you know it, you're at the head of the queue. You duck your head and walk inside the transparent bubble. A raspy, elderly voice, barely recognizable as a woman's, announces, "What's your, whadjamacallit, destination?"
 
-[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an
-idea of who you are.][0m
+[0m[4m[You are present as part of this world too. Try [0m[1m[4mlook at me[0m[4m or [0m[1m[4ml self[0m[4m to get an idea of who you are.][0m
 
 --------------------------------------------------------------------------------
 id: 1736359072480
@@ -817,8 +663,7 @@ command: tutorial off
 --------------------------------------------------------------------------------
 > tutorial off
 
-[0m[4m[Tutorial mode has been turned off; you can re-enable tutorials with [0m[1m[4mtutorial on
-[0m[4m.][0m
+[0m[4m[Tutorial mode has been turned off; you can re-enable tutorials with [0m[1m[4mtutorial on[0m[4m.][0m
 
 --------------------------------------------------------------------------------
 id: 1736359072481
@@ -829,13 +674,7 @@ command: w
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving
-north and south at high speed. From here you can see a portion of the Manhattan
-skyline, all glittering spires and transport tubes endlessly flowing with
-passengers. You can see the transport tube servicing Planet Express across the
-road from you to the west; beyond that is the river. People are everywhere,
-moving north and south along the street and zipping in and out of the transport
-tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
 
 --------------------------------------------------------------------------------
 id: 1736359072482
@@ -866,11 +705,7 @@ command: danger
 > danger
 "What's so dangerous about this mission, Professor?" you ask.
 
-"Oh, the Ellisonium, yes, the bitterest, mostly-stable element in the known
-universe. Who knows what strange and terrible uses the Mirians will use it for!
-Make their deserts bloom? A snap! Change the orbit of their moon? Easy as pie!
-Or wage horrific intergalactic war? It's their choice, but that doesn't matter
-really, it's their payment that's so dangerous."
+"Oh, the Ellisonium, yes, the bitterest, mostly-stable element in the known universe. Who knows what strange and terrible uses the Mirians will use it for! Make their deserts bloom? A snap! Change the orbit of their moon? Easy as pie! Or wage horrific intergalactic war? It's their choice, but that doesn't matter really, it's their payment that's so dangerous."
 
 You could ask about the payment.
 
@@ -887,8 +722,7 @@ parent-id: 1735798155169
 command: x fence
 --------------------------------------------------------------------------------
 > x fence
-It's just like the one you tried to climb as a kid... you know, the time you got
-left hanging upside-down for 12 hours?
+It's just like the one you tried to climb as a kid... you know, the time you got left hanging upside-down for 12 hours?
 
 --------------------------------------------------------------------------------
 id: 1777687935343
@@ -896,8 +730,7 @@ parent-id: 1777687935342
 command: climb fence
 --------------------------------------------------------------------------------
 > climb fence
-Tall fence. Check. Razor wire. Check. Fry going east through the tall fence with
-the razor wire? No check.
+Tall fence. Check. Razor wire. Check. Fry going east through the tall fence with the razor wire? No check.
 
 --------------------------------------------------------------------------------
 id: 1777687935344
@@ -905,6 +738,5 @@ parent-id: 1777687935343
 command: e
 --------------------------------------------------------------------------------
 > e
-Tall fence. Check. Razor wire. Check. Fry going east through the tall fence with
-the razor wire? No check.
+Tall fence. Check. Razor wire. Check. Fry going east through the tall fence with the razor wire? No check.
 
