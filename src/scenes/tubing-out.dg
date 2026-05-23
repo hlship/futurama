@@ -1,27 +1,21 @@
-(global variable (tubing out start $))
-
 #tubing-out
 (scene *) 
 (recurring *)
 (start *)
     (#fry is #in #transport-tube)
-    (current tick $Now)
-    (now) (tubing out start $Now)
 (complete *)
     ~(#fry is #in #transport-tube)
-    (now) ~(tubing out start $)
 (on every tick during *)
-    (tubing out start $Start)
-    (2 ticks elapsed since $Start)
+    (* has duration 2)
     (par) 
     The raspy voice announces, "I'm not getting any younger bub. Just announce where ya wanna go."
 (on every tick during *)
-    (tubing out start $Start)
-    (5 ticks elapsed since $Start)
+    (* has duration 5)
     (par)
     The raspy voice complains, "Listen bub, announce a whadjamacallit, destination,
     or get out of the way!"
     (par)
+    %% Capture the current room
     (#transport-tube is #in $Room)
     %% This disables the stdlib from making (the $Room) out as "this location":
     (now) ~(current room $)

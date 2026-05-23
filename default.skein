@@ -24,6 +24,29 @@ Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
 You can turn this off with [0m[1m[4mtutorial off[0m[4m or back on with [0m[1m[4mtutorial on[0m[4m.][0m
 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[1m[36mWarning:[0m[36m src/scenes/tubing-out.dg, line 6: Possible typo: Local variable $Now only appears once.
+[0m
+
+[Futurama: Honk If You Like Bytecode]
+
+You wish you could say this is the first time you've woken up in a dark, dirty alley... really, you wish you could say for sure. You can't seem to remember. You feel a bit disoriented, and your tortured neurons cough up just a couple of memories... you were out on a bender, or out[0m[4m with[0m a Bender? A loud buzzing sound startles you out of your reverie, as a fast moving, colorful blur whizzes by overhead.
+
+[0m[1mFuturama: Untitled Episode
+[0mComedy by Howard M. Lewis Ship.
+Release 0. Serial number DEBUG.
+Dialog Interactive Debugger (dgdebug) version 1b/02. Library version 1.2.0. Debugging extension 1.1.
+Dialog extensions 0.8 by Howard Lewis Ship
+
+[0m[1mAlley[0m
+A short alley not far from Planet Express, notable for being dark and dingy in an otherwise bright and colorful city. The alley is divided in two by a tall fence, topped with razor wire, to the east. A busy street is just outside the alley to the west. There's not much activity here, beyond a pair of owls who watch you carefully, eager to scavenge any crumbs you might drop. At the back of the alley is a graffiti-festooned dumpster on top of which is perched a precious can of Slurm!
+
+Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
+
+[0m[4m[This game has a built-in tutorial mode for players new to interactive fiction; it suggests common commands that you can use to get started.
+
+You can turn this off with [0m[1m[4mtutorial off[0m[4m or back on with [0m[1m[4mtutorial on[0m[4m.][0m
+
 --------------------------------------------------------------------------------
 id: 1728874698403
 parent-id: 0
@@ -739,4 +762,119 @@ command: e
 --------------------------------------------------------------------------------
 > e
 Tall fence. Check. Razor wire. Check. Fry going east through the tall fence with the razor wire? No check.
+
+--------------------------------------------------------------------------------
+id: 1779548576464
+parent-id: 1728874698432
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779548576465
+parent-id: 1779548576464
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+The raspy voice announces, "I'm not getting any younger bub. Just announce where ya wanna go."
+
+A New New Yorker elbows past you impatiently, announces "Liberty Island," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779548576466
+parent-id: 1779548576465
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779548576467
+parent-id: 1779548576478
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+The raspy voice complains, "Listen bub, announce a whadjamacallit, destination, or get out of the way!"
+
+You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign. You put your hands in the pockets of your jacket and shuffle back out to the Access Road.
+
+--------------------------------------------------------------------------------
+id: 1779548576468
+parent-id: 1779548576467
+command: look
+--------------------------------------------------------------------------------
+> look
+[0m[1mAccess Road[0m
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+
+--------------------------------------------------------------------------------
+id: 1779548576469
+label: booted out of tubing out
+locked: true
+parent-id: 1779548576468
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+--------------------------------------------------------------------------------
+id: 1779548576478
+parent-id: 1779548576466
+command: look
+--------------------------------------------------------------------------------
+> look
+[0m[1mAccess Road[0m (in the Transport Tube Entrance Bubble)
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+
+A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779549476555
+parent-id: 1779548576464
+command: drop jacket
+--------------------------------------------------------------------------------
+> drop jacket
+(first attempting to remove your red jacket)
+You take off your red jacket.
+
+The raspy voice announces, "I'm not getting any younger bub. Just announce where ya wanna go."
+
+A New New Yorker elbows past you impatiently, announces "Liberty Island," and is immediately sucked up into the tube system and away.
+
+Your red jacket falls to the ground.
+
+A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779549476556
+parent-id: 1779549476555
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779549476559
+label: unsuccessful tubing out - no jacket
+locked: true
+parent-id: 1779549476556
+command: z
+--------------------------------------------------------------------------------
+> z
+A moment slips away.
+
+The raspy voice complains, "Listen bub, announce a whadjamacallit, destination, or get out of the way!"
+
+You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign. You shuffle back out to the Access Road.
 
