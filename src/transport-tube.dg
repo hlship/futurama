@@ -4,7 +4,7 @@
 
 #transport-tube
 (name *) Transport Tube Entrance Bubble
-(dict *) system chamber terminal station tubes
+(dict *) system chamber terminal station tubes reverse reversing
 ((tube location $) attracts *)
 (actor container *)
 (descr *)

@@ -4,20 +4,22 @@
 (omit tube appearance *)
 (from * go #east to #alley)
 (from * go #west to #skimmer-traffic)
+(* attracts #skimmers)
 (look *)
     You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed.
     From here you can see a portion of the Manhattan skyline, all glittering
     spires and transport tubes endlessly flowing with passengers.
-    You can see the transport tube servicing Planet Express across the road from you to the
+    You can see the transport tube station servicing Planet Express across the road from you to the
     west; beyond that is the river.
-    People are everywhere, moving north and south along the street and zipping in and out
-    of the transport tube system.
+    Throngs of New New Yorkers are everywhere, moving north and south along the street,
+    ducking into the local transport tube bubble, or emerging from the reversing chamber after 
+    a trip through the system.
+
 (prevent [leave * #north/#south])
     The thought of trudging through the sun-baked streets filled with such
     throngs of happy, productive people fills you with an overpowering sense
     of dread and despair, and brings a twitch to your right eyelid.
     Some of that may be Slurm withdrawal, but nonetheless.
-(* attracts #skimmers)
 
 %% TODO: Support for "cross the street"
 

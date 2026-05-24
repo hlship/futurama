@@ -16,6 +16,7 @@
 #delivery-ship
 (name *) Planet Express delivery ship
 (appearance *)
+        (* is #in #hangar)
         The Planet Express Delivery Ship overshadows everything else in the hangar, resting on three huge landing struts.
         It stands ready for the next mission, or the next whim of the Professor.
 
@@ -23,7 +24,6 @@
 (name *) concrete floor
 (descr *)
     Did you really spend a thousand years as a popsicle just so you could stare at the floor?
-
 
 #lockers
 (name *) row of lockers
@@ -39,7 +39,7 @@
 (openable *)
 (* is closed)
 (appearance *)
-    Off to one side is a cylindrical container, about a foot high, with a clear dome on top.
+    Off to one side is a short cylindrical container with a clear dome on top.
 (descr *)
     The container is cylindrical, about a foot high, with a transparent domed top.
     A bright red label on the side reads: "Danger! Ellisonium! Highly Bitter!"

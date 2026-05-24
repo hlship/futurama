@@ -124,7 +124,7 @@
 (* follows #about-the-danger)
 (comment *)
     You try to tease some useful information out of the old codger.
-    "And their payment is?" you ask.
+    "What kind of payment?" you ask.
     You're really hoping the Mirians pay in Slurm.
 (reply *)
     The Professor becomes agitated and raises his voice.
@@ -133,7 +133,8 @@
     "I'm getting it for quite a steal, actually.
     And really, it shouldn't be so dangerous as long as you don't go fooling
     around with it!
-    Maybe you'll listen to Leela for once ... where is she?"
+    Maybe you'll listen to Leela for once." He myopically searches about the conference
+    room.  "Speaking of Leela, where is she?"
 
 #about-guardian
 (asking quip *)

@@ -260,11 +260,11 @@ command: w
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube station servicing Planet Express across the road from you to the west; beyond that is the river. Throngs of New New Yorkers are everywhere, moving north and south along the street, ducking into the local transport tube bubble, or emerging from the reversing chamber after a trip through the system.
 
 --------------------------------------------------------------------------------
 id: 1728874698432
-label: enter tube
+label: tubing out: start
 locked: true
 parent-id: 1728874698431
 command: enter tube
@@ -274,14 +274,15 @@ You shuffle on to the end of the fast moving line. The New New Yorkers ahead of 
 
 --------------------------------------------------------------------------------
 id: 1728874698434
-label: Reach Planet Express
+label: tubing out: just destination
+locked: true
 parent-id: 1728874698432
 command: planet express
 --------------------------------------------------------------------------------
 > planet express
 "I'd like to go to Planet Express," you announce.
 
-With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of Liberty Island, the Robot Arms Apartments, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
+With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glimpses of Liberty Island, the Robot Arms Apartments, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
 
 [0m[1mPlanet Express[0m
 You are standing outside Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the river. Planet Express is an oddly shaped red building, consisting of a largely conical tower, attached to a large blocky hangar for the delivery ship itself. On the side of the building is a wide circular door which is currently rolled shut. To the east, beyond a blur of fast moving freight skimmers, is the access road. Fortunately, the transport tube system extends this far.
@@ -368,9 +369,9 @@ parent-id: 1728874698442
 command: payment
 --------------------------------------------------------------------------------
 > payment
-You try to tease some useful information out of the old codger. "And their payment is?" you ask. You're really hoping the Mirians pay in Slurm.
+You try to tease some useful information out of the old codger. "What kind of payment?" you ask. You're really hoping the Mirians pay in Slurm.
 
-The Professor becomes agitated and raises his voice. "Just the most dangerous machine in the known galaxy... The Guardian of Forever!" He settles down after a moment. "I'm getting it for quite a steal, actually. And really, it shouldn't be so dangerous as long as you don't go fooling around with it! Maybe you'll listen to Leela for once... where is she?"
+The Professor becomes agitated and raises his voice. "Just the most dangerous machine in the known galaxy... The Guardian of Forever!" He settles down after a moment. "I'm getting it for quite a steal, actually. And really, it shouldn't be so dangerous as long as you don't go fooling around with it! Maybe you'll listen to Leela for once." He myopically searches about the conference room. "Speaking of Leela, where is she?"
 
 You could ask about the Guardian of Forever or suggest finding Leela.
 
@@ -424,7 +425,7 @@ This very large room, the largest open space inside Planet Express, is where the
 
 The Planet Express Delivery Ship overshadows everything else in the hangar, resting on three huge landing struts. It stands ready for the next mission, or the next whim of the Professor.
 
-Off to one side is a cylindrical container, about a foot high, with a clear dome on top.
+Off to one side is a short cylindrical container with a clear dome on top.
 
 Leela is fussing about the hangar, checking that the ship is ready for its next mission.
 
@@ -527,7 +528,7 @@ command: west
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube station servicing Planet Express across the road from you to the west; beyond that is the river. Throngs of New New Yorkers are everywhere, moving north and south along the street, ducking into the local transport tube bubble, or emerging from the reversing chamber after a trip through the system.
 
 [0m[4m[Try [0m[1m[4minventory[0m[4m (or just [0m[1m[4mi[0m[4m) to see what you are carrying.][0m
 
@@ -584,7 +585,7 @@ command: west
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube station servicing Planet Express across the road from you to the west; beyond that is the river. Throngs of New New Yorkers are everywhere, moving north and south along the street, ducking into the local transport tube bubble, or emerging from the reversing chamber after a trip through the system.
 
 [0m[4m[The world is not on a perfect grid; sometimes you go east, and return to where you started by going south (not west). Sometimes a direction is a one-way trip, and you have to find an entirely different route back to where you started, if that is even possible.][0m
 
@@ -666,7 +667,7 @@ command: w
 You walk west.
 
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube station servicing Planet Express across the road from you to the west; beyond that is the river. Throngs of New New Yorkers are everywhere, moving north and south along the street, ducking into the local transport tube bubble, or emerging from the reversing chamber after a trip through the system.
 
 --------------------------------------------------------------------------------
 id: 1736359072482
@@ -740,7 +741,7 @@ command: z
 > z
 A moment slips away.
 
-A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, mumbles "Madison Cube Garden," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1779548576465
@@ -752,7 +753,7 @@ A moment slips away.
 
 The raspy voice announces, "I'm not getting any younger bub. Just announce where ya wanna go."
 
-A New New Yorker elbows past you impatiently, announces "Liberty Island," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, blurts out "Planet Express," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1779548576466
@@ -762,7 +763,7 @@ command: z
 > z
 A moment slips away.
 
-A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, mumbles "Liberty Island," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1779548576467
@@ -783,7 +784,7 @@ command: look
 --------------------------------------------------------------------------------
 > look
 [0m[1mAccess Road[0m
-You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube station servicing Planet Express across the road from you to the west; beyond that is the river. Throngs of New New Yorkers are everywhere, moving north and south along the street, ducking into the local transport tube bubble, or emerging from the reversing chamber after a trip through the system.
 
 --------------------------------------------------------------------------------
 id: 1779548576469
@@ -802,9 +803,9 @@ command: look
 --------------------------------------------------------------------------------
 > look
 [0m[1mAccess Road[0m (in the Transport Tube Entrance Bubble)
-You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube servicing Planet Express across the road from you to the west; beyond that is the river. People are everywhere, moving north and south along the street and zipping in and out of the transport tube system.
+You are next to a wide access road frequented by heavy freight skimmers moving north and south at high speed. From here you can see a portion of the Manhattan skyline, all glittering spires and transport tubes endlessly flowing with passengers. You can see the transport tube station servicing Planet Express across the road from you to the west; beyond that is the river. Throngs of New New Yorkers are everywhere, moving north and south along the street, ducking into the local transport tube bubble, or emerging from the reversing chamber after a trip through the system.
 
-A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, says "Liberty Island," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1779549476555
@@ -817,11 +818,11 @@ You take off your red jacket.
 
 The raspy voice announces, "I'm not getting any younger bub. Just announce where ya wanna go."
 
-A New New Yorker elbows past you impatiently, announces "Liberty Island," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, blurts out "Planet Express," and is immediately sucked up into the tube system and away.
 
 Your red jacket falls to the ground.
 
-A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, mumbles "Liberty Island," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1779549476556
@@ -831,7 +832,7 @@ command: z
 > z
 A moment slips away.
 
-A New New Yorker elbows past you impatiently, announces "Planet Express," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, says "Liberty Island," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1779549476559
@@ -849,7 +850,7 @@ You notice a small but growing mob of impatient New New Yorkers behind you, neve
 
 --------------------------------------------------------------------------------
 id: 1779549476560
-label: Use "say" in tubing out
+label: tubing out: "say" destination
 locked: true
 parent-id: 1779548576464
 command: say planet express
@@ -857,26 +858,7 @@ command: say planet express
 > say planet express
 "I'd like to go to Planet Express," you announce.
 
-With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of the Robot Arms Apartments, Liberty Island, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
-
-[0m[1mPlanet Express[0m
-You are standing outside Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the river. Planet Express is an oddly shaped red building, consisting of a largely conical tower, attached to a large blocky hangar for the delivery ship itself. On the side of the building is a wide circular door which is currently rolled shut. To the east, beyond a blur of fast moving freight skimmers, is the access road. Fortunately, the transport tube system extends this far.
-
-From the upper turret of Planet Express, you hear Professor Farnsworth's demanding, querulous voice call out to you: "Fry! Where have you been? We're about to start a[0m[4m very dangerous[0m mission and we're going to need someone to mop up the blood, er, I mean, provide moral support. Get on in here!" He disappears back into the tower.
-
-[0m[4m(Your score has gone up by one point.)
-[0m
---------------------------------------------------------------------------------
-id: 1779549476562
-label: use "say" in tubing out
-locked: true
-parent-id: 1728874698432
-command: say planet express
---------------------------------------------------------------------------------
-> say planet express
-"I'd like to go to Planet Express," you announce.
-
-With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of Liberty Island, the Robot Arms Apartments, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
+With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glimpses of Liberty Island and the Robot Arms Apartments before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
 
 [0m[1mPlanet Express[0m
 You are standing outside Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the river. Planet Express is an oddly shaped red building, consisting of a largely conical tower, attached to a large blocky hangar for the delivery ship itself. On the side of the building is a wide circular door which is currently rolled shut. To the east, beyond a blur of fast moving freight skimmers, is the access road. Fortunately, the transport tube system extends this far.
@@ -887,18 +869,19 @@ From the upper turret of Planet Express, you hear Professor Farnsworth's demandi
 [0m
 --------------------------------------------------------------------------------
 id: 1779549476563
-label: can say unknown location in tubing out
+label: tubing out: say unknown phrase
 parent-id: 1728874698432
 command: say empire state building
 --------------------------------------------------------------------------------
 > say empire state building
 The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
 
-A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, mumbles "Madison Cube Garden," and is immediately sucked up into the tube system and away.
 
 --------------------------------------------------------------------------------
 id: 1779549476564
-label: cant just tube out to unknown without say
+label: tubing out: unknown phrase w/o "say" is not understood
+locked: true
 parent-id: 1779549476563
 command: empire state building
 --------------------------------------------------------------------------------
@@ -914,7 +897,6 @@ command: actions on
 
 --------------------------------------------------------------------------------
 id: 1779558605183
-label: tubing: say other verb is treated as tube to unknown
 locked: true
 parent-id: 1779558605182
 command: say inventory
@@ -923,5 +905,52 @@ command: say inventory
 ACTION: [tube to unknown] (announce an unknown destination)
 The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
 
-A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+A New New Yorker elbows past you impatiently, mumbles "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779558605184
+label: tubing out: say current room
+parent-id: 1728874698432
+command: say access
+--------------------------------------------------------------------------------
+> say access
+The raspy voice sounds exasperated. "Look around, will ya, or announce someplace else instead, idjyat".
+
+A New New Yorker elbows past you impatiently, mumbles "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779558605185
+label: tubing out: can't go direction
+parent-id: 1728874698432
+command: west
+--------------------------------------------------------------------------------
+> west
+You are inside the entrance bubble of the transport tube, which fully wraps around you. You aren't going anywhere until you announce your destination, or exit the bubble.
+
+A New New Yorker elbows past you impatiently, mumbles "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779558605186
+locked: true
+parent-id: 1779558605185
+command: out
+--------------------------------------------------------------------------------
+> out
+You exit the bubble, squeezing past the line of New New Yorkers waiting to use the transport tube system.
+
+--------------------------------------------------------------------------------
+id: 1779558605189
+parent-id: 1779548576469
+command: x chamber
+--------------------------------------------------------------------------------
+> x chamber
+The transport tube systems connects just about everywhere in the city. A steady flow of people queue up to enter the entrance bubble and are sucked up by the outgoing tube; an equally steady flow of people arrive by the incoming tube and are ejected out of the reversing chamber.
+
+--------------------------------------------------------------------------------
+id: 1779558605190
+parent-id: 1779558605189
+command: x reverse
+--------------------------------------------------------------------------------
+> x reverse
+The transport tube systems connects just about everywhere in the city. A steady flow of people queue up to enter the entrance bubble and are sucked up by the outgoing tube; an equally steady flow of people arrive by the incoming tube and are ejected out of the reversing chamber.
 

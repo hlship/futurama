@@ -29,6 +29,7 @@
     %% Dialog doesn't have a `try silently` so:
     (move player to #in $Room)
     (tick) (stop)
+
 (on every tick during *)
     (par)
     (current room $Room)
@@ -37,7 +38,11 @@
         ~($Stop = $Room)
     (into $Stops)
     (randomly select $Stop from $Stops)
-    A New New Yorker elbows past you impatiently, announces "(no space)(name $Stop)," and is immediately sucked up
+    A New New Yorker elbows past you impatiently, 
+    (select)
+    announces (or) says (or) blurts out (or) mumbles
+    (at random)     
+    "(no space)(name $Stop)," and is immediately sucked up
     into the tube system and away.
 
 (understand $Words as tubing action $Action)
@@ -63,8 +68,6 @@
     (* in progress)
     (understand $Words as tubing action $Action)
 
-(describe action [tube to unknown]) announce an unknown destination
-
 %% Prevent stdlib reachability check:
 ~(refuse [tube to $])
 
@@ -89,7 +92,7 @@
     "I'd like to go to (the $Room)," you announce.
     (par)
     With a sound like a great Tupperware container lid being opened, the tube sucks you in and
-    hurtles you about New New York.  You catch fleeting glances of (the $SomeStops) before
+    hurtles you about New New York.  You catch fleeting glimpses of (the $SomeStops) before
     you are spat out of the reversal chamber at (the $Room).
     You roll gracelessly back onto your feet and look around.
     (enter $Room)
@@ -102,6 +105,8 @@
     You are inside the entrance bubble of the transport tube, which fully wraps
     around you.
     You aren't going anywhere until you announce your destination, or exit the bubble.
+
+(describe action [tube to unknown]) announce an unknown destination
 
 (describe action [tube to $Room])
     announce (name $Room) as your destination
