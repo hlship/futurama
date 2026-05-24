@@ -24,29 +24,6 @@ Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
 
 You can turn this off with [0m[1m[4mtutorial off[0m[4m or back on with [0m[1m[4mtutorial on[0m[4m.][0m
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[1m[36mWarning:[0m[36m src/scenes/tubing-out.dg, line 6: Possible typo: Local variable $Now only appears once.
-[0m
-
-[Futurama: Honk If You Like Bytecode]
-
-You wish you could say this is the first time you've woken up in a dark, dirty alley... really, you wish you could say for sure. You can't seem to remember. You feel a bit disoriented, and your tortured neurons cough up just a couple of memories... you were out on a bender, or out[0m[4m with[0m a Bender? A loud buzzing sound startles you out of your reverie, as a fast moving, colorful blur whizzes by overhead.
-
-[0m[1mFuturama: Untitled Episode
-[0mComedy by Howard M. Lewis Ship.
-Release 0. Serial number DEBUG.
-Dialog Interactive Debugger (dgdebug) version 1b/02. Library version 1.2.0. Debugging extension 1.1.
-Dialog extensions 0.8 by Howard Lewis Ship
-
-[0m[1mAlley[0m
-A short alley not far from Planet Express, notable for being dark and dingy in an otherwise bright and colorful city. The alley is divided in two by a tall fence, topped with razor wire, to the east. A busy street is just outside the alley to the west. There's not much activity here, beyond a pair of owls who watch you carefully, eager to scavenge any crumbs you might drop. At the back of the alley is a graffiti-festooned dumpster on top of which is perched a precious can of Slurm!
-
-Whatever woke you up zoomed off, out of sight, beyond the neighboring rooftops.
-
-[0m[4m[This game has a built-in tutorial mode for players new to interactive fiction; it suggests common commands that you can use to get started.
-
-You can turn this off with [0m[1m[4mtutorial off[0m[4m or back on with [0m[1m[4mtutorial on[0m[4m.][0m
-
 --------------------------------------------------------------------------------
 id: 1728874698403
 parent-id: 0
@@ -287,6 +264,8 @@ You are next to a wide access road frequented by heavy freight skimmers moving n
 
 --------------------------------------------------------------------------------
 id: 1728874698432
+label: enter tube
+locked: true
 parent-id: 1728874698431
 command: enter tube
 --------------------------------------------------------------------------------
@@ -294,25 +273,15 @@ command: enter tube
 You shuffle on to the end of the fast moving line. The New New Yorkers ahead of you flit off to all parts of the city. Before you know it, you're at the head of the queue. You duck your head and walk inside the transparent bubble. A raspy, elderly voice, barely recognizable as a woman's, announces, "What's your, whadjamacallit, destination?"
 
 --------------------------------------------------------------------------------
-id: 1728874698433
-parent-id: 1728874698432
-command: say planet express
---------------------------------------------------------------------------------
-> say planet express
-The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
-
-A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
-
---------------------------------------------------------------------------------
 id: 1728874698434
 label: Reach Planet Express
-parent-id: 1728874698433
+parent-id: 1728874698432
 command: planet express
 --------------------------------------------------------------------------------
 > planet express
 "I'd like to go to Planet Express," you announce.
 
-With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of the Robot Arms Apartments, Liberty Island, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
+With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of Liberty Island, the Robot Arms Apartments, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
 
 [0m[1mPlanet Express[0m
 You are standing outside Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the river. Planet Express is an oddly shaped red building, consisting of a largely conical tower, attached to a large blocky hangar for the delivery ship itself. On the side of the building is a wide circular door which is currently rolled shut. To the east, beyond a blur of fast moving freight skimmers, is the access road. Fortunately, the transport tube system extends this far.
@@ -877,4 +846,82 @@ A moment slips away.
 The raspy voice complains, "Listen bub, announce a whadjamacallit, destination, or get out of the way!"
 
 You notice a small but growing mob of impatient New New Yorkers behind you, never a good sign. You shuffle back out to the Access Road.
+
+--------------------------------------------------------------------------------
+id: 1779549476560
+label: Use "say" in tubing out
+locked: true
+parent-id: 1779548576464
+command: say planet express
+--------------------------------------------------------------------------------
+> say planet express
+"I'd like to go to Planet Express," you announce.
+
+With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of the Robot Arms Apartments, Liberty Island, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
+
+[0m[1mPlanet Express[0m
+You are standing outside Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the river. Planet Express is an oddly shaped red building, consisting of a largely conical tower, attached to a large blocky hangar for the delivery ship itself. On the side of the building is a wide circular door which is currently rolled shut. To the east, beyond a blur of fast moving freight skimmers, is the access road. Fortunately, the transport tube system extends this far.
+
+From the upper turret of Planet Express, you hear Professor Farnsworth's demanding, querulous voice call out to you: "Fry! Where have you been? We're about to start a[0m[4m very dangerous[0m mission and we're going to need someone to mop up the blood, er, I mean, provide moral support. Get on in here!" He disappears back into the tower.
+
+[0m[4m(Your score has gone up by one point.)
+[0m
+--------------------------------------------------------------------------------
+id: 1779549476562
+label: use "say" in tubing out
+locked: true
+parent-id: 1728874698432
+command: say planet express
+--------------------------------------------------------------------------------
+> say planet express
+"I'd like to go to Planet Express," you announce.
+
+With a sound like a great Tupperware container lid being opened, the tube sucks you in and hurtles you about New New York. You catch fleeting glances of Liberty Island, the Robot Arms Apartments, and Madison Cube Garden before you are spat out of the reversal chamber at Planet Express. You roll gracelessly back onto your feet and look around.
+
+[0m[1mPlanet Express[0m
+You are standing outside Professor Farnsworth's curious tower of science and commerce, situated on a parcel of industrial real-estate adjacent to the river. Planet Express is an oddly shaped red building, consisting of a largely conical tower, attached to a large blocky hangar for the delivery ship itself. On the side of the building is a wide circular door which is currently rolled shut. To the east, beyond a blur of fast moving freight skimmers, is the access road. Fortunately, the transport tube system extends this far.
+
+From the upper turret of Planet Express, you hear Professor Farnsworth's demanding, querulous voice call out to you: "Fry! Where have you been? We're about to start a[0m[4m very dangerous[0m mission and we're going to need someone to mop up the blood, er, I mean, provide moral support. Get on in here!" He disappears back into the tower.
+
+[0m[4m(Your score has gone up by one point.)
+[0m
+--------------------------------------------------------------------------------
+id: 1779549476563
+label: can say unknown location in tubing out
+parent-id: 1728874698432
+command: say empire state building
+--------------------------------------------------------------------------------
+> say empire state building
+The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
+
+A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
+
+--------------------------------------------------------------------------------
+id: 1779549476564
+label: cant just tube out to unknown without say
+parent-id: 1779549476563
+command: empire state building
+--------------------------------------------------------------------------------
+> empire state building
+[0m[4m(I'm sorry, I didn't understand what you wanted to do.)
+[0m
+--------------------------------------------------------------------------------
+id: 1779558605182
+parent-id: 1728874698432
+command: actions on
+--------------------------------------------------------------------------------
+> actions on
+
+--------------------------------------------------------------------------------
+id: 1779558605183
+label: tubing: say other verb is treated as tube to unknown
+locked: true
+parent-id: 1779558605182
+command: say inventory
+--------------------------------------------------------------------------------
+> say inventory
+ACTION: [tube to unknown] (announce an unknown destination)
+The raspy voice responds: "How about announcing someplace with a tube innit, will ya?"
+
+A New New Yorker elbows past you impatiently, announces "Madison Cube Garden," and is immediately sucked up into the tube system and away.
 

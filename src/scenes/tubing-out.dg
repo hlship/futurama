@@ -40,20 +40,28 @@
     A New New Yorker elbows past you impatiently, announces "(no space)(name $Stop)," and is immediately sucked up
     into the tube system and away.
 
-(understand [say/announce/request | $Words] as $Action)
-    (* in progress)
-    (just)
-    { (understand $Words as $Action)
-      (or)
-      ($Action = [tube to unknown]) }
-
-(understand $Words as [tube to $Where])
-    (* in progress)
+(understand $Words as tubing action $Action)
     (determine object $Where)
         *(tube location $Where)
     (from words)
         *(dict $Where)
     (matching all of $Words)
+    ($Action = [tube to $Where])
+
+(understand $Words as known or unknown tubing action $Action)
+    (understand $Words as tubing action $Action) 
+    (or)
+    ($Action = [tube to unknown]) 
+
+(understand [say/announce/request | $Words] as $Action)
+    (* in progress)
+    %% Need to start a sub-query for some reason. Inlining it,
+    %% even with (just), or with braces, didn't work
+    (understand $Words as known or unknown tubing action $Action)
+
+(understand $Words as $Action)
+    (* in progress)
+    (understand $Words as tubing action $Action)
 
 (describe action [tube to unknown]) announce an unknown destination
 
